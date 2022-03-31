@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 module.exports = function(){
     mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_SERV}/${process.env.DB_NAME}?retryWrites=true&w=majority`,{
-        // Parâmetros de Conexap
+        // Parâmetros de Conexao
         useNewUrlParser: true,
         useUnifiedTopology: true,
         //useFindAndModify:false -- não se usa mais
