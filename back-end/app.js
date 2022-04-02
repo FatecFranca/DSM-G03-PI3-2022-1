@@ -2,7 +2,7 @@
 require('dotenv').config()
 
 //exibindo as variáveis de ambiente no console (teste)
-console.log(process.env)
+//console.log(process.env)
 
 var express = require('express');
 var path = require('path');
@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 /******************************ROTAS ***********************************/
 
-const glossary = require ('../routes/glossary')
+const glossary = require ('./routes/glossary')
 app.use('/glossary', glossary)
 
 /**********************************************************************/
