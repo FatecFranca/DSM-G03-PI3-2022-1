@@ -1,21 +1,22 @@
 const mongoose = require('mongoose')
 
-module.exports - function(){
+module.exports = function() {
+
     const schema = mongoose.Schema({
-        entry:{
+        entry: {
             type: String,
             required: true
         },
-        defenition:{
+        definition: {
             type: String,
             required: true
         }
     })
 
-    //geração do model
-    //1° parametro: nome do models (inicial maiuscula)
-    //2° parametro: atributos do model (definidos na váriável schema)
-    //3° parâmetros: nome da collection no banco de dados (collection em minuscula no plural, um Glossary faz parte dos glossaries)
-
+    // Geração do model
+    // 1º parâmetro: nome do model (inicial maiúscula)
+    // 2º parâmetro: atributos do model (definidos na variável schema)
+    // 3º parâmetro: nome da collection no banco de dados
     return mongoose.model('Glossary', schema, 'glossaries')
+
 }
