@@ -31,6 +31,16 @@ app.use('/user', user)
 const assessment = require ('./routes/assessment')
 app.use('/assessment', assessment)
 
+const question_group = require ('./routes/question_group')
+app.use('/question-group', question_group)
+
+const question = require ('./routes/question')
+app.use('/question', question)
+
+const answer = require ('./routes/answer')
+app.use('/answer', answer)
+
+
 /**********************************************************************/
 
 module.exports = app;

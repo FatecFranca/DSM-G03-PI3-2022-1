@@ -36,6 +36,7 @@ module.exports = function(){
         }
 
     })
+    schema.index({assessment: 1 /*ASC*/, question: 1 /*ASC*/}, {unique: true})
 
     return mongoose.model('Answer', schema, 'answers')
 }
