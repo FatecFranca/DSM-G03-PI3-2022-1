@@ -22,7 +22,9 @@ controller.create = async (req, res) => {
 // glossário já inseridas
 controller.retrieve = async (req, res) => {
     try {
-        const result = await Answer.find().populate('assessment').populate('question')
+        const assessmentId = req.params.id
+
+        const result = await Answer.find({ assessment: assessmentId }).populate('assessment').populate('question')
         // HTTP 200: OK é implícito aqui
         res.send(result)
     }

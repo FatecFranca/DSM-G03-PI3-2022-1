@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
-const QuestionGroup = require('./QuestionGroup')
 
-module.exports = function(){
+
+module.exports = function() {
+
     const schema = mongoose.Schema({
         number: {
             type: Number,
@@ -11,17 +12,17 @@ module.exports = function(){
             type: String,
             required: true
         },
-        //FK para QuestionGroup
+        // Chave estrangeira para QuestionGroup
         group: {
             type: mongoose.ObjectId,
             ref: 'QuestionGroup',
             required: true
-        }
+        } 
     })
-
-    //Criando um indice unico para os campos group e number
-    schema.index({group: 1 /*ASC*/, number: 1 /*ASC*/}, {unique: true})
     
+    // Criando índice único para os campos group e number
+    schema.index({group: 1 /* ASC */, number: 1 /* ASC */}, {unique: true})
+
     return mongoose.model('Question', schema, 'questions')
 
 }

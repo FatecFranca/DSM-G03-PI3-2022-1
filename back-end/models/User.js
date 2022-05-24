@@ -1,32 +1,33 @@
 const mongoose = require('mongoose')
 
-module.exports = function(){
-    const schema = mongoose.Schema({
+module.exports = function() {
 
+    const schema = mongoose.Schema({
         fullname: {
             type: String,
             required: true
         },
         email: {
             type: String,
-            required: true 
+            required: true,
+            index: { unique: true }
         },
         email_confirmed: {
-            type: String,
+            type: Boolean,
             required: true,
-            default: false 
+            default: false // valor padrão do atributo
         },
         password_hash: {
             type: String,
-            required: true 
-        },
-        data_regsitred:{
-            type: Date, 
             required: true,
-            default: Date.now()
+            select: false // Campo não aparece em consultas
+        },
+        date_registered: {
+            type: Date,
+            required: true,
+            default: Date.now() // Valor padrão do campo
         }
-            
-        })
+    })
 
     return mongoose.model('User', schema, 'users')
 }

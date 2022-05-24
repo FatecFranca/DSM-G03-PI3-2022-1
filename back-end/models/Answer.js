@@ -1,42 +1,42 @@
 const mongoose = require('mongoose')
 
-module.exports = function(){
+module.exports = function() {
+
     const schema = mongoose.Schema({
         assessment: {
-            type:mongoose.ObjectId,
+            type: mongoose.ObjectId,
             required: true,
-            ref:'Assessment'
+            ref: 'Assessment'
         },
-        question:{
-            type:mongoose.ObjectId,
-            required:true,
-            ref:'Question'
+        question: {
+            type: mongoose.ObjectId,
+            required: true,
+            ref: 'Question'
         },
         /*
-        Valores válidos para o objective_answer
-        Y: Yes
-        N: No
-        X: Not Applicable
-        P: Postponed (resposta adiada)
+            Valores válidos para objective_answer
+            Y: Sim (Yes)
+            N: Não (No)
+            X: Não aplicável (Not Applicable)
+            P: Resposta adiada (Postponed)
         */
-        objective_answer:{
+        objective_answer: {
             type: String,
             enum: ['Y', 'N', 'X', 'P'],
             required: true
         },
-        comments:{
+        comments : {
             type: String,
-            required: false
-
+            required: false     // opcional
         },
-        datetime:{
+        datetime: {
             type: Date,
             required: true,
             default: Date.now()
         }
-
     })
-    schema.index({assessment: 1 /*ASC*/, question: 1 /*ASC*/}, {unique: true})
+
+    schema.index({assessment: 1, question: 1}, {unique: true})
 
     return mongoose.model('Answer', schema, 'answers')
 }

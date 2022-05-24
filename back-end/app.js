@@ -1,7 +1,7 @@
 // Carrega as variáveis de ambiente do arquivo .env
 require('dotenv').config()
 
-//exibindo as variáveis de ambiente no console (teste)
+// Exibindo as variáveis de ambiente no console (teste)
 //console.log(process.env)
 
 var express = require('express');
@@ -20,30 +20,26 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-/******************************ROTAS ***********************************/
+/***************** ROTAS ********************* */
 
-const glossary = require ('./routes/glossary')
+const glossary = require('./routes/glossary')
 app.use('/glossary', glossary)
 
-const user = require ('./routes/user')
+const user = require('./routes/user')
 app.use('/user', user)
 
-const assessment = require ('./routes/assessment')
+const assessment = require('./routes/assessment')
 app.use('/assessment', assessment)
 
-const question_group = require ('./routes/question_group')
+const question_group = require('./routes/question_group')
 app.use('/question-group', question_group)
 
-const question = require ('./routes/question')
+const question = require('./routes/question')
 app.use('/question', question)
 
-const answer = require ('./routes/answer')
+const answer = require('./routes/answer')
 app.use('/answer', answer)
 
-const login = require ('./routes/login')
-app.use('/login', login)
-
-
-/**********************************************************************/
+/********************************************* */
 
 module.exports = app;
