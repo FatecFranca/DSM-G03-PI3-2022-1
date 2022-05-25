@@ -1,0 +1,30 @@
+aside {
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color: #ffff;
+}
+
+aside ul li {
+    list-style: none;
+    margin-top: 5%;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-device-height: 500px) {
+    aside {
+        width: 15%;
+        margin-top: -100px;
+        float: top;
+        background-color: #ffff;
+    }
+    aside ul li {
+        display: inline;
+        margin-left: 4px ;
+    }
+
+}
