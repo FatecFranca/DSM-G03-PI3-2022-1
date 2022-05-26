@@ -4,10 +4,10 @@ const router = express.Router()
 // Importa o controller correspondente
 const controller = require('../controllers/question_group')
 
-router.post('/', controller.create)
-router.get('/', controller.retrieve)
-router.get('/:id', controller.retrieveOne)
-router.put('/', controller.update)
-router.delete('/', controller.delete)
+router.post('/', verifyToken, controller.create)
+router.get('/', verifyToken, controller.retrieve)
+router.get('/:id', verifyToken, controller.retrieveOne)
+router.put('/', verifyToken, controller.update)
+router.delete('/', verifyToken, controller.delete)
 
 module.exports = router
