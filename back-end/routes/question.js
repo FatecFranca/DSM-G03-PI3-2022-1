@@ -7,6 +7,8 @@ const controller = require('../controllers/question')
 
 router.post('/', controller.create)
 router.get('/', verifyToken, controller.retrieve)
+router.get('/group/:groupId', controller.retrieveByGroup)
+router.get('/group-number/:groupId/:number', controller.retrieveByGroupAndNumber)
 router.get('/:id', controller.retrieveOne)
 router.put('/', controller.update)
 router.delete('/', controller.delete)

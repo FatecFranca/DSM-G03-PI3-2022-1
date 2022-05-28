@@ -1,6 +1,7 @@
 // Carrega as variáveis de ambiente do arquivo .env
 require('dotenv').config()
 
+const cors = require('cors')
 // Exibindo as variáveis de ambiente no console (teste)
 //console.log(process.env)
 
@@ -14,6 +15,7 @@ var app = express();
 const dbConnection = require('./config/database')
 dbConnection()
 
+app.use(cors())
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

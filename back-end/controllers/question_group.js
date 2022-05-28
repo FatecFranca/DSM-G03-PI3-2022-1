@@ -33,6 +33,32 @@ controller.retrieve = async (req, res) => {
     }
 }
 
+controller.retrieveByGroup = async (req, res) => {
+    try {
+        const result = await Question.find({group: req.params.groupId}).sort('number')
+        // HTTP 200: OK é implícito aqui
+        res.send(result)
+    }
+    catch(error) {
+        console.error(error)
+        // HTTP 500: Internal Server Error
+        res.status(500).send(error)        
+    }
+}
+
+controller.retrieveByGroupAndNumber = async (req, res) => {
+    try {
+        const result = await Question.findOne({group: req.params.groupId, number: req.params.number})
+        // HTTP 200: OK é implícito aqui
+        res.send(result)
+    }
+    catch(error) {
+        console.error(error)
+        // HTTP 500: Internal Server Error
+        res.status(500).send(error)        
+    }
+}
+
 // Função que retorna uma única entrada do glossário
 // com base no id fornecido
 controller.retrieveOne = async (req, res) => {

@@ -5,7 +5,11 @@ import { Route, Routes } from 'react-router-dom'
 import Login from "./components/Login/Login.js";
 import Home from "./components/Home/Home.js";
 import Question from "./components/Questions.js";
-import Body from "./components/Body/Body.js";
+import Answer from "./components/Answer.js";
+import Assessment from "./components/Assessment.js";
+import Glossary from "./components/Glossary.js";
+import About from "./components/About.js";
+
 
 function Routers () {
     return (
@@ -13,7 +17,11 @@ function Routers () {
             <Routes>
                 <Route exact path="/" element={<Login/>} />
                 <Route exact path="/home" element={<Home/>} />
-                <Route exact path="/questoes" element={<Body />}/>
+                <Route exact path="/glossario" element={<Glossary />}/>
+                <Route exact path="/questoes" element={<Question />}/>
+                <Route exact path="/respostas" element={<Answer />}/>
+                <Route exact path="/avaliacoes" element={<Assessment />}/>
+                <Route exact path="/sobre" element={<About />}/>
 
             </Routes>
     )

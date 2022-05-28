@@ -3,9 +3,10 @@ import './Components.css'
 function Footer() {
     return (
 
-        <footer>
-            <p>&copy; Todos os direitos reservados</p>
-        </footer>
+        <div class="footer">
+            <p>Desenvolvido por Tatiane, Fabricio, Nicolas e Vinicius</p>
+            <div>&copy; Todos os direitos reservados</div>
+        </div>
     )
 }
 export default Footer
