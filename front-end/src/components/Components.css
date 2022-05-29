@@ -1,13 +1,29 @@
 .header{
-    background-color: red;
+    background-color: #fd3c36;
     color: #ffff;
+    width: 100%;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 10%;
+}
+
+.content {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 4.6% 0 3.3% 10%;
 }
 
 .menu {
-    background-color: red;
+    background-color: #fd3c36;
     color: #ffff;
-    width: 15%;
-    height: 85vh;
+    position: fixed;
+    width: 10%;
+    height: 100vh;
     float: left;
     
 }
@@ -19,8 +35,12 @@
 }
 
 .footer{
-    background-color: red;
+    background-color: #fd3c36;
     color: #ffff;
+    position: fixed;
+    bottom:0;
+    left: 10%;
+    width: 90%;
 }
 
 .menuitem {
@@ -37,7 +57,10 @@
 .botaoSair:hover {
     border: 1px white solid;
     background-color: #ffff;
-    color: red;
+    color: #fd3c36;
+}
+table th {
+    border: 1px solid #ffff;
 }
 
 @media only screen and (max-device-height: 500px) {
