@@ -35,10 +35,9 @@ export default function Login() {
 
     return (
         <div className="signinForm">
-        <form  onSubmit={handleSubmit}>
-           <h3>LogIn</h3>
+        <form  onSubmit={handleSubmit} id="container-login">
+           <h3 className="login-titulo">Bem Vindo ao UX-Helpers</h3>
               <input
-                    class= "" 
                     type="text" 
                     placeholder="email"
                     id="login-email"
@@ -55,7 +54,7 @@ export default function Login() {
                     onChange={e => setPassword(e.target.value)}                    
                     
                     />
-              <input type="submit" value="Login" />
+              <input id="login-botao" type="submit" value="Login" />
               <a href="#" className="forgot">Esqueceu a senha?</a>
               <h2 className ="notify">{ notify }</h2>                
         </form>  
