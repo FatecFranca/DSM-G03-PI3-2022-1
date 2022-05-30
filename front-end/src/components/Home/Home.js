@@ -11,7 +11,7 @@ function Home() {
     <div className="Home">
       <Header />
       <Menu />
-      <main className="App-header">
+      <main className="content">
           <h1>Bem Vindo ao UX Helpers</h1> 
       </main>
       <Footer />

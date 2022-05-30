@@ -2,13 +2,16 @@ import Header from "./Header"
 import Menu from "./Menu"
 import Footer from "./Footer"
 import './Components.css'
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function Question() {
+    
     return (
         <div className="Home">
             <Header />
             <Menu />
-            <main className="App-header">
+            <main className="content">
                     <h1>Aqui será as questões</h1>
                     <form>
                         

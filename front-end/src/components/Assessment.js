@@ -8,7 +8,7 @@ function Assessment() {
         <div className="Home">
             <Header />
             <Menu />
-            <main className="App-header">
+            <main className="content">
             
                     <h1>Aqui será as Avaliações</h1>
                

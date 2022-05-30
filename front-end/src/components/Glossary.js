@@ -5,9 +5,6 @@ import './Components.css'
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-
-
-
 function Glossary() {
     const [glossary, getGlossary] = useState(([]))
     const url = 'http://localhost:3000/'
@@ -20,9 +17,6 @@ function Glossary() {
             })
             .catch(error => console.error(`Erro: ${error}`))
     }, []);
-    const listItems = glossary.map((glossary) =>
-        <li>{glossary}</li>)
-    console.log(listItems)
 
     return (
         <div className="Home">
@@ -31,10 +25,11 @@ function Glossary() {
             <main className="content">
 
                 <h1 class="title-content">Glossario</h1>
-                <table><tr>
-                    <th>Entrada</th>
-                    <th>Definição</th>
-                </tr>
+                <table>
+                    <tr>
+                        <th>Entrada</th>
+                        <th>Definição</th>
+                    </tr>
                     {glossary.map(glossario => (
                         <tr>
                             <th>{glossario.entry}</th>

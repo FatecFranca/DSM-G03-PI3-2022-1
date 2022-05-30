@@ -23,7 +23,7 @@ function Answer() {
         <div className="Home">
             <Header />
             <Menu />
-            <main className="App-header">
+            <main className="content">
                     <h1>Aqui será as respostas</h1>
             </main>
             <Footer />
