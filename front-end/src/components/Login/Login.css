@@ -1,3 +1,7 @@
+@import url("ps://fonts.google.com/specimen/Roboto+Slab?sidebar.open=true&selection.family=Roboto+Slab:wght@400;700");
+@import url("https://fonts.google.com/specimen/Roboto+Condensed?sidebar.open=true&query=roboto+&selection.family=Roboto+Condensed:wght@300");
+@import url("https://fonts.google.com/specimen/Open+Sans?sidebar.open=true&query=Open+sans&selection.family=Open+Sans:wght@400;700");
+
 .signinForm{
   display: flex;
   justify-content: center;
@@ -13,12 +17,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: red;
+  border: solid 3px #333333;
 }
 
 .login-titulo {
+  
   font-size: 30px;
   margin: 30px 10px 30px 10px;
+  font-family: 'Roboto Slab';
+  font-weight: 700;
 }
 
 #login-email, #login-password {
@@ -27,11 +34,12 @@
   margin-right: 15px;
   text-align: center;
   border-radius: 5px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
 }
 
-#login-botao {
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
+#login-botao { /* css do botão entrar */
   display: inline-block;
   text-align: center;
   letter-spacing: 0.25em;
@@ -46,25 +54,31 @@
   line-height: 3em;
   margin-left: 15px;
   margin-right: 15px;
+  color:#f3f3f3;
+  background-color: #2bb8c9;
+  font-family: 'Open Sans';
+  font-weight: 700;
 }
       input[type="button"]:hover,
       input[type="submit"]:hover,
       input[type="reset"]:hover,
       button:hover,
       .button:hover {
-        background-color: #999;
+        background-color: #2bb8c9;
       }
 
-.forgot {
-  text-decoration: none;
+.forgot { /* css de hiperlink */
   text-align: end;
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 12px;
-  color: #000;
+  color: #005c6e;
   cursor: pointer;
   margin-left: 15px;
   margin-right: 15px;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  font-size: 16px;
 }
 
 .a:link, .a:link:visited{
