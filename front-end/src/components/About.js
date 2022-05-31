@@ -11,7 +11,18 @@ function About() {
             <main className="content">
                     <h1>Sobre o UX Helpers</h1>
                     <h3>Projeto desenvolvido para evoluir a idéia do ErgoList</h3>
-                    <p>Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é.Diuretics paradis num copo é motivis de denguis.Paisis, filhis, espiritis santis.In elementis mé pra quem é amistosis quis leo.</p>
+                    <p> 
+                        O Ergolist foi um site criado no Brasil com o intuito de ajudar os profissionais responsáveis pela avaliação de sistemas e sites. Detalhava como cada item tinha que ser feito, respondido cada questionário e, no final, mostrava o resumo das avaliações. 
+                    </p>    
+                    <p>
+                        Contudo, o Ergolist apresentava alguns pontos a serem melhorados e não se sabe porque foi tirado do ar por seus criadores e colaboradores, que não lançaram mais nenhuma versão do projeto. Muitos que o utilizavam, ficaram sem uma ferramenta que lhes prestasse auxílio neste ramo.    
+                    </p>
+                    <p>
+                        Assim, a fim de preencher uma lacuna deixada pela extinção do Ergolist, surge a possibilidade de criação de uma ferramenta, baseada no Ergolist, porém corrigindo os erros ora existentes e oferecendo a possibilidade de criação de uma rede de negócios entre avaliadores e donos/gestores de sistemas, uma vez que nessa nova ferramenta haverá a funcionalidade disponível de deixar avaliações salvas em um espaço público.
+                    </p>
+                    <p>
+                        Este novo site será chamado de UX-HELPERS, que vai abranger esse espaço e tentar inovar com as ferramentas e conhecimentos existentes, observando as normas e conceitos para as avaliações.
+                    </p>
             </main>
             <Footer />
         </div>

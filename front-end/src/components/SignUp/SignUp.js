@@ -7,18 +7,20 @@ export default function SignUp() {
 
     
     const navigate = useNavigate();
-    const [fullName, setFullName] = useState('');
+    const [fullname, setFullName] = useState('');
     const [email, setEmail] = useState('');
+    const [confirmEmail, setConfirmEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
     const [notify, setNotify] = useState('');
 
     
 
     async function handleSubmit (e) {
         e.preventDefault();
-        console.log(fullName + email + password)
+        console.log(fullname + email + password)
 
-        if(fullName == '' || email == '' || password == '') {
+        if(fullname == '' || email == '' || confirmEmail == '' || password == '' || confirmPassword == '') {
             setNotify('Campos não preenchidos');
         } else {
             const isLogged = await api.post('user/login',{email, password});
@@ -42,8 +44,8 @@ export default function SignUp() {
                     type="text" 
                     placeholder="Nome Completo"
                     id="signUp-fullName"
-                    name="fullName"
-                    value={fullName}
+                    name="fullname"
+                    value={fullname}
                     onChange={e => setFullName(e.target.value)}
                     />
               <input
@@ -59,7 +61,7 @@ export default function SignUp() {
                     placeholder="Confirme seu e-mail"
                     id="signUp-email"
                     name="confirmEmail"
-                    //value={email}
+                    //value={confirmEmail}
                     //onChange={e => setEmail(e.target.value)}
                     />
               <input 
@@ -75,7 +77,7 @@ export default function SignUp() {
                     placeholder="Confirme seu password" 
                     id="signUp-password"
                     name="confirmPassword"
-                    //value={password}
+                    //value={confirmPassword}
                     //onChange={e => setPassword(e.target.value)}                    
                     />
               <input
