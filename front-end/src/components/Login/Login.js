@@ -55,7 +55,7 @@ export default function Login() {
                 />
                 <div>
                     <ul>
-                        <input href="#" id="login-cadastrar" type="submit" value="Cadastrar" />
+                        <input href="SignUp/SignUp" id="login-cadastrar" type="submit" value="Cadastrar" />
                         <input id="login-entrar" type="submit" value="Login" />
                     </ul>
                 </div>
