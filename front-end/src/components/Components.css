@@ -59,18 +59,16 @@
     list-style-type: none;
 
 }
-<<<<<<< HEAD
 .cardGroup {
     text-decoration: none;
-    color: #ffff;
-    border: 2px solid #ffff;
+    color: #B20000;
+    border: 2px solid #B20000;
     border-radius: 10px;
     padding: 15px;
     margin: 10px;
     width: 100%;
 }
-=======
->>>>>>> ae3c225c3c0c0762558f8836fbc9adc9c4e3f52e
+
 
 .footer {
     background-color: #B20000;
@@ -95,6 +93,10 @@
 .menuitem {
     text-decoration: none;
     color: #f3f3f3;
+}
+.menuitemcorpo{
+    text-decoration: none;
+    color: #B20000; 
 }
 
 .botaoSair {

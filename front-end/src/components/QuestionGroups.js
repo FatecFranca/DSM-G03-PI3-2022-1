@@ -30,7 +30,7 @@ function QuestionGroup() {
 
                     {groupQuestions.map(grupos => (
                         <div class="cardGroup">
-                            <Link to={`/questoes/porgrupo/${grupos._id}`} class="menuitem">
+                            <Link to={`/questoes/porgrupo/${grupos._id}`} class="menuitemcorpo">
                                 {grupos.group} - 
                                 {grupos.description}
                             </Link>
