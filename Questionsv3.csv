@@ -1,0 +1,195 @@
+number,enunciation,group
+1,"Os títulos de telas, janelas  e caixas de diálogo estão no alto, centrados ou justificados à esquerda?",6296cb78a050b76fed6d5bc1
+2,Todos os campos e mostradores de dados possuem rótulos identificativos?,6296cb78a050b76fed6d5bc1
+3,"Caso o dado a entrar possua um formato particular, esse formato encontra-se descrito na tela?",6296cb78a050b76fed6d5bc1
+4,As unidades para a entrada ou apresentação de dados métricos ou financeiros encontram-se descritas na tela?,6296cb78a050b76fed6d5bc1
+5,"Os rótulos dos campos contêm um elemento específico, por exemplo "":"", como convite às entradas de dados?",6296cb78a050b76fed6d5bc1
+6,Caso o dado a entrar possua valores aceitáveis esses valores encontram-se descritos na tela?,6296cb78a050b76fed6d5bc1
+7,"Listas longas apresentam indicadores de continuação, de quantidade de itens e de páginas?",6296cb78a050b76fed6d5bc1
+8,As tabelas apresentam cabeçalhos para linhas e colunas consistentes e distinguíveis dos dados apresentados?,6296cb78a050b76fed6d5bc1
+9,Os gráficos possuem um título geral e rótulos para seus eixos?,6296cb78a050b76fed6d5bc1
+10,"Os botões que comandam a apresentação de caixas de diálogo apresentam em seus rótulos o sinal ""..."" como indicador da continuidade do diálogo?",6296cb78a050b76fed6d5bc1
+11,"As páginas de menus possuem títulos, cabeçalhos ou convites à entrada?",6296cb78a050b76fed6d5bc1
+12,"As opções de menu que levam a outros painéis de menu apresentam o sinal "">"" como indicador desse fato?",6296cb78a050b76fed6d5bc1
+13,O usuário encontra disponíveis as informações necessárias para suas ações?,6296cb78a050b76fed6d5bc1
+14,"Nas caixas de mensagens de erro, o botão de comando ""AJUDA"" está sempre presente?",6296cb78a050b76fed6d5bc1
+15,A resposta para uma solicitação de ajuda do usuário está estruturada no contexto da tarefa e da transação corrente?,6296cb78a050b76fed6d5bc1
+16,Existe a possibilidade do usuário obter a lista de comandos básicos da linguagem?,6296cb78a050b76fed6d5bc1
+17,"Na ocorrência de erros, o usuário pode acessar todas as informações necessárias ao diagnóstico e à solução do problema?",6296cb78a050b76fed6d5bc1
+1,O espaço de apresentação está diagramado em pequenas zonas funcionais?,6296cb78a050b76fed6d5bc2
+2,A disposição dos objetos de interação de uma caixa de dialogo segue uma ordem lógica?,6296cb78a050b76fed6d5bc2
+3,"Nos agrupamentos de dados, os itens estão organizados espacialmente segundo um critério lógico?",6296cb78a050b76fed6d5bc2
+4,Os códigos das teclas aceleradoras de opções de menu estão localizados à direita do nome da opção?,6296cb78a050b76fed6d5bc2
+5,"Nas listas de seleção, as opções estão organizadas segundo alguma ordem lógica?",6296cb78a050b76fed6d5bc2
+6,Os paineis de menus são formados a partir de um critério lógico de agrupamento de opções?,6296cb78a050b76fed6d5bc2
+7,"Dentro de um painel de menu, as opções mutuamente exclusivas ou interdependentes estão agrupadas e separadas das demais?",6296cb78a050b76fed6d5bc2
+8,As opções dentro de um painel de menu estão ordenadas segundo algum critério lógico?,6296cb78a050b76fed6d5bc2
+9,A definição da opção de menu selecionada por default segue algum critério?,6296cb78a050b76fed6d5bc2
+10,"Os grupos de botões de comando estão dispostos em coluna e à direita, ou em linha e abaixo dos objetos aos quais estão associados?",6296cb78a050b76fed6d5bc2
+11,"O botão de comando selecionado por default está na posição mais alta, se os botões estão dispostos verticalmente, ou na mais à esquerda, se os botões estão dispostos horizontalmente?",6296cb78a050b76fed6d5bc2
+1,Os controles e comandos encontram-se visualmente diferenciados das informações apresentadas nas telas?,6296cb78a050b76fed6d5bc3
+2,Códigos visuais são empregados para associar diferentes categorias de dados distribuídos de forma dispersa nas telas?,6296cb78a050b76fed6d5bc3
+3,"Os diferentes tipos de elementos de uma tela de consulta (dados, comandos e instruções) são visualmente distintos uns dos outros?",6296cb78a050b76fed6d5bc3
+4,Os rótulos são visualmente diferentes dos dados aos quais estão associados?,6296cb78a050b76fed6d5bc3
+5,"Os cabeçalhos de uma tabela estão diferenciados através do emprego de cores diferentes, letras maiores ou sublinhadas?",6296cb78a050b76fed6d5bc3
+6,"Em situações anormais, os dados críticos e que requeiram atenção imediata são diferenciados através do uso de cores brilhantes como por exemplo, o vermelho ou o rosa?",6296cb78a050b76fed6d5bc3
+7,Sinais sonoros são empregados para alertar os usuários em relação a uma apresentação visual?,6296cb78a050b76fed6d5bc3
+8,"Na apresentação de textos, os recursos de estilo, como itálico, negrito, sublinhado ou diferentes fontes são empregados para salientar palavras ou noções importantes?",6296cb78a050b76fed6d5bc3
+9,"Os itens selecionados para alteração, atualização ou acionamento estão destacados dos outros?",6296cb78a050b76fed6d5bc3
+10,"Nas situações de alarme e nas telas de alta densidade de informação, o recurso de intermitência visual é empregado para salientar dados e informações?",6296cb78a050b76fed6d5bc3
+11,Os campos obrigatórios são diferenciados dos campos opcionais de forma visualmente clara?,6296cb78a050b76fed6d5bc3
+12,"Nas caixas de mensagens, o botão selecionado por default  tem uma apresentação visual suficientemente distinta dos outros?",6296cb78a050b76fed6d5bc3
+13,"Em situações em que se exija atenção especial do usuário, as mensagens de alerta e de aviso são apresentadas de maneira distinta?",6296cb78a050b76fed6d5bc3
+14,A forma do cursor do mouse é diferente da de qualquer outro item apresentado?,6296cb78a050b76fed6d5bc3
+15,As formas de cursores (dois ou mais) apresentados simultaneamente são suficientemente distintas umas das outras?,6296cb78a050b76fed6d5bc3
+16,As caixas de agrupamento são empregadas para realçar um grupo de dados relacionados?,6296cb78a050b76fed6d5bc3
+17,"Quando apresenta opções não disponíveis no momento, o sistema as mostra de forma diferenciada visualmente?",6296cb78a050b76fed6d5bc3
+1,O sistema fornece feedback para todas as ações do usuário?,6296cb78a050b76fed6d5bc4
+2,"Quando, durante a entrada de dados, o sistema torna-se indisponível ao usuário, devido a algum processamento longo, o usuário é avisado desse estado do sistema e do tempo dessa indisponibilidade?",6296cb78a050b76fed6d5bc4
+3,O sistema fornece informações sobre o estado das impressões?,6296cb78a050b76fed6d5bc4
+4,Os itens selecionados de uma lista são realçados visualmente de imediato?,6296cb78a050b76fed6d5bc4
+5,A imagem do cursor fornece feedback dinâmico e contextual sobre a manipulação direta?,6296cb78a050b76fed6d5bc4
+6,O sistema fornece ao usuário informações sobre o tempo de processamentos demorados?,6296cb78a050b76fed6d5bc4
+7,O sistema apresenta uma mensagem informando sobre o sucesso ou fracasso de um processamento demorado?,6296cb78a050b76fed6d5bc4
+8,O sistema fornece feedback imediato e contínuo das manipulações diretas?,6296cb78a050b76fed6d5bc4
+9,O sistema define o foco das ações para os objetos recém criados ou recém abertos?,6296cb78a050b76fed6d5bc4
+10,O sistema fornece feedback sobre as mudanças de atributos dos objetos?,6296cb78a050b76fed6d5bc4
+11,Qualquer mudança na situação atual de objetos de controle é apresentada visualmente de modo claro ao usuário?,6296cb78a050b76fed6d5bc4
+12,O sistema fornece um histórico dos comandos entrados pelo usuário durante uma sessão de trabalho?,6296cb78a050b76fed6d5bc4
+1,"As áreas livres são usadas para separar grupos lógicos em vez de tê-los todos de um só lado da tela, caixa ou janela?",6296cb78a050b76fed6d5bc5
+2,Os grupos de objetos de controle e de apresentação que compõem as caixas de diálogo e outros objetos compostos encontram-se alinhados vertical e horizontalmente?,6296cb78a050b76fed6d5bc5
+3,Os rótulos de campos organizados verticalmente e muito diferentes em tamanho estão justificados à direita?,6296cb78a050b76fed6d5bc5
+4,A largura mínima dos mostradores de texto é de 50 caracteres?,6296cb78a050b76fed6d5bc5
+5,A altura mínima dos mostradores de texto é de 4 linhas?,6296cb78a050b76fed6d5bc5
+6,"Os parágrafos de texto são separados por, pelo menos, uma linha em branco?",6296cb78a050b76fed6d5bc5
+7,O uso exclusivo de maiúsculas nos textos é evitado?,6296cb78a050b76fed6d5bc5
+8,O uso do negrito é minimizado?,6296cb78a050b76fed6d5bc5
+9,O uso do sublinhado é minimizado?,6296cb78a050b76fed6d5bc5
+10,"Nas tabelas, linhas em branco são empregadas para separar grupos?",6296cb78a050b76fed6d5bc5
+11,As listas de dados alfabéticos são justificadas à esquerda?,6296cb78a050b76fed6d5bc5
+12,As listas contendo números decimais apresentam alinhamento pela vírgula?,6296cb78a050b76fed6d5bc5
+13,"As linhas empregadas para o enquadramento e segmentação de menus (separadores, delimitadores etc.) são simples?",6296cb78a050b76fed6d5bc5
+14,As bordas dos painéis dos menus estão suficientemente separadas dos textos das opções de modo a não prejudicar a sua legibilidade?,6296cb78a050b76fed6d5bc5
+15,O uso de abreviaturas é minimizado nos menus?,6296cb78a050b76fed6d5bc5
+16,Os nomes das opções estão somente com a inicial em maiúsculo?,6296cb78a050b76fed6d5bc5
+17,Os números que indicam as opções de menu estão alinhados pela direita?,6296cb78a050b76fed6d5bc5
+18,"Quando a enumeração alfabética é utilizada, as letras para seleção estão alinhadas pela esquerda?",6296cb78a050b76fed6d5bc5
+19,"As opções das barras de menu horizontal estão separadas por, no mínimo, 2 caracteres brancos?",6296cb78a050b76fed6d5bc5
+20,"Os rótulos de campos começam com uma letra maiúscula, e as letras restantes são minúsculas?",6296cb78a050b76fed6d5bc5
+21,"Os itens de dados longos são particionados em grupos mais curtos, tanto nas entradas como nas apresentações?",6296cb78a050b76fed6d5bc5
+22,Os códigos alfanuméricos do sistema agrupam separadamente letras e números?,6296cb78a050b76fed6d5bc5
+23,Os ícones são legíveis?,6296cb78a050b76fed6d5bc5
+24,O sistema utiliza rótulos (textuais) quando pode existir ambiguidade de ícones?,6296cb78a050b76fed6d5bc5
+25,A informação codificada com o vídeo reverso é legível?,6296cb78a050b76fed6d5bc5
+26,O uso de vídeo reverso está restrito à indicação de feedback de seleção?,6296cb78a050b76fed6d5bc5
+27,"Os dados a serem lidos são apresentados de forma contínua, ou seja, não piscantes ?",6296cb78a050b76fed6d5bc5
+1,O sistema oferece valores defaults para acelerar a entrada de dados?,6296cb78a050b76fed6d5bc6
+2,A identificação alfanumérica das janelas é curta o suficiente para ser relembrada facilmente?,6296cb78a050b76fed6d5bc6
+3,Os nomes das opções de menu são concisos?,6296cb78a050b76fed6d5bc6
+4,Os ícones são econômicos sob o ponto de vista do espaço nas telas?,6296cb78a050b76fed6d5bc6
+5,As denominações são breves?,6296cb78a050b76fed6d5bc6
+6,As abreviaturas são curtas?,6296cb78a050b76fed6d5bc6
+7,Os códigos arbitrários que o usuário deve memorizar são sempre menores do que 4 ou 5 caracteres?,6296cb78a050b76fed6d5bc6
+8,Os rótulos são concisos?,6296cb78a050b76fed6d5bc6
+9,Códigos alfanuméricos não significativos para o usuário e que devem ser entrados no sistema são menores do que 7 caracteres?,6296cb78a050b76fed6d5bc6
+10,"Na entrada de dados alfanuméricos, o sistema considera as letras maiúsculas e minúsculas como equivalentes?",6296cb78a050b76fed6d5bc6
+11,"Na entrada de dados numéricos, o usuário é liberado do preenchimento do ponto decimal desnecessário?",6296cb78a050b76fed6d5bc6
+12,"Na entrada de dados numéricos, o usuário é liberado do preenchimento do zeros fracionários desnecessários?",6296cb78a050b76fed6d5bc6
+13,"Na entrada de valores métricos ou financeiros, o usuário é liberado do preenchimento da unidade de medida?",6296cb78a050b76fed6d5bc6
+14,"É permitido ao usuário reaproveitar os valores definidos para entradas anteriores, podendo inclusive alterá-los?",6296cb78a050b76fed6d5bc6
+1,Em formulário de entrada de dados o sistema posiciona o cursor no começo do primeiro campo de entrada?,6296cb78a050b76fed6d5bc7
+2,Na realização das ações principais em uma caixa de diálogo o usuário tem os movimentos de cursor minimizados através da adequada ordenação dos objetos?,6296cb78a050b76fed6d5bc7
+3,O usuário dispõe de um modo simples e rápido (tecla TAB por exemplo) para a navegação entre os campos de um formulário?,6296cb78a050b76fed6d5bc7
+4,Os grupos de botões de comando possuem sempre um botão definido como default?,6296cb78a050b76fed6d5bc7
+5,A estrutura dos menus é concebida de modo a diminuir os passos necessários para a seleção?,6296cb78a050b76fed6d5bc7
+1,A densidade informacional das janelas é reduzida?,6296cb78a050b76fed6d5bc8
+2,As telas apresentam somente os dados e informações necessários e indispensáveis para o usuário em sua tarefa?,6296cb78a050b76fed6d5bc8
+3,"Na entrada de dados codificados, os códigos apresentam somente os dados necessários estão presentes na tela de uma maneira distinguível?",6296cb78a050b76fed6d5bc8
+4,O sistema minimiza a necessidade do usuário lembrar dados exatos de uma tela para outra?,6296cb78a050b76fed6d5bc8
+5,"Na leitura de uma janela, o usuário tem seus movimentos oculares minimizados através da distribuição dos objetos principais segundo as linhas de um ""Z"" ?",6296cb78a050b76fed6d5bc8
+6,O sistema evita apresentar um grande número de janelas que podem desconcentrar ou sobrecarregar a memória do usuário?,6296cb78a050b76fed6d5bc8
+7,"Na manipulação dos dados apresentados pelo sistema, o usuário está liberado da tradução de unidades?",6296cb78a050b76fed6d5bc8
+8,As listas de seleção e combinação apresentam uma altura correspondente a um máximo de nove linhas?,6296cb78a050b76fed6d5bc8
+9,Os painéis de menu apresentam como ativas somente as opções  necessárias?,6296cb78a050b76fed6d5bc8
+1,O sistema posterga os processamentos até que as ações de entrada do usuário tenham sido completadas?,6296cb78a050b76fed6d5bc9
+2,Durante a seleção de uma opção de menu o sistema permite a separação entre indicação e execução da opção?,6296cb78a050b76fed6d5bc9
+3,"Para iniciar o processamento dos dados, o sistema sempre exige do usuário uma ação explícita de ""ENTER""?",6296cb78a050b76fed6d5bc9
+4,É sempre o usuário quem comanda a navegação entre os campos de um formulário?,6296cb78a050b76fed6d5bc9
+1,O usuário pode terminar um diálogo seqüencial repetitivo a qualquer instante?,6296cb78a050b76fed6d5bca
+2,O usuário pode interromper e retomar um diálogo seqüencial a qualquer instante?,6297cb78a050b76fed6d5bca
+3,O usuário pode reiniciar um diálogo seqüencial a qualquer instante?,6298cb78a050b76fed6d5bca
+4,"Durante os períodos de bloqueio dos dispositivos de entrada, o sistema fornece ao usuário uma opção para interromper o processo que causou o bloqueio?",6299cb78a050b76fed6d5bca
+1,Os usuários têm a possibilidade de modificar ou eliminar itens irrelevantes das janelas?,6296cb78a050b76fed6d5bcb
+2,"Ao usuário é permitido personalizar o diálogo, através da definição de macros?",6297cb78a050b76fed6d5bcb
+3,É permitido ao usuário alterar e personalizar valores definidos por default?,6298cb78a050b76fed6d5bcb
+1,"Caso se trate de um sistema de grande público, ele oferece formas variadas de apresentar as mesmas informações aos diferentes tipos de usuário?",6296cb78a050b76fed6d5bcc
+2,"Os estilos de diálogo são compatíveis com as habilidades do usuário, permitindo ações passo-a-passo para iniciantes e a entrada de comandos mais complexos por usuários experimentados?",6297cb78a050b76fed6d5bcc
+3,O usuário pode se deslocar de uma parte da estrutura de menu para outra rapidamente?,6298cb78a050b76fed6d5bcc
+4,"O sistema oferece equivalentes de teclado para a seleção  e execução das opções de menu, além do dispositivo de apontamento (mouse, ...)?",6299cb78a050b76fed6d5bcc
+5,"O sistema é capaz de reconhecer um conjunto de sinônimos para os termos básicos definidos na linguagem de comando, isto para se adap tar aos usuários novatos ou ocasionais?",6300cb78a050b76fed6d5bcc
+6,O usuário experiente pode efetuar a digitação de vários comandos antes de uma confirmação?,6301cb78a050b76fed6d5bcc
+1,O sistema apresenta uma separação adequada entre áreas selecionáveis de um painel de menu de modo a minimizar as ativações acidentais?,6296cb78a050b76fed6d5bcd
+2,"Em toda ação destrutiva, os botões selecionados por default realizam a anulação dessa ação?",6297cb78a050b76fed6d5bcd
+3,"Os campos numéricos para entrada de dados longos estão subdivididos em grupos menores e pontuados com espaços, vírgulas, hífens ou barras?",6298cb78a050b76fed6d5bcd
+4,Ao final de uma sessão de trabalho o sistema informa sobre o risco de perda dos dados?,6299cb78a050b76fed6d5bcd
+5,O sistema emite sinais sonoros quando ocorrem problemas na entrada de dados?,6300cb78a050b76fed6d5bcd
+6,As teclas de funções perigosas encontram-se agrupadas e/ou separadas das demais no teclado?,6301cb78a050b76fed6d5bcd
+7,O sistema solicita confirmação (dupla) de ações que podem gerar perdas de dados e/ou resultados catastróficos?,6302cb78a050b76fed6d5bcd
+1,"As mensagens de erro ajudam a resolver o problema do usuário, fornecendo com precisão o local e a causa específica ou provável do erro, bem como as ações que o usuário poderia realizar para corrigí-l o?",6296cb78a050b76fed6d5bce
+2,As mensagens de erro são neutras e polidas?,6297cb78a050b76fed6d5bce
+3,"As frases das mensagens de erro são curtas e construídas a partir de palavras curtas, significativas e de uso comum?",6298cb78a050b76fed6d5bce
+4,As mensagens de erro estão isentas de abreviaturas e/ou códigos gerados pelo sistema operacional?,6299cb78a050b76fed6d5bce
+5,O usuário pode escolher o nível de detalhe das mensagens de erro em função de seu nível de conhecimento?,6300cb78a050b76fed6d5bce
+6,A informação principal de uma mensagem de erro encontra-se logo no início da mensagem?,6301cb78a050b76fed6d5bce
+7,"Quando necessário, as informações que o usuário deve memorizar encontram-se localizadas na parte final da mensagem de erro?",6302cb78a050b76fed6d5bce
+8,Em situações normais as mensagens de erro são escritas em maiúsculo/minúsculo?,6303cb78a050b76fed6d5bce
+9,As mensagens de erro têm seu conteúdo modificado quando na repetição imediata do mesmo erro pelo mesmo usuário?,6304cb78a050b76fed6d5bce
+1,Qualquer ação do usuário pode ser revertida através da opção DESFAZER?,6296cb78a050b76fed6d5bcf
+2,"Através da opção REFAZER, a regressão do diálogo, também pode ser desfeita?",6297cb78a050b76fed6d5bcf
+3,Os comandos para DESFAZER e REFAZER o diálogo estão diferenciados?,6298cb78a050b76fed6d5bcf
+4,"O sistema reconhece e através de uma confirmação do usuário, executa os comandos mais freqüentes mesmo com erros de ortografia?",6299cb78a050b76fed6d5bcf
+5,"Depois de um erro de digitação de um comando ou de dados, o usuário tem a possibilidade de corrigir somente a parte dos dados ou do comando que está errada?",6300cb78a050b76fed6d5bcf
+1,"A identificação das caixas, telas ou janelas são únicas?",6296cb78a050b76fed6d5bd0
+2,A organização em termos da localização das várias características das janelas é mantida consistente de uma tela para outra?,6296cb78a050b76fed6d5bd0
+3,A posição inicial do cursor é mantida consistente ao longo de todas as apresentações de formulários?,6296cb78a050b76fed6d5bd0
+4,Uma mesma tecla de função aciona a mesma opção de uma tela para outra?,6296cb78a050b76fed6d5bd0
+5,Os ícones são distintos uns dos outros e possuem sempre o mesmo significado de uma tela para outra?,6296cb78a050b76fed6d5bd0
+6,A localização dos dados é mantida consistente de uma tela para outra?,6296cb78a050b76fed6d5bd0
+7,Os formatos de apresentação dos dados são mantidos consistentes de uma tela para outra?,6296cb78a050b76fed6d5bd0
+8,Os rótulos estão na mesma posição em relação aos campos associados?,6296cb78a050b76fed6d5bd0
+9,"O símbolo para convite à entrada de dados é padronizado (por exemplo "" : "" )?",6296cb78a050b76fed6d5bd0
+10,As áreas de entrada de comandos estão na mesma posição de uma tela para outra?,6296cb78a050b76fed6d5bd0
+11,Os significados dos códigos de cores são seguidos de maneira consistente?,6296cb78a050b76fed6d5bd0
+1,As denominações dos títulos estão de acordo com o que eles representam?,6296cb78a050b76fed6d5bd1
+2,"Os títulos das páginas de menu são explicativos, refletindo a natureza da escolha a ser feita?",6296cb78a050b76fed6d5bd1
+3,Os títulos das páginas de menu são distintos entre si?,6296cb78a050b76fed6d5bd1
+4,Os títulos das páginas de menu são combináveis ou componíveis?,6296cb78a050b76fed6d5bd1
+5,As denominações das opções de menu são familiares ao usuário?,6296cb78a050b76fed6d5bd1
+6,"O vocabulário utilizado nos rótulos, convites e mensagens de orientação são familiares ao usuário, evitando palavras difíceis?",6296cb78a050b76fed6d5bd1
+7,"O vocabulário utilizado em rótulos, convites e mensagens de orientação é orientado à tarefa, utilizando termos e jargão técnico normalmente empregados na tarefa?",6296cb78a050b76fed6d5bd1
+8,Os cabeçalhos de colunas de dados são significativos e distintos?,6296cb78a050b76fed6d5bd1
+9,O sistema adota códigos significativos ou familiares aos usuários?,6296cb78a050b76fed6d5bd1
+10,As abreviaturas são significativas?,6296cb78a050b76fed6d5bd1
+11,"As abreviaturas são facilmente distinguíveis umas das outras, evitando confusões geradas por similaridade?",6296cb78a050b76fed6d5bd1
+12,"A intermitência luminosa (pisca-pisca) é usada com moderação e somente para atrair a atenção para alarmes, avisos ou mensagens críticas?",6296cb78a050b76fed6d5bd1
+1,As telas são compatíveis com o padrão do ambiente?,6296cb78a050b76fed6d5bd2
+2,A imagem do formulário na tela do terminal assemelha-se com o formulário de entrada em papel?,6296cb78a050b76fed6d5bd2
+3,"O sistema propõe uma caixa de diálogo modal, quando a aplicação deve ter todos os dados antes de prosseguir ou quando o usuário tenha de responder a uma questão urgente?",6296cb78a050b76fed6d5bd2
+4,"As caixas de diálogo do sistema apresentam um botão e validação, um botão de anulação e, se possível, um botão de ajuda?",6296cb78a050b76fed6d5bd2
+5,Os significados usuais das cores são respeitados nos códigos de cores definidos?,6296cb78a050b76fed6d5bd2
+6,As opções de codificação por cores são limitadas em número?,6296cb78a050b76fed6d5bd2
+7,As informações codificadas através das cores apresentam uma codificação adicional redundante?,6296cb78a050b76fed6d5bd2
+8,A taxa de intermitência para elementos piscantes está entre 2 e 5 Hz (2 a 5 piscadas por segundo)?,6296cb78a050b76fed6d5bd2
+9,A apresentação sonora é compatível com o ruído do ambiente?,6296cb78a050b76fed6d5bd2
+10,As mensagens são sempre afirmativas e na voz ativa?,6296cb78a050b76fed6d5bd2
+11,"Quando uma frase descreve uma seqüência de eventos, a ordem das palavras na frase corresponde à seqüência temporal dos eventos?",6296cb78a050b76fed6d5bd2
+12,Ilustrações e animações são usadas para completar as explicações do texto?,6296cb78a050b76fed6d5bd2
+13,O sistema segue as convenções dos usuários para dados padronizados?,6296cb78a050b76fed6d5bd2
+14,O sistema utiliza unidades de medida familiares ao usuário?,6296cb78a050b76fed6d5bd2
+15,Dados numéricos que se alterem rapidamente são apresentados analogicamente?,6296cb78a050b76fed6d5bd2
+16,Dados numéricos que demandam precisão de leitura são apresentados digitalmente?,6296cb78a050b76fed6d5bd2
+17,"Os itens são numerados com números, não com letras?",6296cb78a050b76fed6d5bd2
+18,"Os identificadores numéricos de opção de menu iniciam de ""1"", e não de ""0""?",6296cb78a050b76fed6d5bd2
+19,"Os eixos de um gráfico apresentam escalas numéricas iniciando em zero, com intervalos padronizados, crescendo da esquerda para a direita e de cima para baixo?",6296cb78a050b76fed6d5bd2
+20,Os itens de um grupo de botões de rádio são mutuamente exclusivos?,6296cb78a050b76fed6d5bd2
+21,Os itens de um grupo de caixas de atribuição permitem escolhas independentes?,6296cb78a050b76fed6d5bd2

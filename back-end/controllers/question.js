@@ -1,3 +1,5 @@
+const mongoose = require('mongoose')
+
 // Importa o model correspondente
 const Question = require('../models/Question')()
 

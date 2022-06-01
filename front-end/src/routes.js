@@ -10,6 +10,7 @@ import Glossary from "./components/Glossary.js";
 import About from "./components/About.js";
 import QuestionGroup from "./components/QuestionGroups.js";
 import SignUp from "./components/SignUp/SignUp.js";
+import Questions from "./components/Questions.js";
 
 
 function Routers () {
@@ -20,6 +21,7 @@ function Routers () {
                 <Route exact path="/home" element={<Home/>} />
                 <Route exact path="/glossario" element={<Glossary />}/>
                 <Route exact path="/questoes" element={<QuestionGroup />}/>
+                <Route exact path="/questoes/porgrupo/:id" element={<Questions />}/>
                 <Route exact path="/respostas" element={<Answer />}/>
                 <Route exact path="/avaliacoes" element={<Assessment />}/>
                 <Route exact path="/sobre" element={<About />}/>

@@ -3,6 +3,7 @@ import Menu from "./Menu"
 import Footer from "./Footer"
 import './Components.css'
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 function QuestionGroup() {
@@ -27,19 +28,17 @@ function QuestionGroup() {
                 <div>
 
 
-                {groupQuestions.map(grupos => (
-                    <button>
+                    {groupQuestions.map(grupos => (
+                        <div class="cardGroup">
+                            <Link to={`/questoes/porgrupo/${grupos._id}`} class="menuitem">
+                                {grupos.group} - 
+                                {grupos.description}
+                            </Link>
 
-                        <h3>{grupos.group}</h3>
-                        <h5>{grupos.description}</h5>
-
-                    </button>
-
-                    
-                    
+                        </div>
                     ))}
                 </div>
-                    
+
             </main>
 
             <Footer />
