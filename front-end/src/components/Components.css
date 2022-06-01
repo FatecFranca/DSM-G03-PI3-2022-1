@@ -59,6 +59,7 @@
     list-style-type: none;
 
 }
+<<<<<<< HEAD
 .cardGroup {
     text-decoration: none;
     color: #ffff;
@@ -68,6 +69,8 @@
     margin: 10px;
     width: 100%;
 }
+=======
+>>>>>>> ae3c225c3c0c0762558f8836fbc9adc9c4e3f52e
 
 .footer {
     background-color: #B20000;
