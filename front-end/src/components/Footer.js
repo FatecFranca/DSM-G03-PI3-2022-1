@@ -4,8 +4,10 @@ function Footer() {
     return (
 
         <div class="footer">
-            <p>Desenvolvido por Tatiane, Fabricio, Nicolas e Vinicius</p>
-            <div>&copy; Todos os direitos reservados</div>
+            <ul>
+            <p>Desenvolvido por Tatiana, Fabricio, Nickolas e Vinicius</p>
+            <div class="direitos-reservados">&copy; Todos os direitos reservados</div>
+            </ul>
         </div>
     )
 }

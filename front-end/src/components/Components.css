@@ -1,67 +1,104 @@
-.header{
-    background-color: #fd3c36;
-    color: #ffff;
+@import url("https://fonts.google.com/specimen/Roboto+Slab?sidebar.open=true&selection.family=Roboto+Slab:wght@400;700");
+@import url("https://fonts.google.com/specimen/Roboto+Condensed?sidebar.open=true&query=roboto+&selection.family=Roboto+Condensed:wght@300");
+@import url("https://fonts.google.com/specimen/Open+Sans?sidebar.open=true&query=Open+sans&selection.family=Open+Sans:wght@400;700");
+
+.header {
+    background-color: #B20000;
+    color: #f3f3f3;
     width: 100%;
     position: fixed;
-    top:0;
-    width: 100%;
+    top: 0;
     height: 10%;
 }
 
 .content {
-    background-color: #282c34;
+    width: auto;
+    background-color: #f3f3f3;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #333333;
     margin: 4.6% 0 3.3% 10%;
-    min-height:83.5vh;
+    min-height: 83.5vh;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.content h1 {
+    color: #005c6e;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.content h3 {
+    color: #005c6e;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.content p {
+    margin: 16px 30px 16px 30px;
+    font-size: 16px;
 }
 
 .menu {
-    background-color: #fd3c36;
-    color: #ffff;
+    background-color: #B20000;
+    color: #f3f3f3;
     position: fixed;
     width: 10%;
     height: 100vh;
     float: left;
-    
+    font-family: 'Roboto Condensed';
 }
 
 .menu ul li {
     list-style-type: none;
-    
 
 }
 
-.footer{
-    background-color: #fd3c36;
-    color: #ffff;
+.footer {
+    background-color: #B20000;
+    color: #f3f3f3;
     position: fixed;
-    bottom:0;
+    bottom: 0;
     left: 10%;
     width: 90%;
+    font-family: 'Roboto Condensed';
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    align-items: center;
+}
+
+.direitos-reservados {
+    align-items: center;
 }
 
 .menuitem {
     text-decoration: none;
-    color: #ffff;
+    color: #f3f3f3;
 }
+
 .botaoSair {
     position: relative;
     text-decoration: none;
-    color: #ffff;
-    left:49%;
-   
+    color: #f3f3f3;
+    left: 49%;
+    font-family: 'Roboto Condensed';
 }
+
 .botaoSair:hover {
-    border: 1px white solid;
-    background-color: #ffff;
-    color: #fd3c36;
+    border: 1px #f3f3f3;
+    color: #f3f3f3;
 }
+
 table th {
-    border: 1px solid #ffff;
+    border: 1px solid #f3f3f3;
     padding: 5px;
     align-items: center;
 }
@@ -69,22 +106,21 @@ table th {
 
 @media only screen and (max-device-height: 500px) {
     .menu {
-
         width: 5%;
         float: top;
-        background-color: #ffff;
-    }
-    .menuitem{
-        color: black;
-        
-    }
-    .menu:hover{
-        width: 50%;
-        float: bottom;
-        background-color: #ffff;
-        color: black;
-        position: relative;
-        
+        background-color: #f3f3f3;
     }
 
+    .menuitem {
+        color: black;
+
+    }
+
+    .menu:hover {
+        width: 50%;
+        float: bottom;
+        background-color: #f3f3f3;
+        color: black;
+        position: relative;
+    }
 }
