@@ -7,27 +7,29 @@ export default function SignUp() {
 
     
     const navigate = useNavigate();
-    const [fullName, setFullName] = useState('');
+    const [fullname, setFullName] = useState('');
     const [email, setEmail] = useState('');
+    const [confirmEmail, setConfirmEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
     const [notify, setNotify] = useState('');
 
     
 
     async function handleSubmit (e) {
         e.preventDefault();
-        console.log(fullName + email + password)
+        console.log(fullname + email + password)
 
-        if(fullName == '' || email == '' || password == '') {
+        if(fullname == '' || email == '' || confirmEmail == '' || password == '' || confirmPassword == '') {
             setNotify('Campos não preenchidos');
         } else {
-            const isLogged = await api.post('user/login',{email, password});
-            console.log(isLogged)
-            if(isLogged) {
+            const signUp = await api.post('user/',{fullname, email, password});
+            console.log(signUp)
+            if(signUp) {
                 navigate("/home");
-                localStorage.setItem('x-access-token', isLogged.data.token)
+                localStorage.setItem('x-access-token', signUp.data.token)
             } else{
-                setNotify('Não Autorizado.');
+                setNotify('Usuário não cadastrado.');
             }
         }
     }
@@ -37,13 +39,13 @@ export default function SignUp() {
     return (
         <div className="signUpForm">
         <form  onSubmit={handleSubmit} id="container-signUp">
-           <h3 className="signUp-titulo">Bem Vindo ao UX-Helpers</h3>
+           <h3 className="signUp-titulo">Junte-se aos UX-Helpers</h3>
               <input
                     type="text" 
                     placeholder="Nome Completo"
                     id="signUp-fullName"
-                    name="fullName"
-                    value={fullName}
+                    name="fullname"
+                    value={fullname}
                     onChange={e => setFullName(e.target.value)}
                     />
               <input
@@ -59,12 +61,12 @@ export default function SignUp() {
                     placeholder="Confirme seu e-mail"
                     id="signUp-email"
                     name="confirmEmail"
-                    //value={email}
+                    //value={confirmEmail}
                     //onChange={e => setEmail(e.target.value)}
                     />
               <input 
                     type="password" 
-                    placeholder="Password" 
+                    placeholder="Senha" 
                     id="signUp-password"
                     name="password"
                     value={password}
@@ -72,20 +74,24 @@ export default function SignUp() {
                     />
               <input 
                     type="password" 
-                    placeholder="Confirme seu password" 
+                    placeholder="Confirme sua senha" 
                     id="signUp-password"
                     name="confirmPassword"
-                    //value={password}
+                    //value={confirmPassword}
                     //onChange={e => setPassword(e.target.value)}                    
                     />
-              <input
-                    type="checkbox"
-                    id="signUp-checkbox"
-                    name="checkbox"
-                    lable="Ao clicar em Criar conta, eu concordo que li e aceito os Termos de uso e a Política de privacidade."
-                    
-                    />
-              <input id="signUp-botao" type="submit" value="Cadastrar" />
+              <div>
+                  <ul id="signUp-checkbox">
+                    <input
+                      type="checkbox"                            
+                      name="checkbox"                                 
+                      />
+                      Ao clicar em Criar Conta, eu concordo que li e aceito os <br></br>
+                      Termos de uso e a Política de privacidade
+                  </ul>  
+              </div>
+                
+              <input id="signUp-botao" type="submit" value="Criar Conta" />
               <h2 className ="notify">{ notify }</h2>                
         </form>  
       </div>
