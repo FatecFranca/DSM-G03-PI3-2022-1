@@ -2,6 +2,9 @@
 @import url("https://fonts.google.com/specimen/Roboto+Condensed?sidebar.open=true&query=roboto+&selection.family=Roboto+Condensed:wght@300");
 @import url("https://fonts.google.com/specimen/Open+Sans?sidebar.open=true&query=Open+sans&selection.family=Open+Sans:wght@400;700");
 
+
+/* Componentes Header, footer e menu */
+
 .header {
     background-color: #B20000;
     color: #f3f3f3;
@@ -21,65 +24,19 @@
     height: 100vh;
     float: left;
     font-family: 'Roboto Condensed';
-    animation: bounce 1s infinite alternate;
-   -webkit-animation: bounce 1s infinite alternate;
 }
 
 .menu ul li {
     list-style-type: none;
 
 }
-.cardGroup {
-    text-decoration: none;
-    color: #B20000;
-    border: 2px solid #B20000;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
-    width: 100%;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #333333;
-    margin: 4.6% 0 3.3% 10%;
-    min-height: 83.5vh;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    border-right: 2px solid #333333;
-    text-align: center;
-  }
-  
-  .content h1 {
-    color: #005c6e;
-    font-family: 'Roboto Slab';
-    font-weight: 700;
-    margin-bottom: 40px;
-  }
-  
-  .content h3 {
-    color: #005c6e;
-    font-family: 'Roboto Slab';
-    font-weight: 700;
-    margin-bottom: 40px;
-  }
-  
-  .content p {
-    margin: 16px 30px 16px;
-    font-size: 16px;
-  }
-
 
 .footer {
     background-color: #B20000;
     color: #f3f3f3;
     position: fixed;
     bottom: 0;
-    left: 10%;
-    width: 90%;
+    width: 100%;
     font-family: 'Roboto Condensed';
     display: flex;
     justify-content: center;
@@ -98,34 +55,111 @@
     color: #f3f3f3;
 }
 
-.menuitemcorpo{
-    text-decoration: none;
-    color: #B20000; 
-}
-
 .menuitem:hover {
     color: #f3f3f3;
+    text-decoration: underline;
 }
 
 .botaoSair {
     position: relative;
     text-decoration: none;
     color: #f3f3f3;
-    left: 49%;
+    left: 48%;
     font-family: 'Roboto Condensed';
 }
 
 .botaoSair:hover {
     border: 1px #f3f3f3;
     color: #f3f3f3;
+    text-decoration: underline;
 }
 
-table th {
+/* ------------------------------------------------------------------------------------------- */
+
+/* CSS do body das paginas */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+    margin: 4.6% 0 3.3% 10%;
+    min-height: 83.5vh;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    border-right: 2px solid #333333;
+    text-align: center;
+}
+
+.content h1 {
+    color: #005c6e;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.content h2 {
+    color: #005c6e;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+}
+
+.content h3 {
+    color: #005c6e;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.content p {
+    margin: 16px 30px 16px;
+    font-size: 16px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* CSS das paginas */
+
+.cardGroup {
+    text-decoration: none;
+    color: #B20000;
+    border: 2px solid #B20000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+}
+
+.menuitemcorpo {
+    text-decoration: none;
+    color: #B20000;
+}
+
+.menuitemcorpo:hover {
+    text-decoration: underline;
+    color: #005c6e;
+}
+
+table th { /* botões e referencia ao glossario */
     border: 1px solid #f3f3f3;
     padding: 5px;
     align-items: center;
 }
 
+.entrada {
+    color: #2bb8c9;
+}
+
+.definicao {
+    color: #2bb8c9;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* CSS de responsividade das paginas */
 
 @media only screen and (max-device-height: 500px) {
     .menu {

@@ -3,8 +3,7 @@
 @import url("https://fonts.google.com/specimen/Open+Sans?sidebar.open=true&query=Open+sans&selection.family=Open+Sans:wght@400;700");
 
 
-
-.signUpForm{
+.signUpForm {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +28,9 @@
   font-weight: 700;
 }
 
-#signUp-fullName, #signUp-email, #signUp-password {
+#signUp-fullName,
+#signUp-email,
+#signUp-password {
   margin-bottom: 20px;
   margin-left: 25px;
   margin-right: 15px;
@@ -45,24 +46,25 @@
   display: inline-block;
   text-align: center;
   letter-spacing: 0.07em;
-  text-decoration: none;  
+  text-decoration: none;
   border: 0;
   border-radius: 5px;
   outline: 0;
   padding: 0 1em 0 1em;
   height: 2.5em;
   margin: 10px 20px 30px 20px;
-  color:#f3f3f3;
+  color: #f3f3f3;
   background: #2bb8c9;
   font-family: 'Open Sans';
   font-weight: 700;
 }
-      input[type="button"]:hover,
-      input[type="submit"]:hover,
-      button:hover,
-      .button:hover {
-        background-color: #005c6e;
-      }
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover,
+.button:hover {
+  background-color: #005c6e;
+}
 
 #signUp-checkbox {
   text-align: right;
@@ -72,7 +74,6 @@
   margin-right: 15px;
   font-size: 12px;
   font-family: 'Open Sans';
-  text-decoration: none;  
- 
-}
+  text-decoration: none;
 
+}

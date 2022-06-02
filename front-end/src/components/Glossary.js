@@ -27,8 +27,8 @@ function Glossary() {
                 <h1 class="title-content">Glossario</h1>
                 <table>
                     <tr>
-                        <th>Entrada</th>
-                        <th>Definição</th>
+                        <th className="entrada">Entrada</th>
+                        <th className="definicao">Definição</th>
                     </tr>
                     {glossary.map(glossario => (
                         <tr>
