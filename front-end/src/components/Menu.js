@@ -9,8 +9,7 @@ function Menu() {
                 <li><Link to="/glossario" class="menuitem">Glossario</Link></li>
                 <li><Link to="/questoes" class="menuitem">Questões</Link></li>
                 <li><Link to="/respostas" class="menuitem">Respostas</Link></li>
-                <li><Link to="/avaliacoes" class="menuitem">Avaliações</Link></li>
-                <li><Link to="/sobre" class="menuitem">Sobre</Link></li>
+                <li><Link to="/avaliacoes" class="menuitem">Avaliações</Link></li>  
             </ul>
         </aside>
     )

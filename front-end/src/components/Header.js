@@ -7,7 +7,6 @@ function Header() {
         <div class="header">
             <Link to="/" class="botaoSair">Sair</Link>
             <h2 class="title">UX Helpers</h2>
-            Helping your inteface!
         </div>
     )
 }

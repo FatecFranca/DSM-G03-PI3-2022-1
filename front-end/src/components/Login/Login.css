@@ -122,7 +122,7 @@
   color:#005c6e;
 }
 
-.content {
+.content-login {
   max-width: 50%;
   display: flex;
   flex-direction: column;
@@ -136,21 +136,21 @@
   text-align: center;
 }
 
-.content h1 {
+.content-login h1 {
   color: #005c6e;
   font-family: 'Roboto Slab';
   font-weight: 700;
   margin-bottom: 40px;
 }
 
-.content h3 {
+.content-login h3 {
   color: #005c6e;
   font-family: 'Roboto Slab';
   font-weight: 700;
   margin-bottom: 40px;
 }
 
-.content p {
+.content-login p {
   margin: 16px 30px 16px;
   font-size: 16px;
 }

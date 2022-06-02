@@ -35,7 +35,7 @@ export default function Login() {
 
     return (
         <div className="signinForm">
-            <main className="content">
+            <main className="content-login">
                 <h1>Sobre o UX Helpers</h1>
                 <h3>Projeto desenvolvido para ajudar profissionais de UX e designers</h3>
                 <p>
