@@ -22,7 +22,7 @@ controller.create = async (req, res) => {
 // glossário já inseridas
 controller.retrieve = async (req, res) => {
     try {
-        const result = await Assessment.find({user: req.authenticatedId}).populate('user')
+        const result = await Assessment.find(/*{user: req.authenticatedId}*/).populate('user')
         // HTTP 200: OK é implícito aqui
         res.send(result)
     }

@@ -7,8 +7,14 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 
 
-function Questions() {
-    const [questions, getQuestions] = useState(([]))
+export default function Questions() {
+    const [questions, getQuestions] = useState([])
+    const [formQuestions, setFormQuestions] = useState({
+        assessment: '',
+        question: '',
+        objective_answer:'',
+        comments:'',
+    })
     const { id } = useParams()
     const url = 'http://localhost:3000/'
     useEffect(() => {
@@ -34,15 +40,16 @@ function Questions() {
                         <h3>{questoes.number} )</h3>
                         <h3>{questoes.enunciation}</h3>
                         <form>
-                        <input type="radio"></input>Sim<br />
-                        <input type="radio"></input>Não<br />
-                        <input type="radio"></input>Responder mais tarde
-                        <br />Comentário<br/><textarea></textarea><br/>
-                        <button>Salvar Resposta</button>
+                            <input type="radio" name="radioSim" value="Y"/>Sim<br />
+                            <input type="radio" name="radioNao" value="N"/>Não<br />
+                            <input type="radio" name="radioP" value="P"/>Responder mais tarde<br/>
+                            <input type="radio" name="radioX" value="X"/>Não aplicável
+                            <br />Comentário<br /><textarea placeholder="Deixe seu comentário sobre essa questão" /*value={formQuestion.password}*/></textarea><br />
+                            <button type="submit">Salvar Resposta</button>
                         </form>
 
 
-                        
+
                     </div>
                 ))}
 
@@ -52,4 +59,3 @@ function Questions() {
         </div>
     )
 }
-export default Questions
