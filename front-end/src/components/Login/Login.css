@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100wh;
   transition: 0.5s;
   background: #ffffff;
 }
@@ -59,8 +60,8 @@
 }
       input[type="button"]:hover,
       input[type="submit"]:hover,
-      button:hover,
-      .button:hover {
+      #login-cadastrar:hover,
+      #login-cadastrar:hover {
         background-color: #005c6e;
       }
 
@@ -84,8 +85,8 @@
 }
       input[type="button"]:hover,
       input[type="submit"]:hover,
-      button:hover,
-      .button:hover {
+      #login-entrar:hover,
+      #login-entrar:focus {
         background-color: #005c6e;
       }
 
@@ -103,13 +104,13 @@
   text-decoration: none;  
 }
 
-.a:link, .a:link:visited, a:active{
+.forgot:link, .forgot:link:visited, .forgot:active{
   text-decoration: none;
   color:#005c6e;
 }
 
-  a:hover {
-    color:#005c6e;
+  .forgot:hover {
+    color: #005c6e;
     text-decoration: underline;
     }
 
@@ -119,4 +120,37 @@
   font-size: 16px;
   text-decoration: none; 
   color:#005c6e;
+}
+
+.content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  margin: 3% 3% 3% -3%;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  border-right: 2px solid #333333;
+  text-align: center;
+}
+
+.content h1 {
+  color: #005c6e;
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.content h3 {
+  color: #005c6e;
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.content p {
+  margin: 16px 30px 16px;
+  font-size: 16px;
 }

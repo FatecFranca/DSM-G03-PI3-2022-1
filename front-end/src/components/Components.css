@@ -9,39 +9,8 @@
     position: fixed;
     top: 0;
     height: 10%;
-}
-
-.content {
-    width: auto;
-    background-color: #f3f3f3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #333333;
-    margin: 4.6% 0 3.3% 10%;
-    min-height: 83.5vh;
-    font-family: 'Open Sans';
-    font-weight: 400;
-}
-
-.content h1 {
-    color: #005c6e;
     font-family: 'Roboto Slab';
     font-weight: 700;
-    margin-bottom: 40px;
-}
-
-.content h3 {
-    color: #005c6e;
-    font-family: 'Roboto Slab';
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-
-.content p {
-    margin: 16px 30px 16px 30px;
-    font-size: 16px;
 }
 
 .menu {
@@ -52,8 +21,9 @@
     height: 100vh;
     float: left;
     font-family: 'Roboto Condensed';
+    animation: bounce 1s infinite alternate;
+   -webkit-animation: bounce 1s infinite alternate;
 }
-
 
 .menu ul li {
     list-style-type: none;
@@ -83,7 +53,7 @@
 }
 
 .footer p {
-    align-items: center;
+    align-items: flex-end;
 }
 
 .direitos-reservados {
@@ -94,9 +64,14 @@
     text-decoration: none;
     color: #f3f3f3;
 }
+
 .menuitemcorpo{
     text-decoration: none;
     color: #B20000; 
+}
+
+.menuitem:hover {
+    color: #f3f3f3;
 }
 
 .botaoSair {
