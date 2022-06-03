@@ -20,18 +20,18 @@ function Assessment() {
         e.preventDefault();
         console.log(title + description)
 
-    if (title == '' && description == '') {
-        setNotify('Por favor informe o título e a url da sua avaliação');
-    } else {
-        const newAssessement = await api.post('assessment', { title, description, user });
-        console.log(newAssessement)
-        if (newAssessement) {
-            navigate("/questoes");
+        if (title == '' && description == '') {
+            setNotify('Por favor informe o título e a url da sua avaliação');
         } else {
-            setNotify('Ops não conseguimos criar uma nova avaliação');
+            const newAssessement = await api.post('assessment', { title, description, user });
+            console.log(newAssessement)
+            if (newAssessement) {
+                navigate("/questoes");
+            } else {
+                setNotify('Ops não conseguimos criar uma nova avaliação');
+            }
         }
     }
-}
 
     useEffect(() => {
         axios.get(`${url}assessment`)
@@ -48,42 +48,47 @@ function Assessment() {
             <Header />
             <Menu />
             <main className="content">
-            <p>precisei tirar o filtro de usuario no controller, entender está exibindo os assessments de todos usuarios</p>
-                    <form onSubmit={handleSubmit} id="container-login">
-                <h3 className="login-titulo">Bem Vindo ao UX-Helpers</h3>
-                <input
-                    type="text"
-                    placeholder="Título da avaliação"
-                    id="login-email"
-                    name="title"
-                    value={title}
-                    onChange={e => setTitle(e.target.value)}
-                />
-                <input
-                    type="text"
-                    placeholder="Descrição da Avaliação"
-                    id="login-password"
-                    name="description"
-                    value={description}
-                    onChange={e => setDescription(e.target.value)}
-                />
-                <div>
-                    <ul>
-                        <input id="login-entrar" type="submit" value="Criar" />
-                    </ul>
-                </div>
-                <h2 className="notify">{notify}</h2>
-            </form>
+                <p>precisei tirar o filtro de usuario no controller, entender está exibindo os assessments de todos usuarios</p>
+                <form onSubmit={handleSubmit} id="container-login">
+                    <h4 className="login-titulo">Nova Avaliação</h4>
+                    <input
+                        type="text"
+                        placeholder="Título da avaliação"
+                        id="login-email"
+                        name="title"
+                        value={title}
+                        onChange={e => setTitle(e.target.value)}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Descrição da Avaliação"
+                        id="login-password"
+                        name="description"
+                        value={description}
+                        onChange={e => setDescription(e.target.value)}
+                    />
+                    <div>
+                        <ul>
+                            <input id="login-entrar" type="submit" value="Criar" />
+                        </ul>
+                    </div>
+                    <h2 className="notify">{notify}</h2>
+                </form>
 
                 <div>
-               
+
                     {assessment.map(avaliacao => (
                         <div class="cardGroup">
                             <h2>{avaliacao.title}</h2>
                             <h3>{avaliacao.description}</h3>
-                            
-                
-                            
+                            <div>
+
+                                <Link to={`/respostas/${avaliacao._id}`}>Abrir Avaliação</Link><br/>
+
+                                <Link to="/questoes" >Questões</Link>
+                            </div>
+
+
                         </div>
                     ))}
                 </div>

@@ -2,29 +2,43 @@ import Header from "./Header"
 import Menu from "./Menu"
 import Footer from "./Footer"
 import './Components.css'
+import { useEffect, useState } from "react";
+import { Link, useNavigate, useParams } from 'react-router-dom';
+
+import axios from "axios";
+
 
 function Answer() {
 
-        //const [assessment, question, objective_answer, comments] = React.useState(null);
+    const [answers, getAnswers] = useState([])
+    const { id } = useParams()
+    const url = 'http://localhost:3000/'
+    useEffect(() => {
 
-        
-            /*"assessment":"624f71204405738589283aba",
-            "question":"62518b7ebe77585f5a61557f",
-            "objective_answer":"Y",
-            "comments":"Os itens estão corretos"*/
-        
-      
-       /* React.useEffect(() => {
-          fetch("/api")
-            .then((res) => res.json())
-            .then((data) => setData(data.message));
-        }, [])*/
+        axios.get(`${url}answer/assessment/${id}`)
+            .then((response) => {
+                console.log(`${url}assessment/${id}`)
+                getAnswers(response.data)
+                console.log(response.data)
+            })
+            .catch(error => console.error(`Erro: ${error}`))
+    }, []);
+
     return (
         <div className="Home">
             <Header />
             <Menu />
             <main className="content">
-                    <h1>Aqui será as respostas</h1>
+                <h1>Aqui será as respostas</h1>
+                <div>
+
+                    {answers.map(respostas => (
+                        <div class="cardGroup">
+                                {respostas.objective_answer} -
+                                {respostas.comments}
+                        </div>
+                    ))}
+                </div>
             </main>
             <Footer />
         </div>

@@ -21,8 +21,9 @@ function Routers () {
                 <Route exact path="/glossario" element={<Glossary />}/>
                 <Route exact path="/questoes" element={<QuestionGroup />}/>
                 <Route exact path="/questoes/porgrupo/:id" element={<Questions />}/>
-                <Route exact path="/respostas" element={<Answer />}/>
+                <Route exact path="/respostas/:id" element={<Answer />}/>
                 <Route exact path="/avaliacoes" element={<Assessment />}/>
+                <Route exact path="/avaliacoes/:id" element={<Assessment />}/>
                 <Route exact path="/cadastro" element={<SignUp/>}/>
 
             </Routes>

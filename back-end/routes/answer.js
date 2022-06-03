@@ -6,7 +6,7 @@ const verifyToken = require('../lib/verify_token')
 const controller = require('../controllers/answer')
 
 router.post('/', verifyToken, controller.create)
-router.get('/assessment/:id', verifyToken, controller.retrieve)
+router.get('/assessment/:id', controller.retrieve)
 router.get('/:id', verifyToken, controller.retrieveOne)
 router.put('/', verifyToken, controller.update)
 router.delete('/', verifyToken, controller.delete)
