@@ -16,6 +16,18 @@
     font-weight: 700;
 }
 
+.header .titulo-pesquisa {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.header .titulo-pesquisa #title {
+    margin-right: 25%;
+}
+
 .menu {
     background-color: #B20000;
     color: #f3f3f3;

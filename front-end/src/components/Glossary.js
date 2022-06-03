@@ -23,7 +23,6 @@ function Glossary() {
             <Header />
             <Menu />
             <main className="content">
-
                 <h1 class="title-content">Glossario</h1>
                 <table>
                     <tr>
@@ -37,8 +36,6 @@ function Glossary() {
                         </tr>
                     ))}
                 </table>
-
-
             </main>
             <Footer />
         </div>

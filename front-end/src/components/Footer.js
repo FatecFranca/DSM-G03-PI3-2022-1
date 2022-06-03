@@ -2,7 +2,6 @@ import './Components.css'
 
 function Footer() {
     return (
-
         <div class="footer">
             <ul>
             <p>Desenvolvido por Tatiana, Fabricio, Nickolas e Vinicius</p>
