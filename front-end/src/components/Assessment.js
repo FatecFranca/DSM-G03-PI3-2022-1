@@ -13,8 +13,9 @@ function Assessment() {
     const navigate = useNavigate();
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    const [user, setUser] = useState('627da16564fbd6c660162c17'); //
+    const [user, setUser] = useState('627da16564fbd6c660162c17'); //localStorage?
     const [notify, setNotify] = useState('');
+
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -25,8 +26,11 @@ function Assessment() {
         } else {
             const newAssessement = await api.post('assessment', { title, description, user });
             console.log(newAssessement)
+            console.log(newAssessement.data.title)
+            localStorage.setItem('assessment', newAssessement.data._id)
             if (newAssessement) {
                 navigate("/questoes");
+                localStorage.setItem('assessment', assessment._id)
             } else {
                 setNotify('Ops não conseguimos criar uma nova avaliação');
             }
@@ -39,9 +43,11 @@ function Assessment() {
                 console.log(url)
                 getAssessment(response.data)
                 console.log(response.data)
+
             })
             .catch(error => console.error(`Erro: ${error}`))
-    }, []);
+    }, []); 
+    
 
     return (
         <div className="Home">
@@ -90,7 +96,9 @@ function Assessment() {
 
 
                         </div>
-                    ))}
+                         
+                    ))
+                    }
                 </div>
 
 

@@ -34,8 +34,10 @@ function Answer() {
 
                     {answers.map(respostas => (
                         <div class="cardGroup">
-                                {respostas.objective_answer} -
-                                {respostas.comments}
+                            <ul>
+                                <li>{respostas.objective_answer}</li> 
+                                <li>{respostas.comments}</li>
+                            </ul>
                         </div>
                     ))}
                 </div>

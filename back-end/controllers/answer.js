@@ -18,6 +18,7 @@ controller.create = async (req, res) => {
     }
 }
 
+
 // Função que devolve uma listagem das entradas de
 // glossário já inseridas
 controller.retrieve = async (req, res) => {

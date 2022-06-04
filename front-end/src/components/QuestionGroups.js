@@ -31,8 +31,8 @@
                         {groupQuestions.map(grupos => (
                             <div class="cardGroup">
                                 <Link to={`/questoes/porgrupo/${grupos._id}`} class="menuitemcorpo">
-                                    {grupos.group} - 
-                                    {grupos.description}
+                                    <h4>{grupos.group}</h4>
+                                    <p>{grupos.description}</p>
                                 </Link>
 
                             </div>
