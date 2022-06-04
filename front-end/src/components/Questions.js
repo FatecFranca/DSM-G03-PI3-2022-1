@@ -9,21 +9,21 @@ import axios from "axios";
 
 
 export default function Questions() {
-    const [question, getQuestions] = useState([]) //pegar a question
+    const [question, getQuestions] = useState([]) // Pegar a Question
     const { id } = useParams()
     const url = 'http://localhost:3000/'
     //const navigate = useNavigate();
-    const [assessment, getAssessment] = useState(localStorage.getItem('assessment')); //usarlocalstorage
+    const [assessment, getAssessment] = useState(localStorage.getItem('assessment')); // Usar localstorage
     const [objective_answer, setObjective_answer] = useState('');
     const [comments, setComments] = useState('');
-    const [user, setUser] = useState('627da16564fbd6c660162c17'); //usar localstorage
+    const [user, setUser] = useState('627da16564fbd6c660162c17'); // Usar localstorage
     const [notify, setNotify] = useState('');
 
     async function handleSubmit(e) {
         e.preventDefault();
         
 
-        if (objective_answer == '') {
+        if(objective_answer == '') {
             setNotify('Ops, vai enviar o que sem responder?');
         } else {
             const newAnswer = await api.post('answer', { assessment, question, objective_answer, comments });
@@ -61,14 +61,9 @@ export default function Questions() {
                             <br />Comentário<br /><textarea placeholder="Deixe seu comentário sobre essa questão" id="comment" value={comments} onChange={e => setObjective_answer(e.target.value)}></textarea><br />
                             <button type="submit">Salvar Resposta</button> 
                         </form>
-
-
-
                     </div>
                 ))}
-
             </main>
-
             <Footer />
         </div>
     )

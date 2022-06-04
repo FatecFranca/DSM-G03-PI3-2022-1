@@ -21,14 +21,14 @@ function Assessment() {
         e.preventDefault();
         console.log(title + description)
 
-        if (title == '' && description == '') {
+        if(title == '' && description == '') {
             setNotify('Por favor informe o título e a url da sua avaliação');
         } else {
             const newAssessement = await api.post('assessment', { title, description, user });
             console.log(newAssessement)
             console.log(newAssessement.data.title)
             localStorage.setItem('assessment', newAssessement.data._id)
-            if (newAssessement) {
+            if(newAssessement) {
                 navigate("/questoes");
                 localStorage.setItem('assessment', assessment._id)
             } else {
@@ -93,22 +93,17 @@ function Assessment() {
 
                                 <Link to="/questoes" >Questões</Link>
                             </div>
-
-
                         </div>
-                         
                     ))
                     }
                 </div>
-
-
             </main>
-
             <Footer />
         </div>
     )
 }
 export default Assessment
+
 /*
 import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -193,10 +188,4 @@ export default function Login() {
         </div>
     )
 }
-
 */
-
-
-
-
-

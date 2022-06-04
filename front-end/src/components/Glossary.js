@@ -23,7 +23,7 @@ function Glossary() {
             <Header />
             <Menu />
             <main className="content">
-                <h1 class="title-content">Glossario</h1>
+                <h1 class="title-content">Glossário</h1>
                 <table>
                     <tr>
                         <th className="entrada">Entrada</th>

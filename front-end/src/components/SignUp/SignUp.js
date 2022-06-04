@@ -28,13 +28,11 @@ export default function SignUp() {
             if(signUp) {
                 navigate("/home");
                 localStorage.setItem('x-access-token', signUp.data.token)
-            } else{
+            } else {
                 setNotify('Usuário não cadastrado.');
             }
         }
     }
-
-    
 
     return (
         <div className="signUpForm">
@@ -97,10 +95,3 @@ export default function SignUp() {
       </div>
     )
 }
-
-
-
-
-
-
-

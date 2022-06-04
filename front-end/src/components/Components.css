@@ -88,7 +88,7 @@
 
 /* ------------------------------------------------------------------------------------------- */
 
-/* CSS do body das paginas */
+/* CSS do body das páginas */
 
 .content {
     display: flex;
@@ -137,7 +137,7 @@
 
 /* -------------------------------------------------------------------------------- */
 
-/* CSS das paginas */
+/* CSS das páginas */
 
 .cardGroup {
     grid-column: span 4;
@@ -177,7 +177,7 @@
     color: #005c6e;
 }
 
-table th { /* botões e referencia ao glossario */
+table th { /* botões e referência ao glossário */
     border: 1px solid #f3f3f3;
     padding: 5px;
     align-items: center;
@@ -193,7 +193,7 @@ table th { /* botões e referencia ao glossario */
 
 /* -------------------------------------------------------------------------- */
 
-/* CSS de responsividade das paginas */
+/* CSS de responsividade das páginas */
 
 @media only screen and (max-device-height: 500px) {
     .menu {
