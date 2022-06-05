@@ -31,6 +31,19 @@
     border-radius: 4px;
 }
 
+.header .btn {
+    background-color: #f3f3f3;
+    height: 30px;
+    text-align: center;
+    margin-left: 6px;
+    padding: 0 10px 0 10px;
+}
+
+.header .btn:hover {
+    background-color: #005c6e;
+    color: #f3f3f3;
+}
+
 .menu {
     background-color: #B20000;
     color: #f3f3f3;
