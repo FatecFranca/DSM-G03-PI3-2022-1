@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'react-router-dom'
+import { BiSearch } from 'react-icons/bi';
 
 function Header() {
     return (
@@ -7,9 +8,11 @@ function Header() {
             <Link to="/" class="botaoSair">Sair</Link>
             <div className="titulo-pesquisa">
                 <h2 id="title">UX Helpers</h2>
-                <i class="fa fa-times" id="clear-val" aria-hidden="true"></i>
-                <input id="pesquisa"type="text" name="Pesquisar" placeholder="Pesquisar"></input>
-                <button class="btn" type="submit">Pesquisar</button>   
+                <form>
+                    <BiSearch class="icon"/>
+                        <input class="pesquisa" type="text" placeholder="Pesquisar..."/>
+                            <button class="btn" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
     )
