@@ -21,11 +21,14 @@
     align-items: baseline;
     justify-content: flex-end;
     margin-right: 10px;
-    border-radius: 5px;
 }
 
 .header .titulo-pesquisa #title {
     margin-right: 25%;
+}
+
+.header .titulo-pesquisa #pesquisa {
+    border-radius: 4px;
 }
 
 .menu {

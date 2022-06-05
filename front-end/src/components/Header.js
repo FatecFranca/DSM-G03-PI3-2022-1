@@ -7,7 +7,7 @@ function Header() {
             <Link to="/" class="botaoSair">Sair</Link>
             <div className="titulo-pesquisa">
                 <h2 id="title">UX Helpers</h2>
-                <input value="Pesquisar"></input>
+                <input id="pesquisa"type="text" name="Pesquisar" placeholder="Pesquisar"></input>
             </div>
         </div>
     )
