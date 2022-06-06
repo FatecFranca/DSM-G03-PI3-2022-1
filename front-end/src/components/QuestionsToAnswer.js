@@ -13,8 +13,8 @@ export default function QuestionToAnswer() {
     const url = 'http://localhost:3000/'
     const navigate = useNavigate();
     const [assessment, getAssessment] = useState(sessionStorage.getItem('assessment'));
-    const [question, setQuestions] = useState('') // Pegar a Question
-    const [questionId, getQuestionsId] = useState(([])) // Pegar a Question
+    const [question, setQuestions] = useState(id) // Pegar a Question
+    const [questionId, getQuestionsId] = useState(([]))  // Pegar a Question
     const [objective_answer, setObjective_answer] = useState('');
     const [enunciation, setEnunciation] = useState('');
     const [comments, setComments] = useState('');
@@ -54,7 +54,7 @@ export default function QuestionToAnswer() {
             <main className="content">
                 <h2>Escolha o grupo de Questões</h2>
                 <div>
-                    <h3>{questionId.enunciation}{id}</h3>
+                    <h3>{questionId._id}</h3>
                 </div>
                 <div class="cardQuestion">
 
@@ -66,7 +66,6 @@ export default function QuestionToAnswer() {
                         <input type="radio" name="objective_answer" id="objctive" value="P" onChange={e => setObjective_answer(e.target.value)} />Responder mais tarde
                         <input type="radio" name="objective_answer" id="objctive" value="X" onChange={e => setObjective_answer(e.target.value)} />Não aplicável
                         <br />Comentário<br /><input type="text" placeholder="Deixe seu comentário sobre essa questão" id="comment" value={comments} onChange={e => setComments(e.target.value)} /><br />
-                        <input class="hiden" type="text" id="question" value={id} onChange={e => setQuestions(e.target.value)} /><br />
                         <button type="submit">Salvar Resposta</button>
                     </form>
 
