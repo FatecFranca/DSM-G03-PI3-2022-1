@@ -7,7 +7,7 @@ const controller = require('../controllers/assessment')
 
 router.post('/', controller.create)
 router.get('/', controller.retrieve)
-router.get('/:id', verifyToken, controller.retrieveOne)
+router.get('/:id', controller.retrieveOne)
 router.put('/', verifyToken, controller.update)
 router.delete('/', verifyToken, controller.delete)
 

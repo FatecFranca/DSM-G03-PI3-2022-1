@@ -9,6 +9,7 @@ export default function Login() {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    
     const [notify, setNotify] = useState('');
 
 
@@ -16,9 +17,9 @@ export default function Login() {
     async function handleSubmit(e) {
         e.preventDefault();
         console.log(email + password)
-
-        if (email == '' && password == '') {
+        if (email == '' || password == '') {
             setNotify('Campos não preenchidos');
+            alert('Senha ou email não preenchidos')
         } else {
             const isLogged = await api.post('user/login', { email, password });
             console.log(isLogged)

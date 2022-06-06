@@ -29,17 +29,24 @@ function Answer() {
             <Header />
             <Menu />
             <main className="content">
-                <h1>Aqui será as respostas</h1>
+                <h1>Respostas</h1>
                 <div>
-
-                    {answers.map(respostas => (
-                        <div class="cardGroup">
-                            <ul>
-                                <li>{respostas.objective_answer}</li> 
-                                <li>{respostas.comments}</li>
-                            </ul>
-                        </div>
-                    ))}
+                    <table class="cardQuestion">
+                        <tr>
+                            <th class="table">ID Avaliação</th>
+                            <th class="table">ID Questão</th>
+                            <th class="table">Resposta</th>
+                            <th class="table">Comentário</th>
+                        </tr>
+                        {answers.map(respostas => (
+                            <tr>
+                                <th class="table">{respostas._assessment}</th>
+                                <th class="table">{respostas._question}</th>
+                                <th class="table">{respostas.objective_answer}</th>
+                                <th class="table">{respostas.comments}</th>
+                            </tr>
+                        ))}
+                    </table>
                 </div>
             </main>
             <Footer />
