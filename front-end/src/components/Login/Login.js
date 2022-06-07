@@ -1,15 +1,16 @@
-import React, { useContext, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css'
+import axios from "axios";
 import api from '../../api';
 
 export default function Login() {
 
-
+    const url = 'http://localhost:3000/'
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [User, getUser] = (([]))
+    const [user, getUser] = (([]))
     const [notify, setNotify] = useState('');
 
 
@@ -25,9 +26,6 @@ export default function Login() {
             console.log(isLogged)
             if (isLogged) {
                 navigate("/home");
-                const user = await User.findOne({email: email})
-                console.log(user._id)
-                sessionStorage.setItem('user', user.id)
                 localStorage.setItem('x-access-token', isLogged.data.token)
             } else {
                 setNotify('Não Autorizado.');
@@ -54,7 +52,7 @@ export default function Login() {
                 <p>
                     Este novo site será chamado de UX-HELPERS, que vai abranger esse espaço e tentar inovar com as ferramentas e conhecimentos existentes, observando as normas e conceitos para as avaliações.
                 </p>
-            </main> 
+            </main>
             <form onSubmit={handleSubmit} id="container-login">
                 <h3 className="login-titulo">Bem Vindo ao UX-Helpers</h3>
                 <input
@@ -75,7 +73,7 @@ export default function Login() {
                 />
                 <div>
                     <ul>
-                        <input href="#" id="login-cadastrar" type="submit" value="Cadastrar" />
+                        <Link to="/cadastro" id="login-cadastrar" type="submit" value="Cadastrar">Cadastrar</Link>
                         <input id="login-entrar" type="submit" value="Login" />
                     </ul>
                 </div>
