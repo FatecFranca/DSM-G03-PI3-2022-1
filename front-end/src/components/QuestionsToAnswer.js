@@ -4,7 +4,7 @@ import Footer from "./Footer"
 import './Components.css'
 import api from "../api"
 import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate} from "react-router-dom";
 import axios from "axios";
 
 
@@ -16,7 +16,6 @@ export default function QuestionToAnswer() {
     const [question, setQuestions] = useState(id) // Pegar a Question
     const [questionId, getQuestionsId] = useState(([]))  // Pegar a Question
     const [objective_answer, setObjective_answer] = useState('');
-    const [enunciation, setEnunciation] = useState('');
     const [comments, setComments] = useState('');
     const [user, setUser] = useState('627da16564fbd6c660162c17'); // Usar localstorage
     const [notify, setNotify] = useState('');
@@ -30,6 +29,8 @@ export default function QuestionToAnswer() {
         } else {
             const newAnswer = await api.post(`answer/`, { assessment, question, objective_answer, comments });
             console.log(newAnswer)
+            navigate(`/questoes/porgrupo/${sessionStorage.getItem('group')}`)
+
         }
 
     }
@@ -41,6 +42,7 @@ export default function QuestionToAnswer() {
                 console.log(`${url}question/${id}`)
                 getQuestionsId(response.data)
                 console.log(response.data)
+                console.log(getQuestionsId)
             })
             .catch(error => console.error(`Erro: ${error}`))
     }, []);
@@ -52,12 +54,11 @@ export default function QuestionToAnswer() {
             <Header />
             <Menu />
             <main className="content">
-                <h2>Escolha o grupo de Questões</h2>
-                <div>
-                    <h3>{questionId._id}</h3>
-                </div>
-                <div class="cardQuestion">
 
+                <div class="cardQuestion">
+                    <div>
+                        <h3>{questionId.enunciation}</h3>
+                    </div>
 
 
                     <form onSubmit={handleSubmit}>
@@ -68,6 +69,7 @@ export default function QuestionToAnswer() {
                         <br />Comentário<br /><input type="text" placeholder="Deixe seu comentário sobre essa questão" id="comment" value={comments} onChange={e => setComments(e.target.value)} /><br />
                         <button type="submit">Salvar Resposta</button>
                     </form>
+
 
                 </div>
 

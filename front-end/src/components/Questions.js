@@ -4,7 +4,7 @@ import Footer from "./Footer"
 import './Components.css'
 import api from "../api"
 import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 
@@ -21,19 +21,7 @@ export default function Questions() {
     const [user, setUser] = useState('627da16564fbd6c660162c17'); // Usar localstorage
     const [notify, setNotify] = useState('');
 
-    async function handleSubmit(e) {
-        e.preventDefault();
-        
-
-        if(objective_answer == '') {
-            setNotify('Ops, vai enviar o que sem responder?');
-        } else {
-            const newAnswer = await api.post('answer', { assessment, question, objective_answer, comments });
-            console.log(newAnswer)
-        }
-
-}
-
+   
     useEffect(() => {
 
         axios.get(`${url}question/group/${id}`)
@@ -41,14 +29,11 @@ export default function Questions() {
                 console.log(`${url}question/group/${id}`)
                 getQuestions(response.data)
                 console.log(response.data)
+                sessionStorage.setItem('group',id)
             })
             .catch(error => console.error(`Erro: ${error}`))
     }, []);
 
-    function OpenOneQuestion() {
-        navigate(`/questoes/${id}`)
-        
-    }
 
     return (
         <div className="Home">
@@ -58,11 +43,10 @@ export default function Questions() {
                 <h2>Escolha o grupo de Questões</h2>
                 {question.map(questoes => (
                     <div class="cardQuestion">
-                        {sessionStorage.setItem(`idQuestion${questoes._id}`,questoes._id)}
-                        {sessionStorage.setItem(`enunciation${questoes._id}`,questoes.enunciation)}
                             
-                        <h3>{questoes.number}) {questoes.enunciation}</h3>{questoes._id}
-                        <button onClick={OpenOneQuestion}>Responder Questão {questoes.number}</button>
+                        <h3>{questoes.number}) {questoes.enunciation}</h3>
+                        <Link to={`/questoes/${questoes._id}`}>Responder Questão {questoes.number}</Link><br/>
+                        <Link to="/questoes">Voltar para os Grupos</Link>
                     </div>
                 ))}
             </main> 
