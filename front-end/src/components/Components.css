@@ -10,12 +10,12 @@
 }
 
 .header {
-    background-color: #B20000;
+    background: linear-gradient(to top, #6b0000,#B20000);
     color: #f3f3f3;
     width: 100%;
     position: fixed;
     top: 0;
-    height: 10%;
+    height: 9.5%;
     font-family: 'Roboto Slab';
     font-weight: 700;
 }
@@ -33,8 +33,9 @@
 }
 
 .menu {
-    background-color: #B20000;
-    color: #f3f3f3;
+    background-color:#f3f3f3;
+    color: #B20000;
+    border-right: 5px solid #6b0000;
     position: fixed;
     width: 10%;
     height: 100vh;
@@ -44,11 +45,14 @@
 
 .menu ul li {
     list-style-type: none;
+    margin-top: 15%;
+    border-top:  2px solid;
+    padding-top: 15px;
 
 }
 
 .footer {
-    background-color: #B20000;
+    background: linear-gradient(to top,#B20000, #6b0000);
     color: #f3f3f3;
     position: fixed;
     bottom: 0;
@@ -68,7 +72,11 @@
 
 .menuitem {
     text-decoration: none;
-    color: #f3f3f3;
+    color: #B20000;
+    font-size: x-large;
+   
+    
+    
 }
 
 .menuitem:hover {
