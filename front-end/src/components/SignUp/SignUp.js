@@ -20,7 +20,7 @@ export default function SignUp() {
         e.preventDefault();
         console.log(fullname + email + password)
 
-        if(fullname == '' || email == '' || confirmEmail == '' || password == '' || confirmPassword == '') {
+        if(fullname == '' || email == '' || password == '') {
             setNotify('Campos não preenchidos');
         } else {
             const signUp = await api.post('user/',{fullname, email, password});

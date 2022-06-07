@@ -5,6 +5,10 @@
 
 /* Componentes Header, footer e menu */
 
+.hiden{
+    display: none;
+}
+
 .header {
     background-color: #B20000;
     color: #f3f3f3;
@@ -21,33 +25,11 @@
     align-items: baseline;
     justify-content: flex-end;
     margin-right: 10px;
+    border-radius: 5px;
 }
 
 .header .titulo-pesquisa #title {
     margin-right: 25%;
-}
-
-.header .pesquisa {
-    border-radius: 4px;
-}
-
-.header .btn {
-    background-color: #f3f3f3;
-    margin-left: 6px;
-    margin-bottom: 3px;
-    padding: 2px 10px 2px 10px;
-}
-
-.header .btn:hover {
-    background-color: #005c6e;
-    color: #f3f3f3;
-}
-
-.header .titulo-pesquisa .icon {
-    position: relative;
-    margin-right: 2px;
-    height: 20px;
-    width: 20px;
 }
 
 .menu {
@@ -82,7 +64,6 @@
 
 .direitos-reservados {
     align-items: center;
-    text-align: center;
 }
 
 .menuitem {
@@ -189,6 +170,10 @@
     font-family: 'Roboto Slab';
     font-weight: 600;
 }
+.table {
+    border: 2px solid #B20000;
+}
+
 
 .menuitemcorpo {
     text-decoration: none;

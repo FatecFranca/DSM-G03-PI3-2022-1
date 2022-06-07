@@ -60,6 +60,7 @@
   background: #2bb8c9;
   font-family: 'Open Sans';
   font-weight: 700;
+  box-shadow: 4px 4px 2px gray;
 }
 
 input[type="button"]:hover,
@@ -67,6 +68,11 @@ input[type="submit"]:hover,
 #login-cadastrar:hover,
 #login-cadastrar:hover {
   background-color: #005c6e;
+}
+
+#login-cadastrar:active{
+  box-shadow: 1px 1px 2px darkgray;
+  transform: translateY(3px);
 }
 
 #login-entrar {
@@ -86,7 +92,7 @@ input[type="submit"]:hover,
   height: 2.5em;
   color: #f3f3f3;
   background: #2bb8c9;
-
+  box-shadow: 4px 4px 2px gray;
 }
 
 input[type="button"]:hover,
@@ -94,6 +100,11 @@ input[type="submit"]:hover,
 #login-entrar:hover,
 #login-entrar:focus {
   background-color: #005c6e;
+}
+
+#login-entrar:active{
+  box-shadow: 1px 1px 2px darkgray;
+  transform: translateY(3px);
 }
 
 .forgot {

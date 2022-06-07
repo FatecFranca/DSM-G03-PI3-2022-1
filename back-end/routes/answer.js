@@ -5,9 +5,10 @@ const verifyToken = require('../lib/verify_token')
 // Importa o controller correspondente
 const controller = require('../controllers/answer')
 
-router.post('/', verifyToken, controller.create)
-router.get('/assessment/:id', verifyToken, controller.retrieve)
-router.get('/:id', verifyToken, controller.retrieveOne)
+router.post('/', controller.create)
+router.post('/:question/:assessment/:radio/:comment', controller.create)
+router.get('/assessment/:id', controller.retrieve)
+router.get('/:id', controller.retrieveOne)
 router.put('/', verifyToken, controller.update)
 router.delete('/', verifyToken, controller.delete)
 

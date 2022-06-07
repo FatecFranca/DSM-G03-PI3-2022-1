@@ -57,13 +57,19 @@
   background: #2bb8c9;
   font-family: 'Open Sans';
   font-weight: 700;
+  box-shadow: 4px 4px 2px gray;
 }
 
 input[type="button"]:hover,
 input[type="submit"]:hover,
 button:hover,
-.button:hover {
+#signUp-botao:hover {
   background-color: #005c6e;
+}
+
+#signUp-botao:active{
+  box-shadow: 1px 1px 2px darkgray;
+  transform: translateY(3px);
 }
 
 #signUp-checkbox {
