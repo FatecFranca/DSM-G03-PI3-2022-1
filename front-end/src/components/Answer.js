@@ -31,6 +31,7 @@ function Answer() {
             <main className="content">
                 <h1>Respostas</h1>
                 <div>
+                <Link to="/questoes">Voltar para os Grupos</Link>
                     <table class="cardQuestion">
                         <tr>
                             <th class="table">ID Avaliação</th>

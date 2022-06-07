@@ -9,7 +9,7 @@ export default function Login() {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    
+    const [User, getUser] = (([]))
     const [notify, setNotify] = useState('');
 
 
@@ -25,6 +25,9 @@ export default function Login() {
             console.log(isLogged)
             if (isLogged) {
                 navigate("/home");
+                const user = await User.findOne({email: email})
+                console.log(user._id)
+                sessionStorage.setItem('user', user.id)
                 localStorage.setItem('x-access-token', isLogged.data.token)
             } else {
                 setNotify('Não Autorizado.');
