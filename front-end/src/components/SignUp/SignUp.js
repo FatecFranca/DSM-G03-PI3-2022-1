@@ -89,7 +89,7 @@ export default function SignUp() {
                         value={password}
                         onChange={e => setPassword(e.target.value)}                    
                         />
-                    <button onClick={toggleShow}>{eyeIsClosed ? <VscEyeClosed /> : <VscEye/>}</button>
+                    <button type="button" onClick={toggleShow}>{eyeIsClosed ? <VscEyeClosed /> : <VscEye/>}</button>
                 </div>
               {/* <input 
                     type="password" 
@@ -110,8 +110,10 @@ export default function SignUp() {
                       Termos de uso e a Política de privacidade
                   </ul>  
               </div>
-                
-              <input id="signUp-botao" type="submit" value="Criar Conta" />
+
+
+              <button id ="signUp-botao" type='submit'>Criar Conta</button>  
+              {/* <input id="signUp-botao" type="submit" value="Criar Conta" /> */}
               <h2 className ="notify">{ notify }</h2>                
         </form>  
       </div>
