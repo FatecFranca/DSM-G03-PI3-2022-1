@@ -6,7 +6,6 @@ const verifyToken = require('../lib/verify_token')
 const controller = require('../controllers/answer')
 
 router.post('/', controller.create)
-router.post('/:question/:assessment/:radio/:comment', controller.create)
 router.get('/assessment/:id', controller.retrieve)
 router.get('/:id', controller.retrieveOne)
 router.put('/', verifyToken, controller.update)

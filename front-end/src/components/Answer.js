@@ -10,14 +10,14 @@ import axios from "axios";
 
 function Answer() {
 
-    const [answers, getAnswers] = useState([])
+    const [answers, getAnswers] = useState(([]))
     const { id } = useParams()
     const url = 'http://localhost:3000/'
     useEffect(() => {
 
         axios.get(`${url}answer/assessment/${id}`)
             .then((response) => {
-                console.log(`${url}assessment/${id}`)
+                console.log(`${url}answer/assessment/${id}`)
                 getAnswers(response.data)
                 console.log(response.data)
             })
@@ -34,14 +34,14 @@ function Answer() {
                 <Link to="/questoes">Voltar para os Grupos</Link>
                     <table class="cardQuestion">
                         <tr>
-                            <th class="table">ID Avaliação</th>
-                            <th class="table">ID Questão</th>
+                            <th class="table">Avaliação</th>
+                            <th class="table">Questão</th>
                             <th class="table">Resposta</th>
                             <th class="table">Comentário</th>
                         </tr>
                         {answers.map(respostas => (
                             <tr>
-                                <th class="table">{respostas._assessment}</th>
+                                <th class="table">{respostas.assessment.title}</th>
                                 <th class="table">{respostas._question}</th>
                                 <th class="table">{respostas.objective_answer}</th>
                                 <th class="table">{respostas.comments}</th>
