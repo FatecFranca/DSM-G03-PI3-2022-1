@@ -20,6 +20,7 @@ function Answer() {
                 console.log(`${url}answer/assessment/${id}`)
                 getAnswers(response.data)
                 console.log(response.data)
+
             })
             .catch(error => console.error(`Erro: ${error}`))
     }, []);
@@ -42,7 +43,7 @@ function Answer() {
                         {answers.map(respostas => (
                             <tr>
                                 <th class="table">{respostas.assessment.title}</th>
-                                <th class="table">{respostas._question}</th>
+                                <th class="table">{respostas.question.enunciation  }</th>
                                 <th class="table">{respostas.objective_answer}</th>
                                 <th class="table">{respostas.comments}</th>
                             </tr>

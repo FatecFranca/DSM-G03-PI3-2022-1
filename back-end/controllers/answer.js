@@ -25,7 +25,22 @@ controller.retrieve = async (req, res) => {
     try {
         const assessmentId = req.params.id
 
-        const result = await Answer.find({ assessment: assessmentId }).populate('assessment').populate('question')
+        const result = await Answer.find({ assessment: assessmentId }).populate(['assessment', {path:'question', select: 'enunciation'}])
+        // HTTP 200: OK é implícito aqui
+        res.send(result)
+    }
+    catch(error) {
+        console.error(error)
+        // HTTP 500: Internal Server Error
+        res.status(500).send(error)        
+    }
+}
+
+controller.retrieveByquestion = async (req, res) => {
+    try {
+        const questionId = req.params.id
+
+        const result = await Answer.find({ question: questionId }).
         // HTTP 200: OK é implícito aqui
         res.send(result)
     }
