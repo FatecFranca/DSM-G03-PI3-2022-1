@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef }  from 'react';
+import React, { useContext, useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './SignUp.css'
 import api from '../../api';
@@ -7,7 +7,7 @@ import { VscEyeClosed, VscEye } from 'react-icons/vsc'
 
 export default function SignUp() {
 
-    
+
     const navigate = useNavigate();
     const [fullname, setFullName] = useState('');
     const [email, setEmail] = useState('');
@@ -18,13 +18,13 @@ export default function SignUp() {
 
     //***************MOSTRAR SENHA****************************************
     const inputRef = useRef(null);
-    const [eyeIsClosed, setEyeState] = useState(false);    
+    const [eyeIsClosed, setEyeState] = useState(false);
 
     const toggleShow = () => {
-        if(inputRef.current.type === "password"){
+        if (inputRef.current.type === "password") {
             setEyeState(true)
             inputRef.current.type = "text";
-        } 
+        }
         else {
             setEyeState(false)
             inputRef.current.type = "password"
@@ -32,16 +32,16 @@ export default function SignUp() {
     };
     //********************************************************************** */
 
-    async function handleSubmit (e) {
+    async function handleSubmit(e) {
         e.preventDefault();
         console.log(fullname + email + password)
 
-        if(fullname === '' || email === '' || password === '') {
+        if (fullname === '' || email === '' || password === '') {
             setNotify('Campos não preenchidos');
         } else {
-            const signUp = await api.post('user/',{fullname, email, password});
+            const signUp = await api.post('user/', { fullname, email, password });
             console.log(signUp)
-            if(signUp) {
+            if (signUp) {
                 navigate("/home");
                 localStorage.setItem('x-access-token', signUp.data.token)
             } else {
@@ -52,25 +52,25 @@ export default function SignUp() {
 
     return (
         <div className="signUpForm">
-        <form  action="" onSubmit={handleSubmit} id="container-signUp">
-           <h3 className="signUp-titulo">Junte-se aos UX-Helpers</h3>
-              <input
-                    type="text" 
+            <form action="" onSubmit={handleSubmit} id="container-signUp">
+                <h3 className="signUp-titulo">Junte-se aos UX-Helpers</h3>
+                <input
+                    type="text"
                     placeholder="Nome Completo"
                     id="signUp-fullName"
                     name="fullname"
                     value={fullname}
                     onChange={e => setFullName(e.target.value)}
-                    />
-              <input
-                    type="text" 
+                />
+                <input
+                    type="text"
                     placeholder="E-mail"
                     id="signUp-email"
                     name="email"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
-                    />
-              {/* <input
+                />
+                {/* <input
                     type="text" 
                     placeholder="Confirme seu e-mail"
                     id="signUp-email"
@@ -78,20 +78,20 @@ export default function SignUp() {
                     //value={confirmEmail}
                     //onChange={e => setEmail(e.target.value)}
                     /> */}
-              
-                <div id="divSenha">    
-                    <input 
+
+                <div id="divSenha">
+                    <input
                         ref={inputRef}
-                        type="password" 
-                        placeholder="Senha" 
-                        id="signUp-password"  
+                        type="password"
+                        placeholder="Senha"
+                        id="signUp-password"
                         name="password"
                         value={password}
-                        onChange={e => setPassword(e.target.value)}                    
-                        />
-                    <button type="button" onClick={toggleShow}>{eyeIsClosed ? <VscEyeClosed /> : <VscEye/>}</button>
+                        onChange={e => setPassword(e.target.value)}
+                    />
+                    <button id="btn-senha" type="button" onClick={toggleShow}>{eyeIsClosed ? <VscEyeClosed /> : <VscEye />}</button>
                 </div>
-              {/* <input 
+                {/* <input 
                     type="password" 
                     placeholder="Confirme sua senha" 
                     id="signUp-password"
@@ -99,23 +99,22 @@ export default function SignUp() {
                     //value={confirmPassword}
                     //onChange={e => setPassword(e.target.value)}                    
                     /> */}
-              <div>
-                  <ul id="signUp-checkbox">
-                    <input
-                      type="checkbox"                            
-                      name="checkbox"       
-                      checked                          
-                      />
-                      Ao clicar em Criar Conta, eu concordo que li e aceito os <br></br>
-                      Termos de uso e a Política de privacidade
-                  </ul>  
-              </div>
+                <div>
+                    <ul id="signUp-checkbox">
+                        <input
+                            type="checkbox"
+                            name="checkbox"
+                        />
+                        Ao clicar em Criar Conta, eu concordo que li e aceito os <br></br>
+                        Termos de uso e a Política de privacidade
+                    </ul>
+                </div>
 
 
-              <button id ="signUp-botao" type='submit'>Criar Conta</button>  
-              {/* <input id="signUp-botao" type="submit" value="Criar Conta" /> */}
-              <h2 className ="notify">{ notify }</h2>                
-        </form>  
-      </div>
+                <button id="signUp-botao" type='submit'>Criar Conta</button>
+                {/* <input id="signUp-botao" type="submit" value="Criar Conta" /> */}
+                <h2 className="notify">{notify}</h2>
+            </form>
+        </div>  
     )
 }

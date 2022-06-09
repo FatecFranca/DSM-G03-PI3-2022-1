@@ -71,7 +71,7 @@ export default function Login() {
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                 />
-                <div>
+                <div class="botao-login">
                     <ul>
                         <Link to="/cadastro" id="login-cadastrar" type="submit" value="Cadastrar">Cadastrar</Link>
                         <input id="login-entrar" type="submit" value="Login" />

@@ -13,7 +13,7 @@
 }
 
 #container-login {
-  text-align: center;
+  text-align: end;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,6 @@
 }
 
 .login-titulo {
-
   font-size: 30px;
   margin: 30px 40px 30px 40px;
   font-family: 'Roboto Slab';
@@ -45,22 +44,19 @@
 #login-cadastrar {
   /* css do botão cadastrar */
   transition: all .25s ease-in-out;
-  display: inline-block;
-  text-align: center;
   letter-spacing: 0.07em;
   text-decoration: none;
-  border: 0;
-  border-radius: 5px;
-  outline: 0;
-  padding: 0 1em 0 1em;
-  height: 2.5em;
-  margin-left: 110px;
-  margin-right: 20px;
-  color: #f3f3f3;
-  background: #2bb8c9;
   font-family: 'Open Sans';
   font-weight: 700;
+  border: 0;
+  border-radius: 5px;
+  padding: 7px 6.50px 8.85px 6.50px;
+  min-width: 7em;
+  height: 2.5em;
+  color: #f3f3f3;
+  background: #2bb8c9;
   box-shadow: 4px 4px 2px gray;
+  margin-right: 15px;
 }
 
 input[type="button"]:hover,
@@ -70,7 +66,7 @@ input[type="submit"]:hover,
   background-color: #005c6e;
 }
 
-#login-cadastrar:active{
+#login-cadastrar:active {
   box-shadow: 1px 1px 2px darkgray;
   transform: translateY(3px);
 }
@@ -78,21 +74,18 @@ input[type="submit"]:hover,
 #login-entrar {
   /* css do botão entrar */
   transition: all .25s ease-in-out;
-  display: inline-block;
-  text-align: center;
   letter-spacing: 0.07em;
   text-decoration: none;
   font-family: 'Open Sans';
   font-weight: 700;
   border: 0;
   border-radius: 5px;
-  outline: 0;
-  padding: 0 1em 0 1em;
   min-width: 7em;
   height: 2.5em;
   color: #f3f3f3;
   background: #2bb8c9;
   box-shadow: 4px 4px 2px gray;
+  margin-right: 15px;
 }
 
 input[type="button"]:hover,
@@ -102,7 +95,7 @@ input[type="submit"]:hover,
   background-color: #005c6e;
 }
 
-#login-entrar:active{
+#login-entrar:active {
   box-shadow: 1px 1px 2px darkgray;
   transform: translateY(3px);
 }

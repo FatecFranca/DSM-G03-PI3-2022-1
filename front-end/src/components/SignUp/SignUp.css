@@ -48,8 +48,7 @@
   text-align: center;
 } */
 
-#signUp-password
-{
+#signUp-password{
   overflow: hidden;
   margin-left: 25px;
   text-align: center;
@@ -58,10 +57,11 @@
   font-weight: 400;
   font-size: 16px;
   float: left;
+  width: 75%;
 }
 
 
-button{
+#btn-senha{
   float: right;
   cursor: pointer;
   outline: unset;
@@ -100,12 +100,13 @@ svg{
   outline: 0;
   padding: 0 1em 0 1em;
   height: 2.5em;
-  margin: 10px 25px 30px 20px;
+  margin: 20px 25px 20px 20px;
   color: #f3f3f3;
   background: #2bb8c9;
   font-family: 'Open Sans';
   font-weight: 700;
   box-shadow: 4px 4px 2px gray;
+  font-size: 16px;
 }
 
 input[type="button"]:hover,
@@ -120,7 +121,7 @@ button:hover,
   transform: translateY(3px);
 }
 
-#signUp-checkbox {
+#signUp-checkbox {                                                                              
   text-align: right;
   margin-bottom: 15px;
   color: #333333;

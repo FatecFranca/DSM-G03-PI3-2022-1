@@ -15,40 +15,84 @@
     width: 100%;
     position: fixed;
     top: 0;
-    height: 9.5%;
+    height: 9.7%;
     font-family: 'Roboto Slab';
     font-weight: 700;
 }
 
 .header .titulo-pesquisa {
     display: flex;
-    align-items: baseline;
     justify-content: flex-end;
     margin-right: 10px;
     border-radius: 5px;
+    margin-top: 18px;
+}
+
+.header .pesquisa {
+    margin-right: 8px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.header .btn {
+    border-radius: 5px;
+    background-color: #2bb8c9;
+}
+
+.header .icon {
+    margin-right: 2px;
+}
+
+.header .btn:hover {
+    background-color: #005c6e;
+    color: #f3f3f3;
 }
 
 .header .titulo-pesquisa #title {
     margin-right: 25%;
+    margin-top: -12px;
+    font-size: 32px;
 }
 
 .menu {
-    background-color:#f3f3f3;
+    background-color: none;
     color: #B20000;
-    border-right: 5px solid #6b0000;
+    border-right: 3px solid #6b0000;
     position: fixed;
     width: 10%;
     height: 100vh;
     float: left;
     font-family: 'Roboto Condensed';
+    margin-left: 0;
+}
+
+.menu ul {
+    margin-right: 10px;
+    padding-left: 10px;
 }
 
 .menu ul li {
     list-style-type: none;  
-    margin-top: 15%;
-    border-top:  2px solid;
-    padding-top: 15px;
+    margin-top: 13%;
+    border-top:  1px solid rgba(255, 0, 0, 0.6);
+    padding-top: 12px;
+    margin-left: 0;
+    width: 120px;
+}
 
+.menu .topo {
+    border-top: 0;
+}
+
+.menuitem {
+    text-decoration: none;
+    color: #333333;
+    font-size: x-large;
+}
+
+.menuitem:hover {
+    color: #B20000;
+    text-decoration: underline;
 }
 
 .footer {
@@ -60,28 +104,17 @@
     font-family: 'Roboto Condensed';
     display: flex;
     justify-content: center;
+    height: 9.5%;
 }
 
-.footer p {
+.footer #texto-footer {
     align-items: flex-end;
+    margin: -3px 0 10px 0;
 }
 
 .direitos-reservados {
     align-items: center;
-}
-
-.menuitem {
-    text-decoration: none;
-    color: #B20000;
-    font-size: x-large;
-   
-    
-    
-}
-
-.menuitem:hover {
-    color: #f3f3f3;
-    text-decoration: underline;
+    text-align: center;
 }
 
 .botaoSair {
@@ -104,6 +137,7 @@
 
 .content {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -143,7 +177,7 @@
 }
 
 .content p {
-    margin: 16px 30px 16px;
+    margin: 16px 30px 16px 0;
     font-size: 16px;
 }
 
