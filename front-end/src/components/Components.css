@@ -2,6 +2,16 @@
 @import url("https://fonts.google.com/specimen/Roboto+Condensed?sidebar.open=true&query=roboto+&selection.family=Roboto+Condensed:wght@300");
 @import url("https://fonts.google.com/specimen/Open+Sans?sidebar.open=true&query=Open+sans&selection.family=Open+Sans:wght@400;700");
 
+/* cores a serem usadas no site */
+:root { 
+    --cor-primaria: #2bb8c9;
+    --cor-escuro: #005c6e;
+    --cor-secundaria: #B20000;    
+    --cor-fundo-clara: #f3f3f3;
+    --cor-fundo-escura: #005c6e;
+    --cor-texto-claro: #f3f3f3;
+    --cor-texto-escura: #333333;
+}
 
 /* Componentes Header, footer e menu */
 
@@ -64,11 +74,16 @@
     float: left;
     font-family: 'Roboto Condensed';
     margin-left: 0;
+    text-align: center;
+    transition: all .25s ease-in-out;
+    outline: 0;
+    letter-spacing: 0.10em;
 }
 
 .menu ul {
     margin-right: 10px;
     padding-left: 10px;
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.50);
 }
 
 .menu ul li {
@@ -87,7 +102,7 @@
 .menuitem {
     text-decoration: none;
     color: #333333;
-    font-size: x-large;
+    font-size: 20px;
 }
 
 .menuitem:hover {
@@ -146,7 +161,6 @@
     min-height: 83.5vh;
     font-family: 'Open Sans';
     font-weight: 400;
-    border-right: 2px solid #333333;
     text-align: center;
 }
 
@@ -179,6 +193,7 @@
 .content p {
     margin: 16px 30px 16px 0;
     font-size: 16px;
+    text-align: center;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -245,23 +260,27 @@ table th { /* botões e referência ao glossário */
 
 /* CSS de responsividade das páginas */
 
+@media screen and (max-width: 980px) {
+
+}
+
 @media only screen and (max-device-height: 500px) {
     .menu {
         width: 5%;
         float: top;
-        background-color: #f3f3f3;
+        background-color: var(--cor-fundo-clara);
     }
 
     .menuitem {
-        color: black;
+        color: var(--cor-texto-escura);
 
     }
 
     .menu:hover {
         width: 50%;
         float: bottom;
-        background-color: #f3f3f3;
-        color: black;
+        background-color: var(--cor-fundo-clara);
+        color: var(--cor-secundaria);
         position: relative;
     }
 }

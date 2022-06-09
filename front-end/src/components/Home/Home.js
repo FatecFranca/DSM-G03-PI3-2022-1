@@ -20,11 +20,11 @@ function Home() {
               <div id="Cartao1">
                 <div className="Conteudo">
                   <h3>Experiência do usuário - UX</h3>
-                  <h5>Experiência do Usuário, a definição sobre o que é UX em português consiste na
+                  <p>Experiência do Usuário, a definição sobre o que é UX em português consiste na
                     experiência gerada com as interações de um usuário com determinada solução ou produto
                     de uma marca. Considerando a transformação digital pela qual as empresas estão passando
                     nos últimos tempos, o conceito de Experiência do Usuário passou a ser bastante aplicado
-                    nas soluções digitais, como uso de sites, aplicativos móveis, entre outras.</h5>
+                    nas soluções digitais, como uso de sites, aplicativos móveis, entre outras.</p>
                 </div>
               </div>
               <div className="Cartao">

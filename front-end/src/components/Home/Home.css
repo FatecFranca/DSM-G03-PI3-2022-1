@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 236px;
+    height: 350px;
     border-radius: 10px;
     margin: 30px 30px 30px 5px;
 }
@@ -23,8 +23,8 @@
     flex-direction: column;
     width: 300px;
     border-radius: 10px;
-    height: 236px;
-    margin: 30px 30px 30px 5px;
+    height: 350px;
+    margin: 30px 30px 30px 0;
 }
 
 .Conteudo {
@@ -38,7 +38,13 @@
     align-items: center;
 }
 
+.Conteudo p {
+    align-items: center;
+    margin-right: 10px  ;
+}
+
 #Cartao1 h5 {
     margin-top: -33px;
     font-weight: 400;
+    text-align: center;
 }
