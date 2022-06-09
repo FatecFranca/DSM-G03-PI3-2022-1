@@ -53,7 +53,7 @@ export default function SignUp() {
     return (
         <div className="signUpForm">
             <form action="" onSubmit={handleSubmit} id="container-signUp">
-                <h3 className="signUp-titulo">Junte-se aos UX-Helpers</h3>
+                <h3 className="signUp-titulo">Junte-se aos UX Helpers</h3>
                 <input
                     type="text"
                     placeholder="Nome Completo"

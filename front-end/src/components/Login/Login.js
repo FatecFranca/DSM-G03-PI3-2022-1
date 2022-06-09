@@ -50,11 +50,11 @@ export default function Login() {
                     Assim, a fim de preencher uma lacuna deixada pela extinção do Ergolist, surge a possibilidade de criação de uma ferramenta, baseada no Ergolist, porém corrigindo os erros ora existentes e oferecendo a possibilidade de criação de uma rede de negócios entre avaliadores e donos/gestores de sistemas, uma vez que nessa nova ferramenta haverá a funcionalidade disponível de deixar avaliações salvas em um espaço público.
                 </p>
                 <p>
-                    Este novo site será chamado de UX-HELPERS, que vai abranger esse espaço e tentar inovar com as ferramentas e conhecimentos existentes, observando as normas e conceitos para as avaliações.
+                    Este novo site será chamado de UX HELPERS, que vai abranger esse espaço e tentar inovar com as ferramentas e conhecimentos existentes, observando as normas e conceitos para as avaliações.
                 </p>
             </main>
             <form onSubmit={handleSubmit} id="container-login">
-                <h3 className="login-titulo">Bem Vindo ao UX-Helpers</h3>
+                <h3 className="login-titulo">Bem-vindo ao UX Helpers</h3>
                 <input
                     type="text"
                     placeholder="email"

@@ -12,17 +12,17 @@ function Home() {
       <Header />
       <Menu />
       <main className="content">
-        <h1>Bem Vindo de volta ao UX Helpers</h1>
-        <p>Ultimas notícias sobre Tecnologia, ultimas tendencias de design e UX/UI</p>
+        <h1>Bem-vindo de volta ao UX Helpers</h1>
+        <p>Últimas notícias sobre Tecnologia, últimas tendências de design e UX/UI</p>
         <div className="page-principal">
           <ul>
             <div className="Cartoes">
               <div id="Cartao1">
                 <div className="Conteudo">
                   <h3>Experiência do usuário - UX</h3>
-                  <h5>Experiência do Usuário, a definição sobre o que é UX em português, consiste na
+                  <h5>Experiência do Usuário, a definição sobre o que é UX em português consiste na
                     experiência gerada com as interações de um usuário com determinada solução ou produto
-                    de uma marca.Considerando a transformação digital pela qual as empresas estão passando
+                    de uma marca. Considerando a transformação digital pela qual as empresas estão passando
                     nos últimos tempos, o conceito de Experiência do Usuário passou a ser bastante aplicado
                     nas soluções digitais, como uso de sites, aplicativos móveis, entre outras.</h5>
                 </div>
