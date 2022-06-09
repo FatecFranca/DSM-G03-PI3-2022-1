@@ -1,5 +1,6 @@
 import React from 'react'
 
+import '../Components.css'
 import Header from '../Header';
 import Menu from '../Menu';
 import Footer from '../Footer';
@@ -10,19 +11,20 @@ function Home() {
     <div className="Home">
       <Header />
       <Menu />
-      <main className="content-home">
+      <main className="content">
         <h1>Bem Vindo de volta ao UX Helpers</h1>
         <p>Ultimas notícias sobre Tecnologia, ultimas tendencias de design e UX/UI</p>
         <div className="page-principal">
           <ul>
-            <div className="Cartao">
+            <div className="Cartoes">
+              <div id="Cartao1">
                 <div className="Conteudo">
                   <h3>Experiência do usuário - UX</h3>
-                  <p>Experiência do Usuário, a definição sobre o que é UX em português, consiste na
+                  <h5>Experiência do Usuário, a definição sobre o que é UX em português, consiste na
                     experiência gerada com as interações de um usuário com determinada solução ou produto
                     de uma marca.Considerando a transformação digital pela qual as empresas estão passando
                     nos últimos tempos, o conceito de Experiência do Usuário passou a ser bastante aplicado
-                    nas soluções digitais, como uso de sites, aplicativos móveis, entre outras.</p>
+                    nas soluções digitais, como uso de sites, aplicativos móveis, entre outras.</h5>
                 </div>
               </div>
               <div className="Cartao">
@@ -46,6 +48,7 @@ function Home() {
                     picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
+            </div>
           </ul>
         </div>
       </main>

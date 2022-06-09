@@ -1,21 +1,30 @@
-.page-principal {
+.Cartoes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .Cartao {
     border: 4px solid;
     overflow: hidden;
+    justify-content: left;
     display: flex;
-    justify-content: flex-start;
-    width: 30%;
-    height: 330px;
+    flex-direction: column;
+    width: 300px;
+    height: 236px;
     border-radius: 10px;
     margin: 30px 30px 30px 5px;
-    font-family: 'Open Sans';
-    font-weight: 400;
+}
+
+#Cartao1 {
+    border: 4px solid;
+    overflow: hidden;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 10px;
+    height: 236px;
+    margin: 30px 30px 30px 5px;
 }
 
 .Conteudo {
@@ -27,57 +36,9 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans';
+}
+
+#Cartao1 h5 {
+    margin-top: -33px;
     font-weight: 400;
-}
-
-#Cartao h3 {
-    margin-top: 0;
-    font-weight: 400;
-}
-
-.content-home {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #333333;
-    margin: 4.6% 0 3.3% 10%;
-    min-height: 83.5vh;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    border-right: 2px solid #333333;
-    text-align: center;
-}
-
-.content-home h1 {
-    color: #005c6e;
-    font-family: 'Roboto Slab';
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-
-.content-home h2 {
-    color: #005c6e;
-    font-family: 'Roboto Slab';
-    font-weight: 700;
-}
-
-.content-home h3 {
-    color: #005c6e;
-    font-family: 'Roboto Slab';
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-.content-home h4 {
-    color: #005c6e;
-    font-family: 'Roboto Slab';
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-
-.content-home p {
-    margin: 16px 30px 16px 0;
-    font-size: 16px;
 }
