@@ -88,6 +88,10 @@ svg{
   animation: fadeIn 0.3s forwards;
 }
 
+#botoes{
+  text-align: right;
+}
+
 #signUp-botao {
   transition: all .25s ease-in-out;
   display: inline-block;
@@ -99,7 +103,27 @@ svg{
   outline: 0;
   padding: 0 1em 0 1em;
   height: 2.5em;
-  margin: 20px 25px 20px 20px;
+  margin: 20px 25px 20px 0px; 
+  color: #f3f3f3;
+  background: #2bb8c9;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  box-shadow: 4px 4px 2px gray;
+  font-size: 16px;
+}
+
+#logIn-botao{
+  transition: all .25s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+  padding: 0 1em 0 1em;
+  height: 2.5em;
+  margin: 20px 15px 20px 20px;
   color: #f3f3f3;
   background: #2bb8c9;
   font-family: 'Open Sans';
@@ -112,6 +136,10 @@ input[type="button"]:hover,
 input[type="submit"]:hover,
 button:hover,
 #signUp-botao:hover {
+  background-color: #005c6e;
+}
+
+#logIn-botao:hover{
   background-color: #005c6e;
 }
 

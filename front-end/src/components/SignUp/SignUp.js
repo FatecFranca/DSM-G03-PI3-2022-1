@@ -110,9 +110,11 @@ export default function SignUp() {
                     </ul>
                 </div>
 
-
-                <button id="signUp-botao" type='submit'>Criar Conta</button>
+                <ul id="botoes">
+                    <Link to="/"><button id="logIn-botao" type='button'>Log In</button></Link>
+                    <button id="signUp-botao" type='submit'>Criar Conta</button>
                 {/* <input id="signUp-botao" type="submit" value="Criar Conta" /> */}
+                </ul>
                 <h2 className="notify">{notify}</h2>
             </form>
         </div>  
