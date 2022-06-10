@@ -2,14 +2,21 @@
 @import url("https://fonts.google.com/specimen/Roboto+Condensed?sidebar.open=true&query=roboto+&selection.family=Roboto+Condensed:wght@300");
 @import url("https://fonts.google.com/specimen/Open+Sans?sidebar.open=true&query=Open+sans&selection.family=Open+Sans:wght@400;700");
 
+:root { 
+  --cor-primaria: #2bb8c9;
+  --cor-escura: #005c6e;
+  --cor-secundaria: #b42626;
+  --cor-texto-claro: #f3f3f3;
+  --cor-texto-escura: #333333;
+}
+
 .signinForm {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100wh;
   transition: 0.5s;
-  background: #ffffff;
+  background: var(--cor-fundo-clara);
 }
 
 #container-login {
@@ -18,7 +25,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: solid 3px #333333;
+  border: solid 2px var(--cor-texto-escura);
 }
 
 .login-titulo {
@@ -48,14 +55,14 @@
   text-decoration: none;
   font-family: 'Open Sans';
   font-weight: 700;
-  border: 0;
   border-radius: 5px;
-  padding: 7px 6.50px 8.85px 6.50px;
   min-width: 7em;
   height: 2.5em;
-  color: #f3f3f3;
-  background: #2bb8c9;
-  box-shadow: 4px 4px 2px gray;
+  padding: 4px 6.50px 7px 6.50px;
+  color: var(--cor-texto-escura);
+  background: var(--cor-fundo-clara);
+  border: 2px solid var(--cor-texto-escura);
+  box-shadow: 3px 3px 4px gray;
   margin-right: 15px;
 }
 
@@ -63,7 +70,8 @@ input[type="button"]:hover,
 input[type="submit"]:hover,
 #login-cadastrar:hover,
 #login-cadastrar:hover {
-  background-color: #005c6e;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-claro);
 }
 
 #login-cadastrar:active {
@@ -78,13 +86,13 @@ input[type="submit"]:hover,
   text-decoration: none;
   font-family: 'Open Sans';
   font-weight: 700;
-  border: 0;
   border-radius: 5px;
   min-width: 7em;
   height: 2.5em;
-  color: #f3f3f3;
-  background: #2bb8c9;
-  box-shadow: 4px 4px 2px gray;
+  color: var(--cor-texto-escura);
+  background: var(--cor-fundo-clara);
+  border: 2px solid var(--cor-texto-escura);
+  box-shadow: 3px 3px 4px gray;
   margin-right: 15px;
 }
 
@@ -92,7 +100,8 @@ input[type="button"]:hover,
 input[type="submit"]:hover,
 #login-entrar:hover,
 #login-entrar:focus {
-  background-color: #005c6e;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-claro);
 }
 
 #login-entrar:active {
@@ -106,7 +115,7 @@ input[type="submit"]:hover,
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 12px;
-  color: #2bb8c9;
+  color: var(--cor-texto-escura);
   margin-left: 15px;
   margin-right: 15px;
   font-weight: 700;
@@ -119,11 +128,11 @@ input[type="submit"]:hover,
 .forgot:link:visited,
 .forgot:active {
   text-decoration: none;
-  color: #005c6e;
+  color: var(--cor-texto-escura);
 }
 
 .forgot:hover {
-  color: #005c6e;
+  color: var(--cor-secundaria);
   text-decoration: underline;
 }
 
@@ -133,7 +142,7 @@ input[type="submit"]:hover,
   font-family: 'Open Sans';
   font-size: 16px;
   text-decoration: none;
-  color: #005c6e;
+  color: var(--cor-texto-escura)
 }
 
 .content-login {
@@ -142,23 +151,23 @@ input[type="submit"]:hover,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #333333;
+  color: var(--cor-texto-escura);
   margin: 3% 3% 3% -3%;
   font-family: 'Open Sans';
   font-weight: 400;
-  border-right: 2px solid #333333;
+  border-right: 2px solid var(--cor-texto-escura);
   text-align: center;
 }
 
 .content-login h1 {
-  color: #005c6e;
+  color: var(--cor-escura);
   font-family: 'Roboto Slab';
   font-weight: 700;
   margin-bottom: 40px;
 }
 
 .content-login h3 {
-  color: #005c6e;
+  color: var(--cor-escura);
   font-family: 'Roboto Slab';
   font-weight: 700;
   margin-bottom: 40px;

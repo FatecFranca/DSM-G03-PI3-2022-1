@@ -21,12 +21,12 @@ function Assessment() {
         e.preventDefault();
         console.log(title + description)
 
-        if(title == '' && description == '') {
+        if (title == '' && description == '') {
             setNotify('Por favor informe o título e a url da sua avaliação');
         } else {
             const newAssessement = await api.post('assessment', { title, description, user });
             console.log(newAssessement)
-            if(newAssessement) {
+            if (newAssessement) {
                 navigate("/questoes");
             } else {
                 setNotify('Ops não conseguimos criar uma nova avaliação');
@@ -43,23 +43,22 @@ function Assessment() {
 
             })
             .catch(error => console.error(`Erro: ${error}`))
-    }, []); 
+    }, []);
 
 
-    
+
     return (
         <div className="Home">
             <Header />
             <Menu />
-            <main className="content">
-                <p>precisei tirar o filtro de usuario no controller, entender está exibindo os assessments de todos usuarios</p>
-                
-                <form onSubmit={handleSubmit} id="container-login">
-                    <h4 className="login-titulo">Nova Avaliação</h4>
+            <main className="content-avaliacao">
+                {/* <p>precisei tirar o filtro de usuario no controller, entender está exibindo os assessments de todos usuarios</p> */}
+                <form onSubmit={handleSubmit} id="container-avaliacao">
+                    <h4 className="nova-avaliacao">Nova Avaliação</h4>
                     <input
                         type="text"
                         placeholder="Título da avaliação"
-                        id="login-email"
+                        id="avaliacao-titulo"
                         name="title"
                         value={title}
                         onChange={e => setTitle(e.target.value)}
@@ -67,29 +66,26 @@ function Assessment() {
                     <input
                         type="text"
                         placeholder="Descrição da Avaliação"
-                        id="login-password"
+                        id="avaliacao-descricao"
                         name="description"
                         value={description}
                         onChange={e => setDescription(e.target.value)}
                     />
                     <div>
                         <ul>
-                            <input id="login-entrar" type="submit" value="Criar" />
+                            <input id="criar-avaliacao" type="submit" value="Criar" />
                         </ul>
                     </div>
                     <h2 className="notify">{notify}</h2>
                 </form>
 
                 <div>
-
                     {assessment.map(avaliacao => (
                         <div class="cardQuestion">
                             <h2>{avaliacao.title}</h2>
                             <h3>{avaliacao.description}</h3>
                             <div>
-
-                                <Link to={`/avaliacao/${avaliacao._id}`}>Abrir Avaliação</Link><br/>
-
+                                <Link to={`/avaliacao/${avaliacao._id}`}>Abrir Avaliação</Link><br />
                             </div>
                         </div>
                     ))

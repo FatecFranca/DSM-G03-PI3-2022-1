@@ -5,11 +5,9 @@
 /* cores a serem usadas no site */
 :root { 
     --cor-primaria: #2bb8c9;
-    --cor-escuro: #005c6e;
-    --cor-secundaria: #B20000;    
+    --cor-escura: #005c6e;
+    --cor-secundaria: #b42626;    
     --cor-fundo-clara: #f3f3f3;
-    --cor-fundo-escura: #005c6e;
-    --cor-texto-claro: #f3f3f3;
     --cor-texto-escura: #333333;
 }
 
@@ -20,7 +18,7 @@
 }
 
 .header {
-    background: linear-gradient(to top, #6b0000,#B20000);
+    background-color: var(--cor-secundaria);
     color: #f3f3f3;
     width: 100%;
     position: fixed;
@@ -54,7 +52,7 @@
 }
 
 .header .btn:hover {
-    background-color: #005c6e;
+    background-color: var(--cor-escura);
     color: #f3f3f3;
 }
 
@@ -156,7 +154,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #333333;
+    color: var(--cor-texto-escura);
     margin: 4.6% 0 3.3% 10%;
     min-height: 83.5vh;
     font-family: 'Open Sans';
@@ -165,26 +163,26 @@
 }
 
 .content h1 {
-    color: #005c6e;
+    color: var(--cor-escura);
     font-family: 'Roboto Slab';
     font-weight: 700;
     margin-bottom: 40px;
 }
 
 .content h2 {
-    color: #005c6e;
+    color: var(--cor-escura);
     font-family: 'Roboto Slab';
     font-weight: 700;
 }
 
 .content h3 {
-    color: #005c6e;
+    color: var(--cor-escura);
     font-family: 'Roboto Slab';
     font-weight: 700;
     margin-bottom: 40px;
 }
 .content h4 {
-    color: #005c6e;
+    color: var(--cor-escura);
     font-family: 'Roboto Slab';
     font-weight: 700;
     margin-bottom: 40px;
@@ -251,7 +249,7 @@
 
 .menuitemcorpo:hover {
     text-decoration: underline;
-    color: #005c6e;
+    color: var(--cor-escura);
 }
 
 table th { /* botões e referência ao glossário */
@@ -267,6 +265,105 @@ table th { /* botões e referência ao glossário */
 .definicao {
     color: #2bb8c9;
 }
+
+.content-avaliacao { /* distribuicao dos cards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: 0.5s;
+    background: #ffffff;
+}
+
+#container-avaliacao { 
+    text-align: end;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 3px #333333;
+    width: 25%;
+    border-right: 2px solid #333333;
+  }
+  
+  #nova-avaliacao {
+    font-size: 30px;
+    margin: 30px 40px 30px 40px;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  #avaliacao-titulo,
+  #avaliacao-descricao {
+    /* css do texto dentro do input */
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  #criar-avaliacao {
+    /* css do botão entrar */
+    transition: all .25s ease-in-out;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    min-width: 7em;
+    height: 2.5em;
+    color: #f3f3f3;
+    background: #2bb8c9;
+    box-shadow: 3px 3px 2px gray;
+    margin-right: 15px;
+  }
+  
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  #criar-avaliacao:hover,
+  #criar-avaliacao:focus {
+    background-color: var(--cor-escura);
+  }
+  
+  #criar-avaliacao:active {
+    box-shadow: 1px 1px 2px darkgray;
+    transform: translateY(3px);
+  }
+
+  .notify {
+    /* css da mensagem que aparece quando algum campo não é preenchido */
+    font-weight: 700;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--cor-escura);
+    margin-right: 18px;
+  }
+
+  #container-login h1 {
+    color: var(--cor-escura);
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  #container-login h3 {
+    color: var(--cor-escura);
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  #container-login p {
+    margin: 16px 30px 16px;
+    font-size: 16px;
+  }
 
 /* -------------------------------------------------------------------------- */
 
