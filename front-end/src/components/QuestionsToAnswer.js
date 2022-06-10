@@ -5,12 +5,10 @@ import './Components.css'
 import api from "../api"
 import { useEffect, useState } from "react";
 import { useParams, useNavigate} from "react-router-dom";
-import axios from "axios";
 
 
 export default function QuestionToAnswer() {
     const { id } = useParams()
-    const url = 'http://localhost:3000/'
     const navigate = useNavigate();
     const [assessment, getAssessment] = useState(sessionStorage.getItem('assessment'));
     const [question, setQuestions] = useState(id) // Pegar a Question
@@ -37,9 +35,9 @@ export default function QuestionToAnswer() {
 
     useEffect(() => {
 
-        axios.get(`${url}question/${id}`)
+        api.get(`question/${id}`)
             .then((response) => {
-                console.log(`${url}question/${id}`)
+                console.log(`question/${id}`)
                 getQuestionsId(response.data)
                 console.log(response.data)
                 console.log(getQuestionsId)

@@ -5,17 +5,15 @@ import './Components.css'
 import api from '../api'
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import axios from "axios";
 
 function Assessment() {
-    const url = 'http://localhost:3000/'
     const { id } = useParams()
     const navigate = useNavigate();
     const [assessment, getAssessment] = useState(([]))
     const [assessmentId, getAssessmentId] = useState('')
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    const [user, setUser] = useState('627da16564fbd6c660162c17'); //localStorage?
+    const [user, setUser] = useState(sessionStorage.getItem('userId')); //localStorage?
     const [notify, setNotify] = useState('');
 
 
@@ -37,9 +35,8 @@ function Assessment() {
     }
 
     useEffect(() => {
-        axios.get(`${url}assessment`)
+        api.get(`assessment`)
             .then((response) => {
-                console.log(url)
                 localStorage.getItem('x-acess-token')
                 getAssessment(response.data)
                 console.log(response.data)

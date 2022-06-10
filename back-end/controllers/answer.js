@@ -25,7 +25,7 @@ controller.retrieve = async (req, res) => {
     try {
         const assessmentId = req.params.id
 
-        const result = await Answer.find({ assessment: assessmentId }).populate(['assessment', {path:'question', select: 'enunciation'}])
+        const result = await Answer.find({ assessment: assessmentId }).populate(['assessment', 'question'])
         // HTTP 200: OK é implícito aqui
         res.send(result)
     }
@@ -40,7 +40,7 @@ controller.retrieveByquestion = async (req, res) => {
     try {
         const questionId = req.params.id
 
-        const result = await Answer.find({ question: questionId }).
+        const result = await Answer.find({ question: questionId, assessment: sessionStorage.getItem('assessment') }).
         // HTTP 200: OK é implícito aqui
         res.send(result)
     }

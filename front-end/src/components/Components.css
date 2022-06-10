@@ -227,6 +227,18 @@
     font-family: 'Roboto Slab';
     font-weight: 600;
 }
+.cardQuestion2 {
+    text-decoration: none;
+    color: #B20000;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    width: 90%;
+    height: 10%;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+}
 .table {
     border: 2px solid #B20000;
 }

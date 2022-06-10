@@ -7,7 +7,6 @@ const controller = require('../controllers/answer')
 
 router.post('/', controller.create)
 router.get('/assessment/:id', controller.retrieve)
-router.get('/question/:id', controller.retrieveByquestion)
 router.get('/:id', controller.retrieveOne)
 router.put('/', verifyToken, controller.update)
 router.delete('/', verifyToken, controller.delete)

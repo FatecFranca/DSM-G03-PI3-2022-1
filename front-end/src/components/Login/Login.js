@@ -27,6 +27,9 @@ export default function Login() {
             if (isLogged) {
                 navigate("/home");
                 localStorage.setItem('x-access-token', isLogged.data.token)
+                let users = await api.get("user/")
+                sessionStorage.setItem('userId', users[0]._id)
+
             } else {
                 setNotify('Não Autorizado.');
             }

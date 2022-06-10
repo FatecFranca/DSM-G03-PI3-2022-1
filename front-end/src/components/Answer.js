@@ -36,6 +36,7 @@ function Answer() {
                     <table class="cardQuestion">
                         <tr>
                             <th class="table">Avaliação</th>
+                            <th class="table">Questão nº</th>
                             <th class="table">Questão</th>
                             <th class="table">Resposta</th>
                             <th class="table">Comentário</th>
@@ -43,6 +44,7 @@ function Answer() {
                         {answers.map(respostas => (
                             <tr>
                                 <th class="table">{respostas.assessment.title}</th>
+                                <th class="table">{respostas.question.number  }</th>
                                 <th class="table">{respostas.question.enunciation  }</th>
                                 <th class="table">{respostas.objective_answer}</th>
                                 <th class="table">{respostas.comments}</th>
