@@ -163,7 +163,7 @@
     justify-content: center;
     color: var(--cor-texto-escura);
     background-color: var(--cor-fundo-clara);
-    margin: 5.5% 0 0 10%;
+    margin: 5.5% 0 0 9.5%;
     min-height: 83.5vh;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -328,6 +328,7 @@ input[type="submit"]:hover,
 table {
     margin-right: 8px;
     margin-bottom: 8px;
+    margin-left: 8px;
 }
 
 table th { /* botões e referência ao glossário */
@@ -361,7 +362,7 @@ table th { /* botões e referência ao glossário */
     align-items: center;
     transition: 0.5s;
     background: var(--cor-fundo-clara);
-    margin: 5.5% 0 0 10%;
+    margin: 5.5% 0 0 9.5%;
     min-height: 83.5vh;
 }
 
