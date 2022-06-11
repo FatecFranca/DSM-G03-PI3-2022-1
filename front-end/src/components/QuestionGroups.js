@@ -25,7 +25,7 @@ function QuestionGroup() {
             <Menu />
             <main className="content">
                 <h2>Escolha o grupo de Questões</h2>
-                <Link to="/avaliacoes" >Voltar para Avaliações</Link>
+                <Link id="btn-voltar-avaliacao" to="/avaliacoes" >Voltar para Avaliações</Link>
                 <div>
 
 

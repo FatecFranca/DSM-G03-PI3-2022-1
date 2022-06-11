@@ -77,7 +77,7 @@ export default function Login() {
                 <div class="botao-login">
                     <ul>
                         <Link to="/cadastro" id="login-cadastrar" type="submit" value="Cadastrar">Cadastrar</Link>
-                        <input id="login-entrar" type="submit" value="Log In" />
+                        <input id="login-entrar" type="submit" value="Entrar" />
                     </ul>
                 </div>
                 <a href="#" className="forgot">Esqueceu a senha?</a>

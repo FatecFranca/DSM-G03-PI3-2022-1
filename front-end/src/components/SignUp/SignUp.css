@@ -4,10 +4,9 @@
 
 
 :root { 
-  --cor-primaria: #2bb8c9;
   --cor-escura: #005c6e;
-  --cor-secundaria: #b42626;
-  --cor-texto-claro: #f3f3f3;
+  --cor-secundaria: #b42626;    
+  --cor-fundo-clara: #f3f3f3;
   --cor-texto-escura: #333333;
 }
 
@@ -17,7 +16,7 @@
   align-items: center;
   height: 100vh;
   transition: 0.5s;
-  background: #ffffff;
+  background: var(--cor-fundo-clara);
 }
 
 #container-signUp {
@@ -26,14 +25,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: solid 3px #333333;
+  border: solid 3px var(--cor-texto-escura);
 }
 
 .signUp-titulo {
   font-size: 30px;
   margin: 30px 40px 30px 40px;
-  font-family: 'Roboto Slab';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+  color: var(--cor-escura);
 }
 
 #signUp-fullName,
@@ -79,7 +79,7 @@
   align-items: center;
   border-radius: 5px;
   border: 0px 4px 4px 0px;
-  color: #ffffff;
+  color: var(--cor-fundo-clara);
   font-size: 16px;
   text-align: center;
   margin-bottom: 20px;
@@ -115,10 +115,9 @@ svg{
   color: var(--cor-texto-escura);
   background: var(--cor-fundo-clara);
   border: 2px solid var(--cor-texto-escura);
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   box-shadow: 3px 3px 4px gray;
-  font-size: 16px;
 }
 
 #logIn-botao{
@@ -132,15 +131,14 @@ svg{
   outline: 0;
   padding: 0 1em 0 1em;
   height: 2.5em;
-  min-width: 8.252em;
+  min-width: 8.733em;
   margin: 20px 15px 20px 20px;
   color: var(--cor-texto-escura);
   background: var(--cor-fundo-clara);
   border: 2px solid var(--cor-texto-escura);
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   box-shadow: 3px 3px 4px gray;
-  font-size: 16px;
 }
 
 input[type="button"]:hover,
@@ -164,10 +162,10 @@ button:hover,
 #signUp-checkbox {                                                                              
   text-align: right;
   margin-bottom: 15px;
-  color: #333333;
+  color: var(--cor-texto-escura);
   margin-left: 25px;
   margin-right: 25px;
   font-size: 12px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
 }

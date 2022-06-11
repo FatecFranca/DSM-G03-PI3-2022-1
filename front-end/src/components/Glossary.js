@@ -23,11 +23,11 @@ function Glossary() {
             <Header />
             <Menu />
             <main className="content">
-                <h1 class="title-content">Glossário</h1>
+                <h1 id="title-content">Glossário</h1>
                 <table>
-                    <tr>
-                        <th className="entrada">Entrada</th>
-                        <th className="definicao">Definição</th>
+                    <tr id="sub-titulos">
+                        <th>Entrada</th>
+                        <th>Definição</th>
                     </tr>
                     {glossary.map(glossario => (
                         <tr>

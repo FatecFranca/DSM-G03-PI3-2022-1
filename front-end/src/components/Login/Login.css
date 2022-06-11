@@ -1,14 +1,12 @@
-@import url("https://fonts.google.com/specimen/Roboto+Slab?sidebar.open=true&selection.family=Roboto+Slab:wght@400;700");
-@import url("https://fonts.google.com/specimen/Roboto+Condensed?sidebar.open=true&query=roboto+&selection.family=Roboto+Condensed:wght@300");
 @import url("https://fonts.google.com/specimen/Open+Sans?sidebar.open=true&query=Open+sans&selection.family=Open+Sans:wght@400;700");
 
 :root { 
-  --cor-primaria: #2bb8c9;
   --cor-escura: #005c6e;
-  --cor-secundaria: #b42626;
-  --cor-texto-claro: #f3f3f3;
+  --cor-secundaria: #b42626;    
+  --cor-fundo-clara: #f3f3f3;
   --cor-texto-escura: #333333;
 }
+
 
 .signinForm {
   display: flex;
@@ -31,7 +29,7 @@
 .login-titulo {
   font-size: 30px;
   margin: 30px 40px 30px 40px;
-  font-family: 'Roboto Slab';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 
@@ -43,7 +41,7 @@
   margin-right: 15px;
   text-align: center;
   border-radius: 5px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -53,12 +51,12 @@
   transition: all .25s ease-in-out;
   letter-spacing: 0.07em;
   text-decoration: none;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   border-radius: 5px;
   min-width: 7em;
   height: 2.5em;
-  padding: 4px 6.50px 7px 6.50px;
+  padding: 2.5px 5px 5px 5px;
   color: var(--cor-texto-escura);
   background: var(--cor-fundo-clara);
   border: 2px solid var(--cor-texto-escura);
@@ -84,7 +82,7 @@ input[type="submit"]:hover,
   transition: all .25s ease-in-out;
   letter-spacing: 0.07em;
   text-decoration: none;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   border-radius: 5px;
   min-width: 7em;
@@ -119,7 +117,7 @@ input[type="submit"]:hover,
   margin-left: 15px;
   margin-right: 15px;
   font-weight: 700;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   text-decoration: none;
 }
@@ -153,7 +151,7 @@ input[type="submit"]:hover,
   justify-content: center;
   color: var(--cor-texto-escura);
   margin: 3% 3% 3% -3%;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   border-right: 2px solid var(--cor-texto-escura);
   text-align: center;
@@ -161,14 +159,14 @@ input[type="submit"]:hover,
 
 .content-login h1 {
   color: var(--cor-escura);
-  font-family: 'Roboto Slab';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin-bottom: 40px;
 }
 
 .content-login h3 {
   color: var(--cor-escura);
-  font-family: 'Roboto Slab';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin-bottom: 40px;
 }
