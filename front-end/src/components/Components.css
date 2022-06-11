@@ -48,7 +48,7 @@
     border: none;
     box-shadow: 3px 3px 4px gray;
     background-color: var(--cor-fundo-clara);
-    color: var(--cor-texto-escura)
+    color: var(--cor-texto-escura);
 }
 
 .header .icon {
@@ -60,6 +60,7 @@
 .header .btn:hover {
     background-color: var(--cor-secundaria);
     color: var(--cor-fundo-clara);
+    border: 2px solid var(--cor-texto-escura);
 }
 
 .header .titulo-pesquisa #title {
@@ -161,6 +162,7 @@
     align-items: center;
     justify-content: center;
     color: var(--cor-texto-escura);
+    background-color: var(--cor-fundo-clara);
     margin: 5.5% 0 0 10%;
     min-height: 83.5vh;
     font-family: 'Open Sans', sans-serif;
@@ -247,6 +249,16 @@
     font-weight: 400;
 }
 
+.cardQuestion #conteudo-card {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: end;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
 .cardQuestion h1 {
     color: var(--cor-escura);
     font-family: 'Open Sans', sans-serif;
@@ -259,6 +271,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     text-align: center;
+    margin-top: 25px;
 }
 
 .cardQuestion h3 {
@@ -499,6 +512,69 @@ table th { /* botões e referência ao glossário */
     margin-bottom: 10px;
     text-align: center;
 }
+
+#btn-questao {
+    transition: all .25s ease-in-out;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    min-width: 7em;
+    height: 2.5em;
+    color: var(--cor-texto-escura);
+    background: var(--cor-fundo-clara);
+    box-shadow: 3px 3px 2px gray;
+    margin-right: 15px;
+    border: 2px solid var(--cor-texto-escura);
+  }
+  
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  #btn-questao:hover,
+  #btn-questao:focus {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo-clara);
+  }
+  
+  #btn-questao:active {
+    box-shadow: 1px 1px 2px darkgray;
+    transform: translateY(3px);
+  }
+
+  #btn-respostas {
+    display: flex;
+    justify-content: center;
+    transition: all .25s ease-in-out;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    height: 1.834em;
+    min-width: 7em;
+    width: 9em;
+    color: var(--cor-texto-escura);
+    background: var(--cor-fundo-clara);
+    border: 2px solid var(--cor-texto-escura);
+    box-shadow: 3px 3px 4px gray;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  #btn-respostas:hover,
+  #btn-respostas:focus {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo-clara);
+  }
+  
+  #btn-respostas:active {
+    box-shadow: 1px 1px 2px darkgray;
+    transform: translateY(3px);
+  }
 
 /* -------------------------------------------------------------------------- */
 

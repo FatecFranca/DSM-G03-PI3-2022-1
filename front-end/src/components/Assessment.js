@@ -16,17 +16,16 @@ function Assessment() {
     const [user, setUser] = useState(sessionStorage.getItem('userId')); //localStorage?
     const [notify, setNotify] = useState('');
 
-
     async function handleSubmit(e) {
         e.preventDefault();
         console.log(title + description)
 
-        if (title == '' && description == '') {
+        if(title == '' && description == '') {
             setNotify('Por favor informe o título e a url da sua avaliação');
         } else {
             const newAssessement = await api.post('assessment', { title, description, user });
             console.log(newAssessement)
-            if (newAssessement) {
+            if(newAssessement) {
                 navigate("/questoes");
             } else {
                 setNotify('Ops não conseguimos criar uma nova avaliação');
@@ -40,12 +39,9 @@ function Assessment() {
                 localStorage.getItem('x-acess-token')
                 getAssessment(response.data)
                 console.log(response.data)
-
             })
             .catch(error => console.error(`Erro: ${error}`))
     }, []);
-
-
 
     return (
         <div className="Home">
@@ -96,4 +92,5 @@ function Assessment() {
         </div>
     )
 }
+
 export default Assessment
