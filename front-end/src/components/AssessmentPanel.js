@@ -4,7 +4,7 @@ import Footer from "./Footer"
 import './Components.css'
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import axios from "axios";
+import api from "../api";
 
 
 function AssessmentPanel() {
@@ -12,12 +12,11 @@ function AssessmentPanel() {
     const [assessment, getAssessment] = useState([])
     const navigate = useNavigate();
     const { id } = useParams()
-    const url = 'http://localhost:3000/'
 
     useEffect(() => {
-        axios.get(`${url}assessment/${id}`)
+        api.get(`assessment/${id}`)
             .then((response) => {
-                console.log(`${url}assessment/${id}`)
+
                 getAssessment(response.data)
                 console.log(response.data)
             })
@@ -27,6 +26,11 @@ function AssessmentPanel() {
     function OpenQuestions() {
         sessionStorage.setItem('assessment', assessment._id)
         navigate("/questoes")
+    }
+
+    function OpenUpdate() {
+        sessionStorage.setItem('assessment', assessment._id)
+        navigate(`/avaliacao/editar/${assessment._id}`)
     }
 
     return (
@@ -41,6 +45,7 @@ function AssessmentPanel() {
                     <div id="conteudo-card">
                         <button id="btn-questao" onClick={OpenQuestions}>Abrir Questões</button>
                         <Link id="btn-respostas" to={`/avaliacao/respostas/${assessment._id}`}>Abrir Respostas</Link>
+                        <button id="btn-questao" onClick={OpenUpdate}>Editar</button>
                     </div>
                 </div>
             </main>

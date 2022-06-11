@@ -10,7 +10,7 @@ router.post('/', controller.create)
 router.get('/',controller.retrieve)
 router.get('/group/:groupId', controller.retrieveByGroup)
 // https://localhost:3000/answer/question/<id do assessment>/<id da question>
-router.get('/question/:assessmentId/:questionId', verifyToken, controller.retrieveAnswerByQuestion)
+router.get('/:assessmentId/:questionId', controller.retrieveAnswerByQuestion)
 
 router.get('/:id', controller.retrieveOne)
 router.put('/', controller.update)

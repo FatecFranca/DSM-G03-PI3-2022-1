@@ -12,6 +12,7 @@ import SignUp from "./components/SignUp/SignUp.js";
 import Questions from "./components/Questions.js";
 import AssessmentPanel from "./components/AssessmentPanel.js";
 import QuestionToAnswer from "./components/QuestionsToAnswer.js";
+import AssessmentUpdate from "./components/AssessmentUpdate.js";
 
 
 function Routers () {
@@ -25,6 +26,7 @@ function Routers () {
                 <Route exact path="/questoes/:id" element={<QuestionToAnswer />}/>
                 <Route exact path="/questoes/porgrupo/:id" element={<Questions />}/>
                 <Route exact path="/avaliacao/:id" element={<AssessmentPanel />}/>
+                <Route exact path="/avaliacao/editar/:id" element={<AssessmentUpdate />}/>
                 <Route exact path="/avaliacao/respostas/:id" element={<Answer />}/>
                 <Route exact path="/avaliacoes" element={<Assessment />}/>
                 <Route exact path="/cadastro" element={<SignUp/>}/>

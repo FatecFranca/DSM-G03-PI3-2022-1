@@ -4,8 +4,7 @@ import Footer from "./Footer"
 import './Components.css'
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from 'react-router-dom';
-
-import axios from "axios";
+import api from "../api";
 
 
 function Answer() {
@@ -15,7 +14,7 @@ function Answer() {
     const url = 'http://localhost:3000/'
     useEffect(() => {
 
-        axios.get(`${url}answer/assessment/${id}`)
+        api.get(`answer/assessment/${id}`)
             .then((response) => {
                 console.log(`${url}answer/assessment/${id}`)
                 getAnswers(response.data)

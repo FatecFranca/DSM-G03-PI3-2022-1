@@ -16,7 +16,7 @@ export default function Questions() {
     const [assessment, getAssessment] = useState(sessionStorage.getItem('assessment'));
     const [objective_answer, setObjective_answer] = useState('');
     const [comments, setComments] = useState('');
-    const [user, setUser] = useState('627da16564fbd6c660162c17'); // Usar localstorage
+    const [user, setUser] = useState(sessionStorage.getItem('userId')); // Usar localstorage
     const [notify, setNotify] = useState('');
 
 
@@ -32,28 +32,27 @@ export default function Questions() {
             .catch(error => console.error(`Erro: ${error}`))
     }, []);
 
-/*
+
 
     function seRespondido(id) {
         
 
             api.get(`question/${sessionStorage.getItem('assessment')}/${id}`)
                 .then((response) => {
-                    console.log(`answer/question/${sessionStorage.getItem('assessment')}/${id}`)
+                    console.log(`question/${sessionStorage.getItem('assessment')}/${id}`)
                     getAnswers(response.data)
                     //console.log(response.data)
     
                 })
                 .catch(error => console.error(`Erro: ${error}`))
                 
-            answer.map(respostas => {
-                if(respostas.question.objective_answer !== "") return "cardQuestion2"
-                else return "cardQuestion"
-
-            })
+                if(answer.question.objective_answer !== "" || answer.question.setObjective_answer == null){
+                    return "Respondido"
+                } 
+                else return "À responder"   
             
     }
-*/
+
     return (
         <div className="Home">
             <Header />
@@ -62,7 +61,6 @@ export default function Questions() {
                 <h2>Escolha o grupo de Questões</h2>
                 {question.map(questoes => (
                     <div class="cardQuestion">
-                        
                         <h3>{questoes.number}) {questoes.enunciation}</h3>
                         <Link to={`/questoes/${questoes._id}`}>Responder Questão {questoes.number}</Link><br />
                         <Link to="/questoes">Voltar para os Grupos</Link>

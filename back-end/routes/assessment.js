@@ -8,7 +8,7 @@ const controller = require('../controllers/assessment')
 router.post('/', controller.create)
 router.get('/', controller.retrieve)
 router.get('/:id', controller.retrieveOne)
-router.put('/', verifyToken, controller.update)
+router.put('/', controller.update)
 router.delete('/', verifyToken, controller.delete)
 
 module.exports = router
