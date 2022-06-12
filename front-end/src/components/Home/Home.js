@@ -11,7 +11,7 @@ function Home() {
     <div className="Home">
       <Header />
       <Menu />
-      <main className="content">
+      <main className="content-home">
         <h1>Bem-vindo de volta ao UX Helpers</h1>
         <p>Últimas notícias sobre Tecnologia, últimas tendências de design e UX/UI</p>
         <div className="page-principal">
@@ -52,7 +52,7 @@ function Home() {
                   <h3>Carreira de UX Design</h3>
                   <p>Bate papo sobre como é a carreira de um profissional de UX Desing.</p>
                   <br/>
-                  <iframe width="100%" height="254" src="https://www.youtube.com/embed/-BCNPcu3eV0"
+                  <iframe width="100%" height="250" src="https://www.youtube.com/embed/-BCNPcu3eV0"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
                     picture-in-picture" allowfullscreen></iframe>

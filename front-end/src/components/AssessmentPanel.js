@@ -45,7 +45,7 @@ function AssessmentPanel() {
                     <div id="conteudo-card">
                         <button id="btn-questao" onClick={OpenQuestions}>Abrir Questões</button>
                         <Link id="btn-respostas" to={`/avaliacao/respostas/${assessment._id}`}>Abrir Respostas</Link>
-                        <button id="btn-questao" onClick={OpenUpdate}>Editar</button>
+                        <button id="btn-editar" onClick={OpenUpdate}>Editar</button>
                     </div>
                 </div>
             </main>

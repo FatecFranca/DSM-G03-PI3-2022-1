@@ -13,8 +13,7 @@ function AssessmentUpdate() {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [idAssessment, setIdAssessment] = useState(sessionStorage.getItem('assessment'));
-
-    const [user, setUser] = useState('627da16564fbd6c660162c17'); //localStorage?
+    const [user, setUser] = useState('62a12f4204126eddb08cc7c4'); //localStorage?
     const [notify, setNotify] = useState('');
 
 
@@ -55,8 +54,8 @@ function AssessmentUpdate() {
             <main className="content">
                 <p>precisei tirar o filtro de usuario no controller, entender está exibindo os assessments de todos usuarios</p>
                 
-                <form onSubmit={handleSubmit} id="container-login">
-                    <h4 className="login-titulo">Editar Avaliação {assessment.title}</h4>
+                <form onSubmit={handleSubmit} id="container-avaliacao">
+                    <h3>Editar Avaliação {assessment.title}</h3>
                     <input
                         type="text"
                         placeholder={assessment.title}
@@ -75,10 +74,10 @@ function AssessmentUpdate() {
                     />
                     <div>
                         <ul>
-                            <input id="btn-respostas" type="submit" value="Alterar" />
+                            <input id="btn-update" type="submit" value="Alterar" />
+                            <h4 className="notify">{notify}</h4>
                         </ul>
                     </div>
-                    <h2 className="notify">{notify}</h2>
                 </form>
 
                

@@ -164,9 +164,9 @@
     color: var(--cor-texto-escura);
     background-color: var(--cor-fundo-clara);
     margin: 5.5% 0 0 9.5%;
-    min-height: 83.5vh;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    min-height: 77vh;
     text-align: center;
     width: auto;
     height: auto;
@@ -300,7 +300,7 @@
     display: flex;
     justify-content: center;
     transition: all .25s ease-in-out;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.06em;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -314,7 +314,7 @@
     box-shadow: 3px 3px 4px gray;
     align-items: center;
     margin-top: 40px;
-    margin-left: 65%;
+    margin-left: 58%;
 }
 
 input[type="button"]:hover,
@@ -363,7 +363,7 @@ table th { /* botões e referência ao glossário */
     transition: 0.5s;
     background: var(--cor-fundo-clara);
     margin: 5.5% 0 0 9.5%;
-    min-height: 83.5vh;
+    min-height: 77vh;
 }
 
 #container-avaliacao { 
@@ -399,7 +399,7 @@ table th { /* botões e referência ao glossário */
     font-weight: 700;
     border: 0;
     border-radius: 5px;
-    min-width: 7em;
+    min-width: 9em;
     height: 2.5em;
     color: var(--cor-texto-escura);
     background: var(--cor-fundo-clara);
@@ -522,12 +522,13 @@ table th { /* botões e referência ao glossário */
     font-weight: 700;
     border: 0;
     border-radius: 5px;
+    width: 10em;
     min-width: 7em;
     height: 2.5em;
     color: var(--cor-texto-escura);
     background: var(--cor-fundo-clara);
     box-shadow: 3px 3px 2px gray;
-    margin-right: 15px;
+    margin-right: 10px;
     border: 2px solid var(--cor-texto-escura);
   }
   
@@ -548,14 +549,14 @@ table th { /* botões e referência ao glossário */
     display: flex;
     justify-content: center;
     transition: all .25s ease-in-out;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.06em;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     border-radius: 5px;
     height: 1.834em;
-    min-width: 7em;
-    width: 9em;
+    min-width: 5em;
+    width: 10em;
     color: var(--cor-texto-escura);
     background: var(--cor-fundo-clara);
     border: 2px solid var(--cor-texto-escura);
@@ -576,6 +577,66 @@ table th { /* botões e referência ao glossário */
     box-shadow: 1px 1px 2px darkgray;
     transform: translateY(3px);
   }
+
+  #btn-editar {
+    transition: all .25s ease-in-out;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    width: 10em;
+    min-width: 7em;
+    height: 2.5em;
+    color: var(--cor-texto-escura);
+    background: var(--cor-fundo-clara);
+    box-shadow: 3px 3px 2px gray;
+    border: 2px solid var(--cor-texto-escura);
+  }
+  
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  #btn-editar:hover,
+  #btn-editar:focus {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo-clara);
+  }
+  
+  #btn-editar:active {
+    box-shadow: 1px 1px 2px darkgray;
+    transform: translateY(3px);
+  }
+
+  #btn-update {
+    display: flex;
+    justify-content: center;
+    transition: all .25s ease-in-out;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    height: 2.5em;
+    min-width: 7em;
+    width: 9em;
+    color: var(--cor-texto-escura);
+    background: var(--cor-fundo-clara);
+    border: 2px solid var(--cor-texto-escura);
+    box-shadow: 3px 3px 4px gray;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 69.5%;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+#btn-update:hover,
+#btn-update:focus {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo-clara);
+}
+
 
 /* -------------------------------------------------------------------------- */
 

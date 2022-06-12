@@ -30,8 +30,8 @@ function Answer() {
             <Menu />
             <main className="content">
                 <h1>Respostas</h1>
+                <Link id="btn-voltar-avaliacao" to="/questoes">Voltar para os Grupos</Link>
                 <div>
-                <Link to="/questoes">Voltar para os Grupos</Link>
                     <table class="cardQuestion">
                         <tr>
                             <th class="table">Avaliação</th>

@@ -4,8 +4,7 @@ import Footer from "./Footer"
 import './Components.css'
 import api from "../api"
 import { useEffect, useState } from "react";
-import { useParams, useNavigate} from "react-router-dom";
-
+import { useParams, useNavigate } from "react-router-dom";
 
 export default function QuestionToAnswer() {
     const { id } = useParams()
@@ -15,7 +14,7 @@ export default function QuestionToAnswer() {
     const [questionId, getQuestionsId] = useState(([]))  // Pegar a Question
     const [objective_answer, setObjective_answer] = useState('');
     const [comments, setComments] = useState('');
-    const [user, setUser] = useState('627da16564fbd6c660162c17'); // Usar localstorage
+    const [user, setUser] = useState('62a12f4204126eddb08cc7c4'); // Usar localstorage
     const [notify, setNotify] = useState('');
 
     async function handleSubmit(e) {
@@ -28,13 +27,10 @@ export default function QuestionToAnswer() {
             const newAnswer = await api.post(`answer/`, { assessment, question, objective_answer, comments });
             console.log(newAnswer)
             navigate(`/questoes/porgrupo/${sessionStorage.getItem('group')}`)
-
         }
-
     }
 
     useEffect(() => {
-
         api.get(`question/${id}`)
             .then((response) => {
                 console.log(`question/${id}`)
@@ -45,20 +41,15 @@ export default function QuestionToAnswer() {
             .catch(error => console.error(`Erro: ${error}`))
     }, []);
 
-
-
     return (
         <div className="Home">
             <Header />
             <Menu />
             <main className="content">
-
                 <div class="cardQuestion">
                     <div>
                         <h3>{questionId.enunciation}</h3>
                     </div>
-
-
                     <form onSubmit={handleSubmit}>
                         <input type="radio" name="objective_answer" id="objctive" value="Y" onChange={e => setObjective_answer(e.target.value)} />Sim
                         <input type="radio" name="objective_answer" id="objctive" value="N" onChange={e => setObjective_answer(e.target.value)} />Não
@@ -67,10 +58,7 @@ export default function QuestionToAnswer() {
                         <br />Comentário<br /><input type="text" placeholder="Deixe seu comentário sobre essa questão" id="comment" value={comments} onChange={e => setComments(e.target.value)} /><br />
                         <button type="submit">Salvar Resposta</button>
                     </form>
-
-
                 </div>
-
             </main>
             <Footer />
         </div>

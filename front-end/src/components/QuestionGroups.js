@@ -27,21 +27,16 @@ function QuestionGroup() {
                 <h2>Escolha o grupo de Questões</h2>
                 <Link id="btn-voltar-avaliacao" to="/avaliacoes" >Voltar para Avaliações</Link>
                 <div>
-
-
                     {groupQuestions.map(grupos => (
                         <div class="cardGroup">
                             <Link to={`/questoes/porgrupo/${grupos._id}`} class="menuitemcorpo">
                                 <h4>{grupos.group}</h4>
                                 <p>{grupos.description}</p>
                             </Link>
-
                         </div>
                     ))}
                 </div>
-
             </main>
-
             <Footer />
         </div>
     )

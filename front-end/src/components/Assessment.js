@@ -13,7 +13,7 @@ function Assessment() {
     const [assessmentId, getAssessmentId] = useState('')
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    const [user, setUser] = useState('627da16564fbd6c660162c17'); //localStorage?
+    const [user, setUser] = useState('62a12f4204126eddb08cc7c4'); //localStorage?
     const [notify, setNotify] = useState('');
 
     async function handleSubmit(e) {
@@ -81,7 +81,9 @@ function Assessment() {
                             <h2>{avaliacao.title}</h2>
                             <p>{avaliacao.description}</p>
                             <div>
+                                <ul>
                                 <Link id="btn-avaliacao" to={`/avaliacao/${avaliacao._id}`}>Abrir Avaliação</Link><br />
+                                </ul>
                             </div>
                         </div>
                     ))
