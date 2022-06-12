@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+/* cores a serem usadas no site */
+:root { 
+    --cor-escura: #005c6e;
+    --cor-secundaria: #b42626;    
+    --cor-fundo-clara: #f3f3f3;
+    --cor-texto-escura: #333333;
+}
+
+/* Componentes Header, footer e menu */
+
+.hiden{
+    display: none;
+}
+
+
+.footer {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo-clara);
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 9.5%;
+}
+
+#texto-footer {
+    align-items: flex-end;
+    margin: -3px 0 10px 0;
+}
+
+.direitos-reservados {
+    align-items: center;
+    text-align: center;
+}

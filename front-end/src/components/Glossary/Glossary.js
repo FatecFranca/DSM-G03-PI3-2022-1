@@ -1,7 +1,7 @@
-import Header from "./Header"
-import Menu from "./Menu"
-import Footer from "./Footer"
-import './Components.css'
+import Header from "../Header/Header"
+import Menu from "../Menu/Menu"
+import Footer from "../Footer/Footer"
+import './Glossary.css'
 import { useEffect, useState } from "react";
 import axios from "axios";
 import VLibras from '@djpfs/react-vlibras';

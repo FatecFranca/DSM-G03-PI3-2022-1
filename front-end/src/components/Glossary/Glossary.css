@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+/* cores a serem usadas no site */
+:root { 
+    --cor-escura: #005c6e;
+    --cor-secundaria: #b42626;    
+    --cor-fundo-clara: #f3f3f3;
+    --cor-texto-escura: #333333;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-texto-escura);
+    background-color: var(--cor-fundo-clara);
+    margin: 5.5% 0 0 9.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    min-height: 77vh;
+    text-align: center;
+    width: auto;
+    height: auto;
+}   
+
+.content h1 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.content h3 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.content h4 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.content p {
+    margin: 12px 0 12px 0;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+}
+
+
+.content #sub-titulos {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: var(--cor-texto-escura);
+}
+
+#title-content {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    text-align: center;
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+/* cores a serem usadas no site */
+:root { 
+    --cor-escura: #005c6e;
+    --cor-secundaria: #b42626;    
+    --cor-fundo-clara: #f3f3f3;
+    --cor-texto-escura: #333333;
+}
+
+.hiden{
+    display: none;
+}
+
+.header {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo-clara);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.titulo-pesquisa {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.pesquisa {
+    margin-right: 8px;
+    border-radius: 5px;
+    width: 200px;
+    height: 2.5em;
+    border: rgba(255, 255, 255, 0.50);
+}
+
+.btn {
+    border-radius: 5px;
+    height: 2.5em;
+    min-width: 7em;
+    border: none;
+    box-shadow: 3px 3px 4px gray;
+    background-color: var(--cor-fundo-clara);
+    color: var(--cor-texto-escura);
+}
+
+.icon {
+    margin-right: 3px;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.btn:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo-clara);
+    border: 2px solid var(--cor-texto-escura);
+}
+
+.titulo-pesquisa #title {
+    margin-right: 25%;
+    font-size: 32px;
+}
+
+.botaoSair {
+    position: relative;
+    text-decoration: none;
+    color: var(--cor-fundo-clara);
+    left: 48%;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .25s ease-in-out;
+}
+
+.botaoSair:hover {
+    border: 1px var(--cor-fundo-clara);
+    color: var(--cor-fundo-clara);
+    text-decoration: underline;
+}

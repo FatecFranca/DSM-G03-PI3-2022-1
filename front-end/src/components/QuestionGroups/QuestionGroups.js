@@ -1,7 +1,7 @@
-import Header from "./Header"
-import Menu from "./Menu"
-import Footer from "./Footer"
-import './Components.css'
+import Header from "../Header/Header"
+import Menu from "../Menu/Menu"
+import Footer from "../Footer/Footer"
+import './QuestionGroups.css'
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";

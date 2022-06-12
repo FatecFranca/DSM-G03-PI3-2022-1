@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+/* cores a serem usadas no site */
+:root { 
+    --cor-escura: #005c6e;
+    --cor-secundaria: #b42626;    
+    --cor-fundo-clara: #f3f3f3;
+    --cor-texto-escura: #333333;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-texto-escura);
+    background-color: var(--cor-fundo-clara);
+    margin: 5.5% 0 0 9.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    min-height: 77vh;
+    text-align: center;
+    width: auto;
+    height: auto;
+}   
+
+.content h1 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.content h3 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.content h4 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.content p {
+    margin: 12px 0 12px 0;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+}
+
+.content-avaliacao { /* distribuicao dos cards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background: var(--cor-fundo-clara);
+    margin: 5.5% 0 0 9.5%;
+    min-height: 77vh;
+}
+
+
+#container-avaliacao { 
+    text-align: end;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 3px var(--cor-texto-escura);
+    width: 35%;
+    border-right: 2px solid var(--cor-texto-escura);
+    margin-right: 40px;
+}
+  
+#avaliacao-titulo,
+#avaliacao-descricao {
+    /* css do texto dentro do input */
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#criar-avaliacao {
+    transition: all .25s ease-in-out;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    min-width: 9em;
+    height: 2.5em;
+    color: var(--cor-texto-escura);
+    background: var(--cor-fundo-clara);
+    box-shadow: 3px 3px 2px gray;
+    margin-right: 15px;
+    border: 2px solid var(--cor-texto-escura);
+}
+  
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  #criar-avaliacao:hover,
+  #criar-avaliacao:focus {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo-clara);
+  }
+  
+#criar-avaliacao:active {
+    box-shadow: 1px 1px 2px darkgray;
+    transform: translateY(3px);
+}
+
+.notify {
+    /* css da mensagem que aparece quando algum campo não é preenchido */
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--cor-escura);
+    margin-right: 18px;
+}
+
+#container-avaliacao h1 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#container-avaliacao h2 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+#container-avaliacao h3 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#container-avaliacao h4 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#container-avaliacao p {
+    margin: 12px 0 12px 0;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+}
+
+.cardQuestion {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--cor-texto-escura);
+    border: 2px solid var(--cor-texto-escura);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    height: 15.6em;
+    width: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.cardQuestion2 {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-texto-escura);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    width: 90%;
+    height: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.cardQuestion #conteudo-card {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: end;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.cardQuestion h1 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cardQuestion h2 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.cardQuestion h3 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cardQuestion h4 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.cardQuestion p {
+    margin: 24px 0 24px 0;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    color: var(--cor-texto-escura);
+}
+
+#btn-avaliacao {
+    display: flex;
+    justify-content: center;
+    transition: all .25s ease-in-out;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    height: 1.834em;
+    min-width: 7em;
+    width: 9em;
+    color: var(--cor-texto-escura);
+    background: var(--cor-fundo-clara);
+    border: 2px solid var(--cor-texto-escura);
+    box-shadow: 3px 3px 4px gray;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 58%;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+#btn-avaliacao:hover,
+#btn-avaliacao:focus {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo-clara);
+}
+

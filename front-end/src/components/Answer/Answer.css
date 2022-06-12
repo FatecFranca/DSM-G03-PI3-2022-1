@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+/* cores a serem usadas no site */
+:root { 
+    --cor-escura: #005c6e;
+    --cor-secundaria: #b42626;    
+    --cor-fundo-clara: #f3f3f3;
+    --cor-texto-escura: #333333;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-texto-escura);
+    background-color: var(--cor-fundo-clara);
+    margin: 5.5% 0 0 9.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    min-height: 77vh;
+    text-align: center;
+    width: auto;
+    height: auto;
+}   
+
+.content h1 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.content h3 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.content h4 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.content p {
+    margin: 12px 0 12px 0;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+}
+
+
+table {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+table th { /* botões e referência ao glossário */
+    border: 1px solid var(--cor-escura);
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-right: 4px;
+}
+
+.content #sub-titulos {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: var(--cor-texto-escura);
+}
+
+
+.cardQuestion {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--cor-texto-escura);
+    border: 2px solid var(--cor-texto-escura);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    height: 15.6em;
+    width: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.cardQuestion2 {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-texto-escura);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    width: 90%;
+    height: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.cardQuestion #conteudo-card {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: end;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.cardQuestion h1 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cardQuestion h2 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.cardQuestion h3 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cardQuestion h4 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.cardQuestion p {
+    margin: 24px 0 24px 0;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    color: var(--cor-texto-escura);
+}

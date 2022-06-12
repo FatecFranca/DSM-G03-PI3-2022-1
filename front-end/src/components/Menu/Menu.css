@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+/* cores a serem usadas no site */
+:root { 
+    --cor-escura: #005c6e;
+    --cor-secundaria: #b42626;    
+    --cor-fundo-clara: #f3f3f3;
+    --cor-texto-escura: #333333;
+}
+
+/* Componentes Header, footer e menu */
+
+.hiden{
+    display: none;
+}
+
+
+.menu {
+    background-color: var(--cor-fundo-clara);
+    color: var(--cor-secundaria);
+    border-right: 3px solid var(--cor-secundaria);
+    position: fixed;
+    margin-top: 35px;
+    width: auto;
+    height: 100%;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 0;
+    text-align: center;
+    transition: all .25s ease-in-out;
+    outline: 0;
+    letter-spacing: 0.10em;
+}
+
+ul {
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+ul li {
+    list-style-type: none;  
+    margin-top: 13%;
+    border-top:  1px solid rgba(255, 0, 0, 0.6);
+    padding-top: 12px;
+    margin-left: 0;
+    width: 120px;
+}
+
+.topo {
+    border-top: 0;
+}
+
+.menuitem {
+    text-decoration: none;
+    color: var(--cor-texto-escura);
+    font-size: 20px;
+}
+
+.menuitem:hover {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+

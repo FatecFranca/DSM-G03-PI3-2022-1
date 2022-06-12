@@ -1,8 +1,8 @@
-import Header from "./Header"
-import Menu from "./Menu"
-import Footer from "./Footer"
-import './Components.css'
-import api from '../api'
+import Header from "../Header/Header"
+import Menu from "../Menu/Menu"
+import Footer from "../Footer/Footer"
+import './Assessment.css'
+import api from '../../api'
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import VLibras from '@djpfs/react-vlibras';

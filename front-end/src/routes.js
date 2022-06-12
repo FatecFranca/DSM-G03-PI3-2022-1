@@ -4,15 +4,15 @@ import { Route, Routes } from 'react-router-dom'
 
 import Login from "./components/Login/Login.js";
 import Home from "./components/Home/Home.js";
-import Answer from "./components/Answer.js";
-import Assessment from "./components/Assessment.js";
-import Glossary from "./components/Glossary.js";
-import QuestionGroup from "./components/QuestionGroups.js";
+import Answer from "./components/Answer/Answer.js";
+import Assessment from "./components/Assessment/Assessment.js";
+import Glossary from "./components/Glossary/Glossary.js";
+import QuestionGroup from "./components/QuestionGroups/QuestionGroups.js";
 import SignUp from "./components/SignUp/SignUp.js";
-import Questions from "./components/Questions.js";
-import AssessmentPanel from "./components/AssessmentPanel.js";
-import QuestionToAnswer from "./components/QuestionsToAnswer.js";
-import AssessmentUpdate from "./components/AssessmentUpdate.js";
+import Questions from "./components/Questions/Questions.js";
+import AssessmentPanel from "./components/AssessmentPanel/AssessmentPanel.js";
+import QuestionToAnswer from "./components/QuestionsToAnswer/QuestionsToAnswer.js";
+import AssessmentUpdate from "./components/AssessmentUpdate/AssessmentUpdate.js";
 
 
 function Routers () {
