@@ -1,7 +1,8 @@
 import Header from "../Header/Header"
 import Menu from "../Menu/Menu"
 import Footer from "../Footer/Footer"
-import './Questions.css'
+import './Questions.css';
+import '../Components.css'
 import api from "../../api"
 import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";

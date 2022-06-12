@@ -2,6 +2,7 @@ import Header from "../Header/Header"
 import Menu from "../Menu/Menu"
 import Footer from "../Footer/Footer"
 import './AssessmentUpdate.css'
+import '../Components.css'
 import api from '../../api'
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from 'react-router-dom';

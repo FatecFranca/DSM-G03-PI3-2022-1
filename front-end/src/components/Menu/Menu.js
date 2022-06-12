@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import './Menu.css'
+import './Menu.css';
+import '../Components.css'
 
 function Menu() {
     return (

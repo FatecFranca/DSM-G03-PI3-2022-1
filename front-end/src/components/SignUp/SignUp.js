@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './SignUp.css'
+import './SignUp.css';
+import '../Components.css'
 import api from '../../api';
 
 import { VscEyeClosed, VscEye } from 'react-icons/vsc';

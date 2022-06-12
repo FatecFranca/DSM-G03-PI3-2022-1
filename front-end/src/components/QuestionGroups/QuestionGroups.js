@@ -1,7 +1,8 @@
 import Header from "../Header/Header"
 import Menu from "../Menu/Menu"
 import Footer from "../Footer/Footer"
-import './QuestionGroups.css'
+import './QuestionGroups.css';
+import '../Components.css'
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";

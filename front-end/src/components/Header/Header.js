@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import { BiSearch } from 'react-icons/bi';
+import './Header.css';
+import '../Components.css'
 
 function Header() {
     return (
