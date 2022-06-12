@@ -5,6 +5,7 @@ import './Components.css'
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import VLibras from '@djpfs/react-vlibras';
 
 function QuestionGroup() {
     const [groupQuestions, getGroupQuestions] = useState(([]))
@@ -38,6 +39,7 @@ function QuestionGroup() {
                 </div>
             </main>
             <Footer />
+            <VLibras forceOnload={true} />
         </div>
     )
 }

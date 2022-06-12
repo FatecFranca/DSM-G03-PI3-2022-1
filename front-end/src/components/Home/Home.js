@@ -5,6 +5,7 @@ import Header from '../Header';
 import Menu from '../Menu';
 import Footer from '../Footer';
 import './Home.css';
+import VLibras from '@djpfs/react-vlibras';
 
 function Home() {
   return (
@@ -63,6 +64,7 @@ function Home() {
         </div>
       </main>
       <Footer />
+      <VLibras forceOnload={true} />
     </div>
   );
 }

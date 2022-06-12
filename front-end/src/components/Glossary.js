@@ -4,6 +4,7 @@ import Footer from "./Footer"
 import './Components.css'
 import { useEffect, useState } from "react";
 import axios from "axios";
+import VLibras from '@djpfs/react-vlibras';
 
 function Glossary() {
     const [glossary, getGlossary] = useState(([]))
@@ -38,6 +39,7 @@ function Glossary() {
                 </table>
             </main>
             <Footer />
+            <VLibras forceOnload={true} />
         </div>
     )
 }

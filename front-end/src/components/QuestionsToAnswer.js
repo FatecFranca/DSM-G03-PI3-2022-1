@@ -5,6 +5,7 @@ import './Components.css'
 import api from "../api"
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import VLibras from '@djpfs/react-vlibras';
 
 export default function QuestionToAnswer() {
     const { id } = useParams()
@@ -61,6 +62,7 @@ export default function QuestionToAnswer() {
                 </div>
             </main>
             <Footer />
+            <VLibras forceOnload={true} />
         </div>
     )
 }

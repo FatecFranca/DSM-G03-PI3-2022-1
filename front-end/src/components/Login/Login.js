@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Login.css'
 import axios from "axios";
 import api from '../../api';
+import VLibras from '@djpfs/react-vlibras';
 
 export default function Login() {
 
@@ -83,6 +84,7 @@ export default function Login() {
                 <a href="#" className="forgot">Esqueceu a senha?</a>
                 <h2 className="notify">{notify}</h2>
             </form>
+            <VLibras forceOnload={true} />
         </div>
     )
 }

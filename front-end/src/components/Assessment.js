@@ -5,6 +5,7 @@ import './Components.css'
 import api from '../api'
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import VLibras from '@djpfs/react-vlibras';
 
 function Assessment() {
     const { id } = useParams()
@@ -91,6 +92,7 @@ function Assessment() {
                 </div>
             </main>
             <Footer />
+            <VLibras forceOnload={true} />
         </div>
     )
 }

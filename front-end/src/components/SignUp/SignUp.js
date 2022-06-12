@@ -1,12 +1,12 @@
-import React, { useContext, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './SignUp.css'
 import api from '../../api';
 
-import { VscEyeClosed, VscEye } from 'react-icons/vsc'
+import { VscEyeClosed, VscEye } from 'react-icons/vsc';
+import VLibras from '@djpfs/react-vlibras';
 
 export default function SignUp() {
-
 
     const navigate = useNavigate();
     const [fullname, setFullName] = useState('');
@@ -117,6 +117,10 @@ export default function SignUp() {
                 </ul>
                 <h2 className="notify">{notify}</h2>
             </form>
+            <VLibras forceOnload={true} />
+                
         </div>  
+
+        
     )
 }
