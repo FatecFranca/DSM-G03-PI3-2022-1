@@ -7,12 +7,12 @@
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
-    height: 15.6em;
+    height: auto;
     width: auto;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
-
+/* 
 .cardQuestion2 {
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -24,7 +24,7 @@
     height: 10%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-}
+} */
 
 .cardQuestion #conteudo-card {
     display: flex;
@@ -73,3 +73,49 @@
     color: var(--cor-texto-escura);
 }
 
+form ul li{  
+    display: inline-block;
+    vertical-align: top;
+    border-top: none;
+    text-align: center;
+    margin-top: 0;       
+}
+
+textarea{
+    /* resize: none; */
+    width: 35em;
+    height: 5em;
+}
+
+button{
+    transition: all .25s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+  padding: 0 1em 0 1em;
+  height: 2.5em;
+  margin: 20px 15px 20px 0px; 
+  color: var(--cor-texto-escura);
+  background: var(--cor-fundo-clara);
+  border: 2px solid var(--cor-texto-escura);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  box-shadow: 3px 3px 2px gray;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover,
+button:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo-clara);
+}
+
+button:active{
+    box-shadow: 1px 1px 2px darkgray;
+    transform: translateY(3px);
+}

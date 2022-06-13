@@ -53,11 +53,14 @@ export default function QuestionToAnswer() {
                         <h3>{questionId.enunciation}</h3>
                     </div>
                     <form onSubmit={handleSubmit}>
-                        <input type="radio" name="objective_answer" id="objctive" value="Y" onChange={e => setObjective_answer(e.target.value)} />Sim
-                        <input type="radio" name="objective_answer" id="objctive" value="N" onChange={e => setObjective_answer(e.target.value)} />Não
-                        <input type="radio" name="objective_answer" id="objctive" value="P" onChange={e => setObjective_answer(e.target.value)} />Responder mais tarde
-                        <input type="radio" name="objective_answer" id="objctive" value="X" onChange={e => setObjective_answer(e.target.value)} />Não aplicável
-                        <br />Comentário<br /><input type="text" placeholder="Deixe seu comentário sobre essa questão" id="comment" value={comments} onChange={e => setComments(e.target.value)} /><br />
+                        <ul>
+                            <li><input type="radio" name="objective_answer" id="objctive" value="Y" onChange={e => setObjective_answer(e.target.value)} /> Sim</li>
+                            <li><input type="radio" name="objective_answer" id="objctive" value="N" onChange={e => setObjective_answer(e.target.value)} /> Não</li>
+                            <li><input type="radio" name="objective_answer" id="objctive" value="P" onChange={e => setObjective_answer(e.target.value)} /> Responder mais tarde</li>
+                            <li><input type="radio" name="objective_answer" id="objctive" value="X" onChange={e => setObjective_answer(e.target.value)} /> Não aplicável</li>
+                        </ul>
+                        <br />Comentário<br />
+                        <textarea placeholder="Deixe seu comentário sobre essa questão" id="comment" value={comments} onChange={e => setComments(e.target.value)} /><br />
                         <button type="submit">Salvar Resposta</button>
                     </form>
                 </div>
