@@ -34,7 +34,6 @@ function Home() {
                 <div className="Conteudo">
                   <h3>Quais as áreas de UX?</h3>
                   <p>Você sabe quais são as divisões de areas dentro de UX? </p>
-                  <p>Não ?</p> 
                   <p>Veja abaixo um resumo em topicos quais são essas divisões!</p>
                   <br/>
                   <ul>

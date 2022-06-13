@@ -1,63 +1,63 @@
-.content {
+.content-update {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 11.5vh 0 0 9.5%;
     color: var(--cor-texto-escura);
     background-color: var(--cor-fundo-clara);
-    margin: 5.5% 0 0 9.5%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     min-height: 77vh;
-    text-align: center;
-    width: auto;
-    height: auto;
-}   
+}
 
-.content h1 {
+#container-update {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid var(--cor-texto-escura);
+    width: 35%;
+    height: 15.6em;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.content-update h1 {
     color: var(--cor-escura);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.content h2 {
+.content-update h2 {
     color: var(--cor-escura);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin-top: 50px;
 }
 
-.content h3 {
+.content-update h3 {
     color: var(--cor-escura);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-}
-.content h4 {
-    color: var(--cor-escura);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin-bottom: 30px;
+    text-align: center;
+    margin: 25px 0 25px 0;
+    border-radius: 5px;
 }
 
-.content p {
+.content-update h4 {
+    color: var(--cor-escura);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.content-update p {
     margin: 12px 0 12px 0;
     font-size: 16px;
     text-align: center;
     align-items: center;
-}
-
-#container-avaliacao { 
-    text-align: end;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: solid 3px var(--cor-texto-escura);
-    width: 35%;
-    border-right: 2px solid var(--cor-texto-escura);
-    margin-right: 40px;
 }
 
 #btn-update {
@@ -77,8 +77,8 @@
     border: 2px solid var(--cor-texto-escura);
     box-shadow: 3px 3px 4px gray;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 69.5%;
+    margin-top: 10px;
+    margin-left: 72%;
 }
 
 input[type="button"]:hover,
@@ -90,7 +90,7 @@ input[type="submit"]:hover,
 }
 
 
-.notify {
+.notify-update {
     /* css da mensagem que aparece quando algum campo não é preenchido */
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
@@ -98,4 +98,6 @@ input[type="submit"]:hover,
     text-decoration: none;
     color: var(--cor-escura);
     margin-right: 18px;
+    margin-top: 5px;
+    text-align: end;
 }

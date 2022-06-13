@@ -39,7 +39,7 @@ function AssessmentPanel() {
         <div className="Home">
             <Header />
             <Menu />
-            <main className="content">
+            <main className="content-panel">
                 <h1>Avaliação detalhada</h1>
                 <div class="cardQuestion"> {/* classe do css diferente para não mudar os outros cards da pagina */}
                     <h2>{assessment.title}</h2>

@@ -1,16 +1,14 @@
 /* Componentes menu */
 
-.hiden{
+.hiden {
     display: none;
 }
-
 
 .menu {
     background-color: var(--cor-fundo-clara);
     color: var(--cor-secundaria);
     border-right: 3px solid var(--cor-secundaria);
     position: fixed;
-    margin-top: 35px;
     width: auto;
     height: 100%;
     float: left;

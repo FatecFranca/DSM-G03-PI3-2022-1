@@ -15,6 +15,11 @@
     display: none;
 }
 
+.home {
+    height: 100vh;
+    width: auto;
+}
+
 @media screen and (max-width: 980px) {
 
 }

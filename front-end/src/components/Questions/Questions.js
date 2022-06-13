@@ -23,7 +23,6 @@ export default function Questions() {
 
 
     useEffect(() => {
-
         api.get(`question/group/${id}`)
             .then((response) => {
                 console.log(`question/group/${id}`)
@@ -34,25 +33,19 @@ export default function Questions() {
             .catch(error => console.error(`Erro: ${error}`))
     }, []);
 
-
-
     function seRespondido(id) {
-        
+        api.get(`question/${sessionStorage.getItem('assessment')}/${id}`)
+            .then((response) => {
+                console.log(`question/${sessionStorage.getItem('assessment')}/${id}`)
+                getAnswers(response.data)
+                //console.log(response.data)
+            })
+            .catch(error => console.error(`Erro: ${error}`))
 
-            api.get(`question/${sessionStorage.getItem('assessment')}/${id}`)
-                .then((response) => {
-                    console.log(`question/${sessionStorage.getItem('assessment')}/${id}`)
-                    getAnswers(response.data)
-                    //console.log(response.data)
-    
-                })
-                .catch(error => console.error(`Erro: ${error}`))
-                
-                if(answer.question.objective_answer !== "" || answer.question.setObjective_answer == null){
-                    return "Respondido"
-                } 
-                else return "À responder"   
-            
+        if (answer.question.objective_answer !== "" || answer.question.setObjective_answer == null) {
+            return "Respondido"
+        }
+        else return "À responder"
     }
 
     return (

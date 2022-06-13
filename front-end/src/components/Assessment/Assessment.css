@@ -1,76 +1,30 @@
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--cor-texto-escura);
+#home {
     background-color: var(--cor-fundo-clara);
-    margin: 5.5% 0 0 9.5%;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    min-height: 77vh;
-    text-align: center;
-    width: auto;
-    height: auto;
-}   
-
-.content h1 {
-    color: var(--cor-escura);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.content h2 {
-    color: var(--cor-escura);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin-top: 50px;
-}
-
-.content h3 {
-    color: var(--cor-escura);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-}
-.content h4 {
-    color: var(--cor-escura);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-.content p {
-    margin: 12px 0 12px 0;
-    font-size: 16px;
-    text-align: center;
-    align-items: center;
 }
 
 .content-avaliacao { /* distribuicao dos cards */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 11.5vh 0 0 9.5%;
     transition: 0.5s;
     background: var(--cor-fundo-clara);
-    margin: 5.5% 0 0 9.5%;
+    width: auto;
     min-height: 77vh;
 }
 
-
 #container-avaliacao { 
-    text-align: end;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: solid 3px var(--cor-texto-escura);
+    border: 2px solid var(--cor-texto-escura);
     width: 35%;
-    border-right: 2px solid var(--cor-texto-escura);
+    height: 15.6em;
     margin-right: 40px;
+    padding-bottom: 20px;
+    border-radius: 10px;
 }
-  
+
 #avaliacao-titulo,
 #avaliacao-descricao {
     /* css do texto dentro do input */
@@ -84,37 +38,7 @@
     font-size: 16px;
 }
 
-#criar-avaliacao {
-    transition: all .25s ease-in-out;
-    letter-spacing: 0.07em;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    border: 0;
-    border-radius: 5px;
-    min-width: 9em;
-    height: 2.5em;
-    color: var(--cor-texto-escura);
-    background: var(--cor-fundo-clara);
-    box-shadow: 3px 3px 2px gray;
-    margin-right: 15px;
-    border: 2px solid var(--cor-texto-escura);
-}
-  
-  input[type="button"]:hover,
-  input[type="submit"]:hover,
-  #criar-avaliacao:hover,
-  #criar-avaliacao:focus {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-fundo-clara);
-  }
-  
-#criar-avaliacao:active {
-    box-shadow: 1px 1px 2px darkgray;
-    transform: translateY(3px);
-}
-
-.notify {
+.notify-avaliacao {
     /* css da mensagem que aparece quando algum campo não é preenchido */
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
@@ -122,6 +46,8 @@
     text-decoration: none;
     color: var(--cor-escura);
     margin-right: 18px;
+    margin-top: 8px;
+    text-align: end;
 }
 
 #container-avaliacao h1 {
@@ -135,6 +61,9 @@
     color: var(--cor-escura);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    text-align: center;
+    margin: 25px 0 25px 0;
+    border-radius: 5px;
 }
 
 #container-avaliacao h3 {
@@ -142,14 +71,14 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 25px 0 25px 0;
+    border-radius: 5px;
 }
 
 #container-avaliacao h4 {
     color: var(--cor-escura);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    margin-bottom: 30px;
 }
 
 #container-avaliacao p {
@@ -159,7 +88,7 @@
     align-items: center;
 }
 
-.cardQuestion {
+.cardQuestion-avaliacao{
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -169,9 +98,9 @@
     padding: 5px;
     margin: 5px;
     height: 15.6em;
-    width: auto;
+    width: 420px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .cardQuestion2 {
@@ -187,7 +116,7 @@
     font-weight: 400;
 }
 
-.cardQuestion #conteudo-card {
+.cardQuestion-avaliacao #conteudo-card {
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -197,14 +126,14 @@
     margin-top: 15px;
 }
 
-.cardQuestion h1 {
+.cardQuestion-avaliacao h1 {
     color: var(--cor-escura);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.cardQuestion h2 {
+.cardQuestion-avaliacao h2 {
     color: var(--cor-escura);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -212,21 +141,21 @@
     margin-top: 25px;
 }
 
-.cardQuestion h3 {
+.cardQuestion-avaliacao h3 {
     color: var(--cor-escura);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     text-align: center;
+    margin: 30px 0 30px 0;
 }
 
-.cardQuestion h4 {
+.cardQuestion-avaliacao h4 {
     color: var(--cor-escura);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    margin-bottom: 30px;
 }
 
-.cardQuestion p {
+.cardQuestion-avaliacao p {
     margin: 24px 0 24px 0;
     font-size: 16px;
     text-align: center;
@@ -234,7 +163,41 @@
     color: var(--cor-texto-escura);
 }
 
+/* botoes */
+
+#criar-avaliacao {
+    transition: all .25s ease-in-out;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    min-width: 9em;
+    height: 2.5em;
+    color: var(--cor-texto-escura);
+    background: var(--cor-fundo-clara);
+    box-shadow: 3px 3px 2px gray;
+    margin: 0 5px 0 0;
+    border: 2px solid var(--cor-texto-escura);
+    margin-left: 72.5%;
+}
+  
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  #criar-avaliacao:hover,
+  #criar-avaliacao:focus {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo-clara);
+  }
+  
+#criar-avaliacao:active {
+    box-shadow: 1px 1px 2px darkgray;
+    transform: translateY(3px);
+}
+
 #btn-avaliacao {
+    justify-content: end;
     display: flex;
     justify-content: center;
     transition: all .25s ease-in-out;
@@ -243,16 +206,16 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     border-radius: 5px;
-    height: 1.834em;
-    min-width: 7em;
+    height: 2.05em;
+    min-width: 9em;
     width: 9em;
     color: var(--cor-texto-escura);
     background: var(--cor-fundo-clara);
     border: 2px solid var(--cor-texto-escura);
     box-shadow: 3px 3px 4px gray;
     align-items: center;
-    margin-top: 40px;
-    margin-left: 58%;
+    margin-top: 50.5px;
+    margin-left: 63%;
 }
 
 input[type="button"]:hover,

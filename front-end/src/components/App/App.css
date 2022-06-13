@@ -4,14 +4,7 @@
   max-height: 100%;
 }
 
-.header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-@media screen and (max-width: 1280px) {
+/* @media screen and (max-width: 1280px) {
 
   .App {
     width: calc(100% - 100px);
@@ -33,4 +26,4 @@
     width: calc(100% - 40px);
   }
 
-}
+} */

@@ -1,53 +1,16 @@
-.content {
+.content-panel {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 11.5vh 0 0 9.5%;
     color: var(--cor-texto-escura);
     background-color: var(--cor-fundo-clara);
-    margin: 5.5% 0 0 9.5%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     min-height: 77vh;
-    text-align: center;
-    width: auto;
-    height: auto;
-}   
-
-.content h1 {
-    color: var(--cor-escura);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin-bottom: 10px;
 }
-
-.content h2 {
-    color: var(--cor-escura);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin-top: 50px;
-}
-
-.content h3 {
-    color: var(--cor-escura);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-}
-.content h4 {
-    color: var(--cor-escura);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-.content p {
-    margin: 12px 0 12px 0;
-    font-size: 16px;
-    text-align: center;
-    align-items: center;
-}
-
 
 .cardQuestion {
     display: flex;
@@ -57,9 +20,8 @@
     border: 2px solid var(--cor-texto-escura);
     border-radius: 10px;
     padding: 5px;
-    margin: 5px;
     height: 15.6em;
-    width: auto;
+    width: 35%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
@@ -72,7 +34,7 @@
     padding: 5px;
     margin: 5px;
     width: 90%;
-    height: 10%;
+    height: 15.6em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
@@ -164,13 +126,13 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     border-radius: 5px;
-    height: 1.834em;
+    height: 2.11em;
     min-width: 5em;
     width: 10em;
     color: var(--cor-texto-escura);
     background: var(--cor-fundo-clara);
     border: 2px solid var(--cor-texto-escura);
-    box-shadow: 3px 3px 4px gray;
+    box-shadow: 3px 3px 2px gray;
     align-items: center;
     margin-right: 10px;
 }
@@ -195,15 +157,15 @@
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    border: 0;
     border-radius: 5px;
     width: 10em;
-    min-width: 7em;
+    min-width: 9em;
     height: 2.5em;
     color: var(--cor-texto-escura);
     background: var(--cor-fundo-clara);
     box-shadow: 3px 3px 2px gray;
     border: 2px solid var(--cor-texto-escura);
+    margin-right: 5px;
 }
   
   input[type="button"]:hover,

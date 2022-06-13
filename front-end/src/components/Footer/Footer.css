@@ -2,28 +2,31 @@
 
 /* Componentes footer */
 
-.hiden{
-    display: none;
-}
-
 .footer {
+    display: flex;
     background-color: var(--cor-secundaria);
     color: var(--cor-fundo-clara);
     bottom: 0;
+    left: 0;
     position: relative;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
-    display: flex;
     justify-content: center;
-    height: 9.5%;
+    height: 11.5vh;
 }
 
 #texto-footer {
     align-items: flex-end;
-    margin: -3px 0 10px 0;
+    margin: 10px 0 10px 0;
+    background-color: var(--cor-secundaria);
 }
 
 .direitos-reservados {
     align-items: center;
     text-align: center;
+    background-color: var(--cor-secundaria);
+}
+
+.footer ul {
+    background-color: var(--cor-secundaria);
 }

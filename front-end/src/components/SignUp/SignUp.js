@@ -116,7 +116,7 @@ export default function SignUp() {
                     <button id="signUp-botao" type='submit'>Criar Conta</button>
                 {/* <input id="signUp-botao" type="submit" value="Criar Conta" /> */}
                 </ul>
-                <h2 className="notify">{notify}</h2>
+                <h2 className="notify-sign  ">{notify}</h2>
             </form>
             <VLibras forceOnload={true} />
                 

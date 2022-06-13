@@ -52,7 +52,7 @@ function Assessment() {
             <main className="content-avaliacao">
                 {/* <p>precisei tirar o filtro de usuario no controller, entender está exibindo os assessments de todos usuarios</p> */}
                 <form onSubmit={handleSubmit} id="container-avaliacao">
-                    <h3>Nova Avaliação</h3>
+                    <h2>Nova Avaliação</h2>
                     <input
                         type="text"
                         placeholder="Título da avaliação"
@@ -74,19 +74,15 @@ function Assessment() {
                             <input id="criar-avaliacao" type="submit" value="Criar" />
                         </ul>
                     </div>
-                    <h2 className="notify">{notify}</h2>
+                    <h4 className="notify-avaliacao">{notify}</h4>
                 </form>
 
                 <div>
                     {assessment.map(avaliacao => (
-                        <div class="cardQuestion">
+                        <div class="cardQuestion-avaliacao">
                             <h2>{avaliacao.title}</h2>
                             <p>{avaliacao.description}</p>
-                            <div>
-                                <ul>
-                                <Link id="btn-avaliacao" to={`/avaliacao/${avaliacao._id}`}>Abrir Avaliação</Link><br />
-                                </ul>
-                            </div>
+                            <Link id="btn-avaliacao" to={`/avaliacao/${avaliacao._id}`}>Abrir Avaliação</Link>
                         </div>
                     ))
                     }

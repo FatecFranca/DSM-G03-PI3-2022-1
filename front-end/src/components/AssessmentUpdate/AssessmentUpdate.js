@@ -24,12 +24,12 @@ function AssessmentUpdate() {
         console.log(title + description)
         localStorage.getItem('x-acess-token')
 
-        if(title == '' && description == '') {
+        if (title == '' && description == '') {
             setNotify('Por favor informe o título e a url da sua avaliação');
         } else {
-            const {data} = await api.put(`assessment`, { id, title, description, user });
+            const { data } = await api.put(`assessment`, { id, title, description, user });
             console.log(data)
-            if(data) {
+            if (data) {
                 navigate("/questoes");
             } else {
                 setNotify('Ops não conseguimos editar a avaliação');
@@ -46,17 +46,17 @@ function AssessmentUpdate() {
 
             })
             .catch(error => console.error(`Erro: ${error}`))
-    }, []); 
+    }, []);
 
-    
+
     return (
         <div className="Home">
             <Header />
             <Menu />
-            <main className="content">
+            <main className="content-update">
                 <p>precisei tirar o filtro de usuario no controller, entender está exibindo os assessments de todos usuarios</p>
-                
-                <form onSubmit={handleSubmit} id="container-avaliacao">
+
+                <form onSubmit={handleSubmit} id="container-update">
                     <h3>Editar Avaliação {assessment.title}</h3>
                     <input
                         type="text"
@@ -75,14 +75,10 @@ function AssessmentUpdate() {
                         onChange={e => setDescription(e.target.value)}
                     />
                     <div>
-                        <ul>
-                            <input id="btn-update" type="submit" value="Alterar" />
-                            <h4 className="notify">{notify}</h4>
-                        </ul>
+                        <input id="btn-update" type="submit" value="Alterar" />
+                        <h4 className="notify-update">{notify}</h4>
                     </div>
                 </form>
-
-               
             </main>
             <Footer />
             <VLibras forceOnload={true} />
