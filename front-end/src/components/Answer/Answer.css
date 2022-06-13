@@ -14,6 +14,10 @@ table th { /* botões e referência ao glossário */
     margin-right: 4px;
 }
 
+.cabecalho{
+    font-weight: 700;
+}
+
 .content #sub-titulos {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -30,7 +34,7 @@ table th { /* botões e referência ao glossário */
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
-    height: 15.6em;
+    height: auto;
     width: auto;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -94,4 +98,33 @@ table th { /* botões e referência ao glossário */
     text-align: center;
     align-items: center;
     color: var(--cor-texto-escura);
+}
+
+#primeiraLinha{
+    font-weight: bolder;
+}
+
+#colunaAvaliacao{
+    text-align: left;
+    width: 10em;
+}
+
+#colunaNumQuestao{
+    text-align: center;
+    width: 7em;
+}
+
+#colunaQuestao{
+    text-align: left;
+    width: 40em;
+}
+
+#colunaResposta{
+    text-align: center;
+    width: 6em;
+}
+
+#comentario{
+    text-align: left;
+    width: 20em;
 }

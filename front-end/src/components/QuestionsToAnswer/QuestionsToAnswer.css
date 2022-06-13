@@ -87,7 +87,7 @@ textarea{
     height: 5em;
 }
 
-button{
+#btn-salvar{
     transition: all .25s ease-in-out;
   display: inline-block;
   text-align: center;
@@ -109,13 +109,13 @@ button{
 
 input[type="button"]:hover,
 input[type="submit"]:hover,
-button:hover,
-button:hover {
+#btn-salvar:hover,
+#btn-salvar:hover {
   background-color: var(--cor-secundaria);
   color: var(--cor-fundo-clara);
 }
 
-button:active{
+#btn-salvar:active{
     box-shadow: 1px 1px 2px darkgray;
     transform: translateY(3px);
 }

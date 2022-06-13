@@ -61,7 +61,7 @@ export default function QuestionToAnswer() {
                         </ul>
                         <br />Comentário<br />
                         <textarea placeholder="Deixe seu comentário sobre essa questão" id="comment" value={comments} onChange={e => setComments(e.target.value)} /><br />
-                        <button type="submit">Salvar Resposta</button>
+                        <button id="btn-salvar"type="submit">Salvar Resposta</button>
                     </form>
                 </div>
             </main>
