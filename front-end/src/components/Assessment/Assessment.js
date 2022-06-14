@@ -51,33 +51,34 @@ function Assessment() {
             <Menu />
             <main className="content-avaliacao">
                 {/* <p>precisei tirar o filtro de usuario no controller, entender está exibindo os assessments de todos usuarios</p> */}
-                <form onSubmit={handleSubmit} id="container-avaliacao">
-                    <h2>Nova Avaliação</h2>
-                    <input
-                        type="text"
-                        placeholder="Título da avaliação"
-                        id="avaliacao-titulo"
-                        name="title"
-                        value={title}
-                        onChange={e => setTitle(e.target.value)}
-                    />
-                    <input
-                        type="text"
-                        placeholder="Descrição da Avaliação"
-                        id="avaliacao-descricao"
-                        name="description"
-                        value={description}
-                        onChange={e => setDescription(e.target.value)}
-                    />
-                    <div>
-                        <ul>
-                            <input id="criar-avaliacao" type="submit" value="Criar" />
-                        </ul>
-                    </div>
-                    <h4 className="notify-avaliacao">{notify}</h4>
-                </form>
-
-                <div>
+                <div id="nova-avaliacao">
+                    <form onSubmit={handleSubmit} id="container-avaliacao">
+                        <h2>Nova Avaliação</h2>
+                        <input
+                            type="text"
+                            placeholder="Título da avaliação"
+                            id="avaliacao-titulo"
+                            name="title"
+                            value={title}
+                            onChange={e => setTitle(e.target.value)}
+                        />
+                        <input
+                            type="text"
+                            placeholder="Descrição da Avaliação"
+                            id="avaliacao-descricao"
+                            name="description"
+                            value={description}
+                            onChange={e => setDescription(e.target.value)}
+                        />
+                        <div>
+                            <ul>
+                                <input id="criar-avaliacao" type="submit" value="Criar" />
+                            </ul>
+                        </div>
+                        <h4 className="notify-avaliacao">{notify}</h4>
+                    </form>
+                </div>
+                <div id="avaliacoes">
                     {assessment.map(avaliacao => (
                         <div class="cardQuestion-avaliacao">
                             <h2>{avaliacao.title}</h2>
