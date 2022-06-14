@@ -35,7 +35,8 @@ function AssessmentPanel() {
         navigate(`/avaliacao/editar/${assessment._id}`)
     }
     function Delete() {
-        api.delete(`assessment/${id}`)
+        api.delete(`assessment/${assessment._id}`)
+        console.log(`assessment/${id}`)
         navigate(`/avaliacoes`)
     }
 
