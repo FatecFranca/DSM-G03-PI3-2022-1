@@ -34,6 +34,12 @@ function AssessmentPanel() {
         sessionStorage.setItem('assessment', assessment._id)
         navigate(`/avaliacao/editar/${assessment._id}`)
     }
+    function Delete() {
+        api.delete(`assessment/${id}`)
+        navigate(`/avaliacoes`)
+    }
+
+    
 
     return (
         <div className="Home">
@@ -48,6 +54,8 @@ function AssessmentPanel() {
                         <button id="btn-questao" onClick={OpenQuestions}>Abrir Questões</button>
                         <Link id="btn-respostas" to={`/avaliacao/respostas/${assessment._id}`}>Abrir Respostas</Link>
                         <button id="btn-editar" onClick={OpenUpdate}>Editar</button>
+                        <button id="btn-editar" onClick={Delete}>Apagar</button>
+
                     </div>
                 </div>
             </main>

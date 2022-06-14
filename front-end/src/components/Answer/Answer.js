@@ -12,18 +12,23 @@ function Answer() {
 
     const [answers, getAnswers] = useState(([]))
     const { id } = useParams()
-    const url = 'http://localhost:3000/'
     useEffect(() => {
 
         api.get(`answer/assessment/${id}`)
             .then((response) => {
-                console.log(`${url}answer/assessment/${id}`)
                 getAnswers(response.data)
                 console.log(response.data)
 
             })
             .catch(error => console.error(`Erro: ${error}`))
     }, []);
+
+    function getGroupName(_id) {
+
+        let groups = api.get(`question-group/6296cb78a050b76fed6d5bc3`)
+            console.log(groups.data.group)
+            return groups.data.group
+    }
 
     return (
         <div className="Home">
@@ -44,8 +49,8 @@ function Answer() {
                         {answers.map(respostas => (
                             <tr>
                                 <th class="table" id="colunaAvaliacao">{respostas.assessment.title}</th>
-                                <th class="table" id="colunaNumQuestao">{respostas.question.number  }</th>
-                                <th class="table" id="colunaQuestao">{respostas.question.enunciation  }</th>
+                                <th class="table" id="colunaNumQuestao">{respostas.question.number}</th>
+                                <th class="table" id="colunaQuestao">{respostas.question.enunciation}</th>
                                 <th class="table" id="colunaResposta">{respostas.objective_answer}</th>
                                 <th class="table" id="comentario">{respostas.comments}</th>
                             </tr>

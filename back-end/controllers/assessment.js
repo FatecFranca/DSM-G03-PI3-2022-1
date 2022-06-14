@@ -68,7 +68,7 @@ controller.update = async (req, res) => {
 
 controller.delete = async (req, res) => {
     try {
-        const id = req.body._id
+        const id = req.params
         const result = await Assessment.findByIdAndDelete(id)
         if(result) res.status(204).end()
         else res.status(404).end()

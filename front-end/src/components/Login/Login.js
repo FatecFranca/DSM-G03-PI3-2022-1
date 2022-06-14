@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 import '../Components.css'
-import axios from "axios";
 import api from '../../api';
 import VLibras from '@djpfs/react-vlibras';
 

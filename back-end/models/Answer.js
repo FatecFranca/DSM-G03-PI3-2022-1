@@ -11,7 +11,13 @@ module.exports = function() {
         question: {
             type: mongoose.ObjectId,
             required: true,
-            ref: 'Question'
+            ref: 'Question',
+            group: {
+                type: mongoose.ObjectId,
+                ref: 'QuestionGroup',
+                required: true
+            } 
+        
         },
         /*
             Valores válidos para objective_answer
