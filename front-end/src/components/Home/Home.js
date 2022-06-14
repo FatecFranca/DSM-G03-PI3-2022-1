@@ -25,9 +25,6 @@ function Home() {
                     de uma marca. Considerando a transformação digital pela qual as empresas estão passando
                     nos últimos tempos, o conceito de Experiência do Usuário passou a ser bastante aplicado
                     nas soluções digitais, como uso de sites, aplicativos móveis, entre outras.</p>
-                    <p>
-                      Neste projeto em que está navegando no momento, é uma experiencia de usuário.
-                    </p>
                 </div>
               </div>
               <div className="Cartao">
