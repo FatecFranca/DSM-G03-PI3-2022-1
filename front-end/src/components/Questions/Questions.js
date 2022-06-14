@@ -53,7 +53,7 @@ export default function Questions() {
             <Header />
             <Menu />
             <main className="content">
-                <h2>Escolha o grupo de Questões</h2>
+                <h2>Escolha uma Questão</h2>
                 {question.map(questoes => (
                     <div class="cardQuestion">
                         <h3>{questoes.number}) {questoes.enunciation}</h3>
