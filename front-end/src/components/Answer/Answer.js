@@ -6,6 +6,7 @@ import '../Components.css'
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import api from "../../api";
+import VLibras from '@djpfs/react-vlibras';
 
 
 function Answer() {
@@ -59,6 +60,7 @@ function Answer() {
                 </div>
             </main>
             <Footer />
+            <VLibras forceOnload={true} />
         </div>
     )
 }
