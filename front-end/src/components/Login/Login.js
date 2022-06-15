@@ -1,41 +1,81 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 import '../Components.css'
 import api from '../../api';
 import VLibras from '@djpfs/react-vlibras';
 
-export default function Login() {
+import { AuthContext } from '../../contexts/Auth/AuthContext'
 
-    const url = 'http://localhost:3000/'
-    const navigate = useNavigate();
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [user, getUser] = (([]))
+const Login = ()=>{
+
     const [notify, setNotify] = useState('');
 
+    const auth = useContext(AuthContext);
 
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
-    async function handleSubmit(e) {
+    const navigate = useNavigate()
+    const contexto = useContext(AuthContext)
+
+    async function onSubmit(e){
         e.preventDefault();
-        console.log(email + password)
-        if (email == '' || password == '') {
-            setNotify('Campos não preenchidos');
-            alert('Senha ou email não preenchidos')
-        } else {
-            const isLogged = await api.post('user/login', { email, password });
-            console.log(isLogged)
-            if (isLogged) {
-                navigate("/home");
-                localStorage.setItem('x-access-token', isLogged.data.token)
-                let users = await api.get("user/")
-                sessionStorage.setItem('userId', users[0]._id)
+        const formData = new FormData(e.target)
+        const data = Object.fromEntries(formData)
 
-            } else {
-                setNotify('Não Autorizado.');
-            }
+        setEmail(data.email)
+        setPassword(data.password)
+
+        console.log("Usuário.: " + email)
+        console.log("Senha...: " + password)
+        console.log('Contexto: ' + contexto)    
+        
+        const retorno = await api.post("user/login", { email, password })
+
+        if (retorno && email != '' && password != ''){
+            console.log("Logado")
+            localStorage.setItem('x-access-token', retorno.data.token)
+
+            navigate('/home')
+        }else{
+            setNotify('Não Autorizado.');
         }
     }
+
+// export default function Login() {
+
+
+
+    // const url = 'http://localhost:3000/'
+    // const navigate = useNavigate();
+    // const [email, setEmail] = useState('');
+    // const [password, setPassword] = useState('');
+    // const [user, getUser] = (([]))
+    // const [notify, setNotify] = useState('');
+
+
+
+    // async function handleSubmit(e) {
+    //     e.preventDefault();
+    //     console.log(email + password)
+    //     if (email == '' || password == '') {
+    //         setNotify('Campos não preenchidos');
+    //         alert('Senha ou email não preenchidos')
+    //     } else {
+    //         const isLogged = await api.post('user/login', { email, password });
+    //         console.log(isLogged)
+    //         if (isLogged) {
+    //             navigate("/home");
+    //             localStorage.setItem('x-access-token', isLogged.data.token)
+    //             let users = await api.get("user/")
+    //             sessionStorage.setItem('userId', users[0]._id)
+
+    //         } else {
+    //             setNotify('Não Autorizado.');
+    //         }
+    //     }
+    // }
 
 
 
@@ -57,7 +97,7 @@ export default function Login() {
                     Este novo site será chamado de UX HELPERS, que vai abranger esse espaço e tentar inovar com as ferramentas e conhecimentos existentes, observando as normas e conceitos para as avaliações.
                 </p>
             </main>
-            <form onSubmit={handleSubmit} id="container-login">
+            <form onSubmit={onSubmit} id="container-login">
                 <h3 className="login-titulo">Bem-vindo ao UX Helpers</h3>
                 <input
                     type="text"
@@ -88,3 +128,4 @@ export default function Login() {
         </div>
     )
 }
+export default Login;
