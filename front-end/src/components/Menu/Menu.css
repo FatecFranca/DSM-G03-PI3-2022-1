@@ -47,5 +47,118 @@ ul li {
 .menuitem:hover {
     color: var(--cor-secundaria);
     text-decoration: underline;
+} 
+
+.icon{
+    display: none;
 }
 
+@media screen and (max-width: 1020px) {
+
+
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+    } 
+
+    .icon{
+        display: flex;
+        position: absolute;
+        z-index: 4;
+        left: 1%;
+        width: fit-content;
+        height: 44px;
+        cursor: pointer;
+    }
+/* traço central */
+    .hamburguer{
+        top: 50%;
+        margin-left: 5px;
+        width: 37px;
+        height: 6px;
+        background: var(--cor-secundaria);
+        position: absolute;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: 0.5s;
+    }
+/* traço superior*/
+    .hamburguer::before{
+        top: -12px;
+        left: 10%;
+        content: '';
+        position: absolute;
+        width: 37px;
+        height: 6px;
+        background-color: var(--cor-secundaria);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: 0.5s;
+    }
+/* traço inferior*/
+    .hamburguer::after{
+        top: 12px;
+        left: 10%;
+        content: '';
+        position: absolute;
+        width: 37px;
+        height: 6px;
+        background-color: var(--cor-secundaria);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: 0.5s;
+    }
+
+    .list{
+        display: flex;
+        flex-direction: column;
+        left: 1%;
+        margin: 45px 0 0;
+        flex-wrap: nowrap;
+        color: white;
+        font: 1.2rem;
+        font-weight: 700;
+    }
+
+    .list .listItems{
+        padding: 0;
+        list-style: none;
+    }
+
+    .list .listItems li{
+        margin: 2px 8px;
+        cursor: pointer;
+    }
+    
+    .list .listItems li:hover{
+        font-weight: 800;
+    }
+
+    .icon.iconActive .hamburguer{
+        background-color: transparent;
+        box-shadow: 0 2px 5px transparent;
+    }
+
+    .icon.iconActive .hamburguer::after{
+        top: 0;
+        background-color: --var(--cor-secundaria);
+        transform: rotate(225deg);
+       
+    }
+
+    .icon.iconActive .hamburguer::before{
+        top: 0;
+        background-color: --var(--cor-secundaria);
+        transform: rotate(135deg);
+        
+    }
+
+    .menu.menuOpen{
+        width: 150px;
+        height: 100vh;    
+        box-shadow: 10px 0px 69px 0px rgba(0,0,0,0.59);
+    }
+
+    .menu.menuClose{
+        display: none;
+        width: 0;
+    }
+}
