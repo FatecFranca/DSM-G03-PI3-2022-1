@@ -72,3 +72,8 @@
     align-items: center;
     color: var(--cor-texto-escura);
 }
+.cardQuestion:hover {
+    border: 2px solid var(--cor-secundaria);
+    box-shadow: 3px 2px 5px var(--cor-secundaria);
+    transition: 0.5s;
+  }

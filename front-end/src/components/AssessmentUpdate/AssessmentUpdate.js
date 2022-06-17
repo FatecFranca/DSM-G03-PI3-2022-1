@@ -27,13 +27,10 @@ function AssessmentUpdate() {
         if (title == '' && description == '') {
             setNotify('Por favor informe o título e a url da sua avaliação');
         } else {
-            const { data } = await api.put(`assessment`, { id, title, description, user });
+            const { data } = await api.put(`assessment/${assessment._id}`, { title, description });
             console.log(data)
-            if (data) {
-                navigate("/questoes");
-            } else {
-                setNotify('Ops não conseguimos editar a avaliação');
-            }
+            navigate("/avaliacoes");
+
         }
     }
 

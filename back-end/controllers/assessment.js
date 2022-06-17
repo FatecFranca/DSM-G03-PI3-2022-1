@@ -53,7 +53,7 @@ controller.retrieveOne = async (req, res) => {
 
 controller.update = async (req, res) => {
     try {
-        const id = req.body._id
+        const id = req.params.id
         const result = await Assessment.findByIdAndUpdate(id, req.body)
         // HTTP 204: No content
         if(result) res.status(204).end()

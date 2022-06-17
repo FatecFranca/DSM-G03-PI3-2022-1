@@ -15,6 +15,7 @@ const Login = ()=>{
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [fullname, getFullname] = useState('')
 
     const navigate = useNavigate()
     const contexto = useContext(AuthContext)
@@ -35,6 +36,8 @@ const Login = ()=>{
 
         if (retorno && email != '' && password != ''){
             console.log("Logado")
+            const usuario = await api.get("user/")
+            console.log(usuario.data)
             localStorage.setItem('x-access-token', retorno.data.token)
 
             navigate('/home')

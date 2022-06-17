@@ -39,9 +39,9 @@ controller.retrieve = async (req, res) => {
 
         // Apenas o usuário administrador estaria autorizado
         // a listar todos os usuários
-        if(req.authenticatedId === 'Id do usuário admin')
+       // if(req.authenticatedId === 'Id do usuário admin')          ------ desabilitado regra
             result = await User.find()
-        else result = await User.find({ _id: req.authenticatedId})
+       // else result = await User.find({ _id: req.authenticatedId})  ------ desabilitado regra
         
         // HTTP 200: OK é implícito aqui
         res.send(result)
@@ -64,11 +64,11 @@ controller.retrieveOne = async (req, res) => {
         // Retornamos os dados do usuário solicitado somente
         // se quem estiver logado for o admin ou próprio usuário
         // sendo consultado
-        if(req.authenticatedId === 'Id do usuário admin' || 
-            req.authenticatedId === id)
+        //if(req.authenticatedId === 'Id do usuário admin' ||  ------ desabilitado regra
+        //    req.authenticatedId === id)                      ------ desabilitado regra
             result = await User.findById(id)
-        else
-            result = null
+        //else                                                 ------ desabilitado regra
+        //    result = null                                    ------ desabilitado regra
 
         // Se tivermos um resultado, retornamos com status HTTP 200
         if(result) res.send(result)

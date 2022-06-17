@@ -21,6 +21,11 @@
     margin-bottom: 20px;
 
 }
+#conteiner:hover {
+    border: 2px solid var(--cor-secundaria);
+    box-shadow: 3px 2px 5px var(--cor-secundaria);
+    transition: 0.5s;
+  }
 
 #avaliacoes{
     display: flex;
@@ -119,6 +124,12 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
+
+.cardQuestion-avaliacao:hover {
+    border: 2px solid var(--cor-secundaria);
+    box-shadow: 3px 2px 5px var(--cor-secundaria);
+    transition: 0.5s;
+  }
 
 .cardQuestion2 {
     text-decoration: none;
