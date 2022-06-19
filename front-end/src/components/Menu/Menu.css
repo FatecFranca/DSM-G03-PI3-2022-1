@@ -53,112 +53,133 @@ ul li {
     display: none;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1080px) {
 
-
-    *{
+    * {
         margin: 0;
         box-sizing: border-box;
         font-family: 'Open Sans', sans-serif;
-    } 
+    }
 
-    .icon{
+    .menu {
+        border-right: none;
+    }
+
+    .icon {
         display: flex;
         position: absolute;
+        align-items: center;
         z-index: 4;
         left: 1%;
         width: fit-content;
         height: 44px;
         cursor: pointer;
     }
+
 /* traço central */
-    .hamburguer{
+    .hamburguer {
         top: 50%;
-        margin-left: 5px;
+        margin-left: 10px;
         width: 37px;
         height: 6px;
         background: var(--cor-secundaria);
         position: absolute;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        transition: 0.5s;
-    }
-/* traço superior*/
-    .hamburguer::before{
-        top: -12px;
-        left: 10%;
-        content: '';
-        position: absolute;
-        width: 37px;
-        height: 6px;
-        background-color: var(--cor-secundaria);
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        transition: 0.5s;
-    }
-/* traço inferior*/
-    .hamburguer::after{
-        top: 12px;
-        left: 10%;
-        content: '';
-        position: absolute;
-        width: 37px;
-        height: 6px;
-        background-color: var(--cor-secundaria);
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        box-shadow: 0 2px 5px rgba(128, 128, 128, 0.2);
         transition: 0.5s;
     }
 
-    .list{
+/* traço superior*/
+    .hamburguer::before {
+        top: -12px;
+        left: 1%;
+        content: '';
+        position: absolute;
+        width: 37px;
+        height: 6px;
+        background-color: var(--cor-secundaria);
+        box-shadow: 0 2px 5px rgba(128, 128, 128, 0.2);
+        transition: 0.5s;
+    }
+
+/* traço inferior*/
+    .hamburguer::after {
+        top: 12px;
+        left: 1%;
+        content: '';
+        position: absolute;
+        width: 37px;
+        height: 6px;
+        background-color: var(--cor-secundaria);
+        box-shadow: 0 2px 5px rgba(128, 128, 128, 0.2);
+        transition: 0.5s;
+    }
+
+    .list {
         display: flex;
         flex-direction: column;
         left: 1%;
         margin: 45px 0 0;
         flex-wrap: nowrap;
-        color: white;
-        font: 1.2rem;
-        font-weight: 700;
+        color: var(--cor-fundo-clara);
+        font-weight: 4  00;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        transition: all .25s ease-in-out;
+        letter-spacing: 0.08em;
     }
 
-    .list .listItems{
+    .list ul li {   
+        padding-bottom: 12px;
+    }
+
+    .list .listItems {
         padding: 0;
         list-style: none;
     }
 
-    .list .listItems li{
+    .list .listItems li {
         margin: 2px 8px;
         cursor: pointer;
     }
     
-    .list .listItems li:hover{
-        font-weight: 800;
+    .list .listItems li:hover {
+        color: var(--cor-secundaria);
+        text-decoration: underline;
     }
 
-    .icon.iconActive .hamburguer{
+    .icon.iconActive .hamburguer {
         background-color: transparent;
         box-shadow: 0 2px 5px transparent;
     }
 
-    .icon.iconActive .hamburguer::after{
+    .icon.iconActive .hamburguer::after {
         top: 0;
-        background-color: --var(--cor-secundaria);
+        background-color: var(--cor-secundaria);
         transform: rotate(225deg);
        
     }
 
-    .icon.iconActive .hamburguer::before{
+    .icon.iconActive .hamburguer::before {
         top: 0;
-        background-color: --var(--cor-secundaria);
+        background-color: var(--cor-secundaria);
         transform: rotate(135deg);
         
     }
 
-    .menu.menuOpen{
-        width: 150px;
+    .menu .menuOpen {
+        width: 140px;
         height: 100vh;    
-        box-shadow: 10px 0px 69px 0px rgba(0,0,0,0.59);
+        box-shadow: 2px 6px 14px 0px gray;
+        background-color: var(--cor-fundo-clara);
+        border-right: 3px solid var(--cor-secundaria);
     }
 
-    .menu.menuClose{
+    .menu .menuClose {
         display: none;
         width: 0;
+    }
+
+    .topo {
+        border-top: 0;
     }
 }

@@ -71,9 +71,7 @@ function Assessment() {
                             onChange={e => setDescription(e.target.value)}
                         />
                         <div>
-                            <ul>
                                 <input id="criar-avaliacao" type="submit" value="Criar" />
-                            </ul>
                         </div>
                         <h4 className="notify-avaliacao">{notify}</h4>
                     </form>

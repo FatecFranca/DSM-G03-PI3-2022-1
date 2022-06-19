@@ -17,10 +17,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
     margin-bottom: 20px;
-
 }
+
 #conteiner:hover {
     border: 2px solid var(--cor-secundaria);
     box-shadow: 3px 2px 5px var(--cor-secundaria);
@@ -39,9 +38,8 @@
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid var(--cor-texto-escura);
-    width: 35%;
+    width: 420px;
     height: 15.6em;
-    margin-right: 40px;
     margin-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
@@ -199,17 +197,16 @@
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    border: 0;
     border-radius: 5px;
     min-width: 9em;
     height: 2.5em;
     color: var(--cor-texto-escura);
     background: var(--cor-fundo-clara);
     box-shadow: 3px 3px 2px gray;
-    margin: 0 5px 0 0;
+    margin: 0 15px 0 0;
     border: 2px solid var(--cor-texto-escura);
-    margin-left: 72.5%;
-}
+    margin-left: 68%;
+    }
   
   input[type="button"]:hover,
   input[type="submit"]:hover,

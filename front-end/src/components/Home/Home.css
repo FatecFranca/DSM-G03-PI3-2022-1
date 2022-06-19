@@ -1,32 +1,17 @@
 .Cartoes {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 15px;
-    margin-left: 55px;
+    margin-top: 3%;
+    margin-left: 5%;
 }
 
 .Cartao {
     border: 3px solid;
     overflow: hidden;
-    justify-content: left;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 395px;
+    width: 370px;
+    height: 400px;
     border-radius: 10px;
-    margin: 0px 30px 0px 0px;
-}
-
-#Cartao1 {
-    border: 3px solid;
-    overflow: hidden;
-    justify-content: left;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    border-radius: 10px;
-    height: 395px;
-    margin: 0 30px 0 0;
+    margin: 0px 45px 15px 0px;
 }
 
 .Conteudo {
@@ -43,28 +28,22 @@
 }
 
 .Conteudo ul {
-    width: 130px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
     line-height: 15px;
+    margin-left: 30%;
 }
 
 .Conteudo ul li {
+    text-align: center;
     list-style: disc;
     border: none;
     margin: 0;
     padding: 10px 0;
+    width: 150px;
 }
 
 .content-home {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 11.5vh 0 0 9.5%;
+    justify-items: center;
+    margin: 11.5vh 0 0 11%;
     color: var(--cor-texto-escura);
     background-color: var(--cor-fundo-clara);
     font-family: 'Open Sans', sans-serif;
@@ -77,7 +56,6 @@
     color: var(--cor-escura);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .content-home h2 {
@@ -102,7 +80,7 @@
 }
 
 .content-home p {
-    margin: 10px 0 20px 0;
+    margin: 20px 0 10px 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: center;
@@ -112,13 +90,5 @@
 .Conteudo p {
     align-items: center;
     margin: 0 10px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#Cartao1 p {
-    margin-top: 0;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
