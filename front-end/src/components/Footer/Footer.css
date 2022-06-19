@@ -30,3 +30,9 @@
 .footer ul {
     background-color: var(--cor-secundaria);
 }
+
+@media screen and (max-width: 1080px) {
+    #texto-footer{
+        text-align: center;
+    }
+}

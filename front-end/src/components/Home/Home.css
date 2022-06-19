@@ -2,7 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 3%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
+    justify-content: center;
+    
 }
 
 .Cartao {
@@ -91,4 +93,17 @@
     align-items: center;
     margin: 0 10px;
     font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 1080px) {
+    .Cartoes{   
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+   
+    .Cartao{
+        width: 80%;
+        height: auto;
+    }
 }
