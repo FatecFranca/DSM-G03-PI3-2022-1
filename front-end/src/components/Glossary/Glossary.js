@@ -26,7 +26,7 @@ function Glossary() {
             <Menu />
             <main className="content">
                 <h1 id="title-content">Glossário</h1>
-                <table>
+                <table id="table-glossary">
                     <tr id="sub-titulos">
                         <th class="cabecalhoGlossario">Entrada</th>
                         <th class="cabecalhoGlossario">Definição</th>

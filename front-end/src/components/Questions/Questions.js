@@ -55,7 +55,7 @@ export default function Questions() {
             <main className="content">
                 <h2>Escolha uma Questão</h2>
                 {question.map(questoes => (
-                    <div class="cardQuestion">
+                    <div class="cardQuestions">
                         <h3>{questoes.number}) {questoes.enunciation}</h3>
                         <Link to={`/questoes/${questoes._id}`}>Responder Questão {questoes.number}</Link><br />
                         <Link to="/questoes">Voltar para os Grupos</Link>

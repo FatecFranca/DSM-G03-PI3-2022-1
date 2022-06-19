@@ -172,3 +172,9 @@ input[type="submit"]:hover,
   margin-top: 5px;
   text-align: end;
 }
+
+@media screen and (max-width: 600px) {
+  .signUpForm{
+    margin: 0 10px;
+  }
+}
