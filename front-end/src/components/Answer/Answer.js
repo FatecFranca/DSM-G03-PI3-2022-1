@@ -23,7 +23,7 @@ function Answer() {
             })
             .catch(error => console.error(`Erro: ${error}`))
     }, []);
-
+/*
 async function getGroupName(id) {
 
  const groups = await api.get(`question-group/${id}`)
@@ -31,7 +31,7 @@ async function getGroupName(id) {
       sessionStorage.setItem('grupoexibido', groups.data.group)
       
 }
-
+*/
 return (
     <div className="Home">
         <Header />
@@ -43,7 +43,7 @@ return (
                 <table class="cardQuestion">
                     <tr>
                         <th class="cabecalho" id="colunaAvaliacao">Avaliação</th>
-                        <th class="cabecalho" id="colunaNumQuestao">Questão nº</th>
+                        <th class="cabecalho" id="colunaGrupo">Grupo</th>
                         <th class="cabecalho" id="colunaNumQuestao">Questão nº</th>
                         <th class="cabecalho" id="colunaQuestao">Questão</th>
                         <th class="cabecalho" id="colunaResposta">Resposta</th>
@@ -51,9 +51,8 @@ return (
                     </tr>
                     {answers.map(respostas => (
                         <tr>
-                            {getGroupName(respostas.question.group)}
                             <th class="table" id="colunaAvaliacao">{respostas.assessment.title}</th>
-                            <th class="table" id="colunaAvaliacao">{sessionStorage.getItem('grupoexibido')}</th>
+                            <th class="table" id="colunaGrupo">{respostas.question.group_name}</th>
                             <th class="table" id="colunaNumQuestao">{respostas.question.number}</th>
                             <th class="table" id="colunaQuestao">{respostas.question.enunciation}</th>
                             <th class="table" id="colunaResposta">{respostas.objective_answer}</th>

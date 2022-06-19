@@ -12,6 +12,7 @@ export default function QuestionToAnswer() {
     const { id } = useParams()
     const navigate = useNavigate();
     const [assessment, getAssessment] = useState(sessionStorage.getItem('assessment'));
+    const [group_name, getGroup_name] = useState(localStorage.getItem('grupoescolhido'));
     const [question, setQuestions] = useState(id) // Pegar a Question
     const [questionId, getQuestionsId] = useState(([]))  // Pegar a Question
     const [objective_answer, setObjective_answer] = useState('');
@@ -56,7 +57,7 @@ export default function QuestionToAnswer() {
                         <ul>
                             <li><input type="radio" name="objective_answer" id="objctive" value="Y" onChange={e => setObjective_answer(e.target.value)} /> Sim</li>
                             <li><input type="radio" name="objective_answer" id="objctive" value="N" onChange={e => setObjective_answer(e.target.value)} /> Não</li>
-                            <li><input type="radio" name="objective_answer" id="objctive" value="P" onChange={e => setObjective_answer(e.target.value)} /> Responder mais tarde</li>
+                            <li><input type="radio" name="objective_answer" id="objctive" value="P" onChange={e => setObjective_answer(e.target.value)} /> Adiar resposta</li>
                             <li><input type="radio" name="objective_answer" id="objctive" value="X" onChange={e => setObjective_answer(e.target.value)} /> Não aplicável</li>
                         </ul>
                         <br />Comentário<br />

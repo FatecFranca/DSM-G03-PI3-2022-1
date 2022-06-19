@@ -109,6 +109,11 @@ table th { /* botões e referência ao glossário */
     width: 10em;
 }
 
+#colunaGrupo{
+    text-align: left;
+    width: 30em;
+}
+
 #colunaNumQuestao{
     text-align: center;
     width: 7em;

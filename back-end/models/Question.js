@@ -12,12 +12,16 @@ module.exports = function() {
             type: String,
             required: true
         },
+        group_name:{
+            type: String,
+            required: true
+        },
         // Chave estrangeira para QuestionGroup
         group: {
             type: mongoose.ObjectId,
             ref: 'QuestionGroup',
             required: true
-        } 
+        }
     })
     
     // Criando índice único para os campos group e number

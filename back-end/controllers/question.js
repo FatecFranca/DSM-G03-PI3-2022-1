@@ -37,7 +37,7 @@ controller.retrieve = async (req, res) => {
 
 controller.retrieveByGroup = async (req, res) => {
     try {
-        const result = await Question.find({group: req.params.groupId}).sort('number')
+        const result = await Question.find({group: req.params.groupId}).sort('_id').sort('number')
         // HTTP 200: OK é implícito aqui
         res.send(result)
     }

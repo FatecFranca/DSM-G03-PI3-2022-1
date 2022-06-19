@@ -34,6 +34,7 @@ function QuestionGroup() {
                             <Link to={`/questoes/porgrupo/${grupos._id}`} class="menuitemcorpo">
                                 <h4>{grupos.group}</h4>
                                 <p>{grupos.description}</p>
+                                {localStorage.setItem('grupoescolhido', grupos.group)}
                             </Link>
                         </div>
                     ))}
