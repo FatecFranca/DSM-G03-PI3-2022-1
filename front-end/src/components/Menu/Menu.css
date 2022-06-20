@@ -26,9 +26,9 @@ ul {
 }
 
 ul li {
-    list-style-type: none;  
+    list-style-type: none;
     margin-top: 13%;
-    border-top:  1px solid rgba(255, 0, 0, 0.6);
+    border-top: 1px solid rgba(255, 0, 0, 0.6);
     padding-top: 12px;
     margin-left: 0;
     width: 120px;
@@ -47,9 +47,9 @@ ul li {
 .menuitem:hover {
     color: var(--cor-secundaria);
     text-decoration: underline;
-} 
+}
 
-.icon{
+.icon {
     display: none;
 }
 
@@ -76,7 +76,7 @@ ul li {
         cursor: pointer;
     }
 
-/* traço central */
+    /* traço central */
     .hamburguer {
         top: 50%;
         margin-left: 10px;
@@ -88,7 +88,7 @@ ul li {
         transition: 0.5s;
     }
 
-/* traço superior*/
+    /* traço superior*/
     .hamburguer::before {
         top: -12px;
         left: 1%;
@@ -101,7 +101,7 @@ ul li {
         transition: 0.5s;
     }
 
-/* traço inferior*/
+    /* traço inferior*/
     .hamburguer::after {
         top: 12px;
         left: 1%;
@@ -121,14 +121,14 @@ ul li {
         margin: 45px 0 0;
         flex-wrap: nowrap;
         color: var(--cor-fundo-clara);
-        font-weight: 4  00;
+        font-weight: 4 00;
         font-family: 'Open Sans', sans-serif;
         text-align: center;
         transition: all .25s ease-in-out;
         letter-spacing: 0.08em;
     }
 
-    .list ul li {   
+    .list ul li {
         padding-bottom: 12px;
     }
 
@@ -141,7 +141,7 @@ ul li {
         margin: 2px 8px;
         cursor: pointer;
     }
-    
+
     .list .listItems li:hover {
         color: var(--cor-secundaria);
         text-decoration: underline;
@@ -156,19 +156,17 @@ ul li {
         top: 0;
         background-color: var(--cor-secundaria);
         transform: rotate(225deg);
-       
     }
 
     .icon.iconActive .hamburguer::before {
         top: 0;
         background-color: var(--cor-secundaria);
         transform: rotate(135deg);
-        
     }
 
     .menu .menuOpen {
         width: 140px;
-        height: 100vh;    
+        height: 100vh;
         box-shadow: 2px 6px 14px 0px gray;
         background-color: var(--cor-fundo-clara);
         border-right: 3px solid var(--cor-secundaria);
@@ -182,4 +180,31 @@ ul li {
     .topo {
         border-top: 0;
     }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .icon {
+        margin-top: 50px;
+        left: 1%;
+        width: fit-content;
+        height: 44px;
+        cursor: pointer;
+    }
+
+    .menu .menuOpen {
+        margin-top: 47px;
+        width: 140px;
+        height: 100vh;
+        box-shadow: 2px 6px 14px 0px gray;
+        background-color: var(--cor-fundo-clara);
+        border-right: 3px solid var(--cor-secundaria);
+    }
+
+    .menu .menuClose {
+        display: none;
+        width: 0;
+    }
+
 }

@@ -4,7 +4,7 @@
     margin-top: 3%;
     /* margin-left: 5%; */
     justify-content: center;
-    
+
 }
 
 .Cartao {
@@ -52,7 +52,7 @@
     font-weight: 400;
     text-align: center;
     min-height: 77vh;
-}   
+}
 
 .content-home h1 {
     color: var(--cor-escura);
@@ -96,14 +96,17 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .Cartoes{   
+
+    .Cartoes {
         display: flex;
         flex-direction: column;
         align-content: center;
     }
-   
-    .Cartao{
+
+    .Cartao {
         width: 80%;
         height: auto;
     }
 }
+
+@media screen and (max-width: 720px) {}

@@ -1,4 +1,4 @@
-    .header {
+.header {
     background-color: var(--cor-secundaria);
     color: var(--cor-fundo-clara);
     width: 100%;
@@ -23,15 +23,16 @@
 }
 
 .header form {
-    background-color: var(--cor-secundaria);    
+    background-color: var(--cor-secundaria);
 }
+
 .pesquisa {
     margin-right: 8px;
     border-radius: 5px;
     width: 200px;
     height: 2.5em;
     border: rgba(255, 255, 255, 0.50);
-    
+
 }
 
 .btn {
@@ -44,7 +45,7 @@
     color: var(--cor-texto-escura);
 }
 
-.icon {
+.icon-pesquisa {
     margin-right: 3px;
     height: 1.5em;
     width: 1.5em;
@@ -77,4 +78,44 @@
     border: 1px var(--cor-fundo-clara);
     color: var(--cor-fundo-clara);
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1080px) {
+
+    .titulo-pesquisa #title {
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 18vh;
+    }
+
+    .titulo-pesquisa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .titulo-pesquisa #title {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .botaoSair {
+        margin-right: 10px;
+    }
+
+    .icon-pesquisa {
+        display: none;
+    }
 }

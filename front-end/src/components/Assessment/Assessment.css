@@ -2,7 +2,8 @@
     background-color: var(--cor-fundo-clara);
 }
 
-.content-avaliacao { /* distribuicao dos cards */
+.content-avaliacao {
+    /* distribuicao dos cards */
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -13,7 +14,7 @@
     min-height: 77vh;
 }
 
-#nova-avaliacao{
+#nova-avaliacao {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,16 +25,16 @@
     border: 2px solid var(--cor-secundaria);
     box-shadow: 3px 2px 5px var(--cor-secundaria);
     transition: 0.5s;
-  }
+}
 
-#avaliacoes{
+#avaliacoes {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-#container-avaliacao { 
+#container-avaliacao {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,6 +44,12 @@
     margin-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
+}
+
+#container-avaliacao:hover {
+    border: 2px solid var(--cor-secundaria);
+    box-shadow: 3px 2px 5px var(--cor-secundaria);
+    transition: 0.5s;
 }
 
 #avaliacao-titulo,
@@ -108,7 +115,7 @@
     align-items: center;
 }
 
-.cardQuestion-avaliacao{
+.cardQuestion-avaliacao {
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -127,7 +134,7 @@
     border: 2px solid var(--cor-secundaria);
     box-shadow: 3px 2px 5px var(--cor-secundaria);
     transition: 0.5s;
-  }
+}
 
 .cardQuestion2 {
     text-decoration: none;
@@ -206,16 +213,16 @@
     margin: 0 15px 0 0;
     border: 2px solid var(--cor-texto-escura);
     margin-left: 68%;
-    }
-  
-  input[type="button"]:hover,
-  input[type="submit"]:hover,
-  #criar-avaliacao:hover,
-  #criar-avaliacao:focus {
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+#criar-avaliacao:hover,
+#criar-avaliacao:focus {
     background-color: var(--cor-secundaria);
     color: var(--cor-fundo-clara);
-  }
-  
+}
+
 #criar-avaliacao:active {
     box-shadow: 1px 1px 2px darkgray;
     transform: translateY(3px);
@@ -247,7 +254,6 @@ input[type="button"]:hover,
 input[type="submit"]:hover,
 #btn-avaliacao:hover,
 #btn-avaliacao:focus {
-  background-color: var(--cor-secundaria);
-  color: var(--cor-fundo-clara);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo-clara);
 }
-

@@ -9,7 +9,7 @@ function Header() {
             <Link to="/" class="botaoSair">Sair</Link>
             <div className="titulo-pesquisa">
                 <h2 id="title">UX Helpers</h2>
-                <BiSearch class="icon" />
+                <BiSearch class="icon-pesquisa" />
                 <form>
                     <input class="pesquisa" type="text" placeholder="Pesquisar..." />
                     <button class="btn" type="submit">Buscar</button>
