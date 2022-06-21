@@ -23,7 +23,7 @@ function Assessment() {
         console.log(title + description)
 
         if(title == '' && description == '') {
-            setNotify('Por favor informe o título e a url da sua avaliação');
+            setNotify('Por favor informe o título e a descrição da sua avaliação');
         } else {
             const newAssessement = await api.post('assessment', { title, description, user });
             console.log(newAssessement)
