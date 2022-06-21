@@ -7,7 +7,7 @@ import VLibras from '@djpfs/react-vlibras';
 
 import { AuthContext } from '../../contexts/Auth/AuthContext'
 
-const Login = ()=>{
+const Login = () => {
 
     const [notify, setNotify] = useState('');
 
@@ -20,7 +20,7 @@ const Login = ()=>{
     const navigate = useNavigate()
     const contexto = useContext(AuthContext)
 
-    async function onSubmit(e){
+    async function onSubmit(e) {
         e.preventDefault();
         const formData = new FormData(e.target)
         const data = Object.fromEntries(formData)
@@ -30,23 +30,26 @@ const Login = ()=>{
 
         console.log("Usuário.: " + email)
         console.log("Senha...: " + password)
-        console.log('Contexto: ' + contexto)    
-        
-        const retorno = await api.post("user/login", { email, password })
+        console.log('Contexto: ' + contexto)
 
-        if (retorno && email != '' && password != ''){
-            console.log("Logado")
-            const usuario = await api.get("user/")
-            console.log(usuario.data)
-            localStorage.setItem('x-access-token', retorno.data.token)
+        try {
+            const retorno = await api.post("user/login", { email, password })
+            if (retorno && email != '' && password != '') {
+                console.log("Logado")
+                const usuario = await api.get("user/")
+                console.log(usuario.data)
+                localStorage.setItem('x-access-token', retorno.data.token)
 
-            navigate('/home')
-        }else{
+                navigate('/home')
+
+            }
+        } catch (e) {
             setNotify('Não Autorizado.');
         }
+
     }
 
-// export default function Login() {
+    // export default function Login() {
 
 
 
