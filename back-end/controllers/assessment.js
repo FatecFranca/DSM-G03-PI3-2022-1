@@ -22,7 +22,7 @@ controller.create = async (req, res) => {
 // glossário já inseridas
 controller.retrieve = async (req, res) => {
     try {
-        const result = await Assessment.find(/*{user: req.authenticatedId}*/).populate('user')
+        const result = await Assessment.find({user: req.authenticatedId}).populate('user')
         // HTTP 200: OK é implícito aqui
         res.send(result)
     }
@@ -38,7 +38,7 @@ controller.retrieve = async (req, res) => {
 controller.retrieveOne = async (req, res) => {
     try {
         const id = req.params.id
-        const result = await Assessment.findOne({ _id: id/*, user: req.authenticatedId*/})
+        const result = await Assessment.findOne({ _id: id, user: req.authenticatedId})
         // Se tivermos um resultado, retornamos com status HTTP 200
         if(result) res.send(result)
         // Senão, retornamos HTTP 404: Not found
