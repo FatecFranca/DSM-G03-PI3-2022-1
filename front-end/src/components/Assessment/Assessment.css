@@ -257,3 +257,15 @@ input[type="submit"]:hover,
     background-color: var(--cor-secundaria);
     color: var(--cor-fundo-clara);
 }
+
+@media screen and (max-width: 720px) {
+
+    #nova-avaliacao {
+        margin-top: 18vh;
+    }
+
+    #criar-avaliacao {
+        margin-left: 66%;
+    }
+
+}

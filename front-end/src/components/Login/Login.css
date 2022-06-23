@@ -166,10 +166,12 @@ input[type="submit"]:hover,
   font-size: 16px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
+
   .content-login{
-    margin-left: 5px;
     border-right: none;
+    margin: 20px 0 20px 0;
+    max-width: 95%;
   }
 
   .signinForm{
@@ -177,13 +179,31 @@ input[type="submit"]:hover,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-
+    height: auto;
   }
+
+  #container-login{
+    margin-bottom: 15px;
+  }
+
+  .content-login h1 {
+    margin-bottom: 15px;
+  }
+
+  .content-login h3 {
+    margin-bottom: 15px;
+  }
+
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
+
   #container-login{
-    margin: 10px 10px;
+    margin-bottom: 15px;
+  }
+
+  .content-login {
+    margin: 20px 0 20px 0;
+    max-width: 85%;
   }
 }

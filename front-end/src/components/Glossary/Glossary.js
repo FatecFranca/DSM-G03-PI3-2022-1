@@ -33,7 +33,7 @@ function Glossary() {
                     </tr>
                     {glossary.map(glossario => (
                         <tr>
-                            <th>{glossario.entry}</th>
+                            <th id="entrada">{glossario.entry}</th>
                             <th>{glossario.definition}</th>
                         </tr>
                     ))}

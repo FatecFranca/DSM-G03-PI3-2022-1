@@ -186,7 +186,6 @@ ul li {
 @media screen and (max-width: 720px) {
 
     .icon {
-        margin-top: 50px;
         left: 1%;
         width: fit-content;
         height: 44px;
@@ -194,7 +193,6 @@ ul li {
     }
 
     .menu .menuOpen {
-        margin-top: 47px;
         width: 140px;
         height: 100vh;
         box-shadow: 2px 6px 14px 0px gray;
