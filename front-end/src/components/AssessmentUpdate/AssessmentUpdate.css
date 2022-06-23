@@ -101,3 +101,16 @@ input[type="submit"]:hover,
     margin-top: 5px;
     text-align: end;
 }
+
+@media screen and (max-width: 1200px) {
+
+
+}
+
+@media screen and (max-width: 720px) {
+
+  .content-update {
+    margin-top: 18vh;
+  }
+
+}

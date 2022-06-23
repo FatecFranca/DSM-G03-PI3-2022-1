@@ -180,3 +180,16 @@
     box-shadow: 1px 1px 2px darkgray;
     transform: translateY(3px);
 }
+
+@media screen and (max-width: 1200px) {
+
+
+  }
+  
+  @media screen and (max-width: 720px) {
+  
+    .content-panel {
+      margin-top: 18vh;
+    }
+  
+}

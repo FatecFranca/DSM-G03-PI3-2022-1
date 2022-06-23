@@ -133,3 +133,13 @@ table th { /* botões e referência ao glossário */
     text-align: left;
     width: 20em;
 }
+
+@media screen and (max-width: 1200px) {
+
+
+}
+
+@media screen and (max-width: 720px) {
+
+
+}
